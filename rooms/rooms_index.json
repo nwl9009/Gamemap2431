@@ -4,6 +4,363 @@
       "id": 1,
       "image": "room_01.png",
       "center": [
+        2957,
+        1382
+      ],
+      "bbox": [
+        2833,
+        1328,
+        3081,
+        1436
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 3984,
+      "height_px": 1744
+    },
+    {
+      "id": 2,
+      "image": "room_02.png",
+      "center": [
+        2607,
+        1034
+      ],
+      "bbox": [
+        2554,
+        979,
+        2661,
+        1089
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 1728,
+      "height_px": 1776
+    },
+    {
+      "id": 3,
+      "image": "room_03.png",
+      "center": [
+        1346,
+        244
+      ],
+      "bbox": [
+        1326,
+        173,
+        1367,
+        316
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 672,
+      "height_px": 2304
+    },
+    {
+      "id": 4,
+      "image": "room_04.png",
+      "center": [
+        2904,
+        1259
+      ],
+      "bbox": [
+        2868,
+        1223,
+        2941,
+        1296
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 2368,
+      "height_px": 2368
+    },
+    {
+      "id": 5,
+      "image": "room_05.png",
+      "center": [
+        2904,
+        1329
+      ],
+      "bbox": [
+        2868,
+        1293,
+        2941,
+        1366
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 2368,
+      "height_px": 2368
+    },
+    {
+      "id": 6,
+      "image": "room_06.png",
+      "center": [
+        3044,
+        1119
+      ],
+      "bbox": [
+        3008,
+        1083,
+        3081,
+        1156
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 2368,
+      "height_px": 2368
+    },
+    {
+      "id": 7,
+      "image": "room_07.png",
+      "center": [
+        2974,
+        1119
+      ],
+      "bbox": [
+        2938,
+        1083,
+        3011,
+        1156
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 2368,
+      "height_px": 2368
+    },
+    {
+      "id": 8,
+      "image": "room_08.png",
+      "center": [
+        210,
+        2309
+      ],
+      "bbox": [
+        174,
+        2274,
+        246,
+        2345
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 2336,
+      "height_px": 2304
+    },
+    {
+      "id": 9,
+      "image": "room_09.png",
+      "center": [
+        2957,
+        1294
+      ],
+      "bbox": [
+        2938,
+        1223,
+        2976,
+        1365
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 624,
+      "height_px": 2288
+    },
+    {
+      "id": 10,
+      "image": "room_10.png",
+      "center": [
+        2677,
+        491
+      ],
+      "bbox": [
+        2660,
+        420,
+        2695,
+        563
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 576,
+      "height_px": 2304
+    },
+    {
+      "id": 11,
+      "image": "room_11.png",
+      "center": [
+        2607,
+        1166
+      ],
+      "bbox": [
+        2566,
+        1118,
+        2648,
+        1214
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 1328,
+      "height_px": 1552
+    },
+    {
+      "id": 12,
+      "image": "room_12.png",
+      "center": [
+        192,
+        1837
+      ],
+      "bbox": [
+        173,
+        1783,
+        211,
+        1891
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 624,
+      "height_px": 1744
+    },
+    {
+      "id": 13,
+      "image": "room_13.png",
+      "center": [
+        2467,
+        1102
+      ],
+      "bbox": [
+        2413,
+        1083,
+        2521,
+        1121
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 1744,
+      "height_px": 624
+    },
+    {
+      "id": 14,
+      "image": "room_14.png",
+      "center": [
+        962,
+        2922
+      ],
+      "bbox": [
+        944,
+        2869,
+        981,
+        2976
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 608,
+      "height_px": 1728
+    },
+    {
+      "id": 15,
+      "image": "room_15.png",
+      "center": [
+        787,
+        2764
+      ],
+      "bbox": [
+        768,
+        2728,
+        806,
+        2801
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 2368
+    },
+    {
+      "id": 16,
+      "image": "room_16.png",
+      "center": [
+        1417,
+        1855
+      ],
+      "bbox": [
+        1398,
+        1819,
+        1436,
+        1891
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 2336
+    },
+    {
+      "id": 17,
+      "image": "room_17.png",
+      "center": [
+        261,
+        2309
+      ],
+      "bbox": [
+        243,
+        2274,
+        280,
+        2345
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1216,
+      "height_px": 2304
+    },
+    {
+      "id": 18,
+      "image": "room_18.png",
+      "center": [
+        227,
+        1749
+      ],
+      "bbox": [
+        208,
+        1713,
+        246,
+        1786
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 2368
+    },
+    {
+      "id": 19,
+      "image": "room_19.png",
+      "center": [
+        2432,
+        1049
+      ],
+      "bbox": [
+        2413,
+        1013,
+        2451,
+        1086
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 2368
+    },
+    {
+      "id": 20,
+      "image": "room_20.png",
+      "center": [
+        2432,
+        1154
+      ],
+      "bbox": [
+        2413,
+        1118,
+        2451,
+        1191
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 2368
+    },
+    {
+      "id": 21,
+      "image": "room_21.png",
+      "center": [
+        1417,
+        1916
+      ],
+      "bbox": [
+        1398,
+        1888,
+        1436,
+        1945
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 1856
+    },
+    {
+      "id": 22,
+      "image": "room_22.png",
+      "center": [
         1242,
         2117
       ],
@@ -18,8 +375,93 @@
       "height_px": 1248
     },
     {
-      "id": 2,
-      "image": "room_02.png",
+      "id": 23,
+      "image": "room_23.png",
+      "center": [
+        227,
+        1802
+      ],
+      "bbox": [
+        208,
+        1783,
+        246,
+        1821
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 1248
+    },
+    {
+      "id": 24,
+      "image": "room_24.png",
+      "center": [
+        262,
+        1732
+      ],
+      "bbox": [
+        243,
+        1713,
+        281,
+        1751
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 1248
+    },
+    {
+      "id": 25,
+      "image": "room_25.png",
+      "center": [
+        2957,
+        3027
+      ],
+      "bbox": [
+        2939,
+        3009,
+        2976,
+        3046
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1216,
+      "height_px": 1216
+    },
+    {
+      "id": 26,
+      "image": "room_26.png",
+      "center": [
+        227,
+        2362
+      ],
+      "bbox": [
+        209,
+        2344,
+        245,
+        2380
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1184,
+      "height_px": 1184
+    },
+    {
+      "id": 27,
+      "image": "room_27.png",
+      "center": [
+        2608,
+        1155
+      ],
+      "bbox": [
+        2594,
+        1118,
+        2622,
+        1192
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 928,
+      "height_px": 2400
+    },
+    {
+      "id": 28,
+      "image": "room_28.png",
       "center": [
         227,
         1837
@@ -35,8 +477,8 @@
       "height_px": 1184
     },
     {
-      "id": 3,
-      "image": "room_03.png",
+      "id": 29,
+      "image": "room_29.png",
       "center": [
         262,
         1837
@@ -52,8 +494,8 @@
       "height_px": 1184
     },
     {
-      "id": 4,
-      "image": "room_04.png",
+      "id": 30,
+      "image": "room_30.png",
       "center": [
         262,
         1802
@@ -69,8 +511,8 @@
       "height_px": 1184
     },
     {
-      "id": 5,
-      "image": "room_05.png",
+      "id": 31,
+      "image": "room_31.png",
       "center": [
         227,
         1872
@@ -86,8 +528,8 @@
       "height_px": 1184
     },
     {
-      "id": 6,
-      "image": "room_06.png",
+      "id": 32,
+      "image": "room_32.png",
       "center": [
         1836,
         2778
@@ -103,8 +545,8 @@
       "height_px": 1376
     },
     {
-      "id": 7,
-      "image": "room_07.png",
+      "id": 33,
+      "image": "room_33.png",
       "center": [
         857,
         2782
@@ -120,25 +562,790 @@
       "height_px": 1152
     },
     {
-      "id": 8,
-      "image": "room_08.png",
+      "id": 34,
+      "image": "room_34.png",
       "center": [
-        2913,
-        3018
+        1288,
+        271
       ],
       "bbox": [
-        2905,
-        3010,
-        2921,
-        3026
+        1258,
+        261,
+        1318,
+        281
       ],
       "pixelsPerTile": 32,
-      "width_px": 544,
-      "height_px": 544
+      "width_px": 1952,
+      "height_px": 672
     },
     {
-      "id": 9,
-      "image": "room_09.png",
+      "id": 35,
+      "image": "room_35.png",
+      "center": [
+        1288,
+        306
+      ],
+      "bbox": [
+        1258,
+        296,
+        1318,
+        316
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1952,
+      "height_px": 672
+    },
+    {
+      "id": 36,
+      "image": "room_36.png",
+      "center": [
+        262,
+        1767
+      ],
+      "bbox": [
+        244,
+        1749,
+        280,
+        1785
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1184,
+      "height_px": 1184
+    },
+    {
+      "id": 37,
+      "image": "room_37.png",
+      "center": [
+        2607,
+        1033
+      ],
+      "bbox": [
+        2552,
+        977,
+        2663,
+        1089
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 1792,
+      "height_px": 1808
+    },
+    {
+      "id": 38,
+      "image": "room_38.png",
+      "center": [
+        2467,
+        1102
+      ],
+      "bbox": [
+        2411,
+        1011,
+        2523,
+        1193
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 1808,
+      "height_px": 2928
+    },
+    {
+      "id": 39,
+      "image": "room_39.png",
+      "center": [
+        2449,
+        2336
+      ],
+      "bbox": [
+        2426,
+        2326,
+        2473,
+        2346
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1536,
+      "height_px": 672
+    },
+    {
+      "id": 40,
+      "image": "room_40.png",
+      "center": [
+        2607,
+        1166
+      ],
+      "bbox": [
+        2564,
+        1116,
+        2650,
+        1216
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 1392,
+      "height_px": 1616
+    },
+    {
+      "id": 41,
+      "image": "room_41.png",
+      "center": [
+        1294,
+        183
+      ],
+      "bbox": [
+        1271,
+        173,
+        1318,
+        193
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1536,
+      "height_px": 672
+    },
+    {
+      "id": 42,
+      "image": "room_42.png",
+      "center": [
+        2449,
+        2283
+      ],
+      "bbox": [
+        2426,
+        2273,
+        2473,
+        2293
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1536,
+      "height_px": 672
+    },
+    {
+      "id": 43,
+      "image": "room_43.png",
+      "center": [
+        336,
+        3125
+      ],
+      "bbox": [
+        241,
+        3094,
+        432,
+        3156
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 3072,
+      "height_px": 1008
+    },
+    {
+      "id": 44,
+      "image": "room_44.png",
+      "center": [
+        1277,
+        252
+      ],
+      "bbox": [
+        1258,
+        242,
+        1296,
+        263
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 704
+    },
+    {
+      "id": 45,
+      "image": "room_45.png",
+      "center": [
+        1277,
+        287
+      ],
+      "bbox": [
+        1258,
+        277,
+        1296,
+        298
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 704
+    },
+    {
+      "id": 46,
+      "image": "room_46.png",
+      "center": [
+        1305,
+        217
+      ],
+      "bbox": [
+        1293,
+        207,
+        1318,
+        228
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 704
+    },
+    {
+      "id": 47,
+      "image": "room_47.png",
+      "center": [
+        1305,
+        252
+      ],
+      "bbox": [
+        1293,
+        242,
+        1318,
+        263
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 704
+    },
+    {
+      "id": 48,
+      "image": "room_48.png",
+      "center": [
+        1305,
+        287
+      ],
+      "bbox": [
+        1293,
+        277,
+        1318,
+        298
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 704
+    },
+    {
+      "id": 49,
+      "image": "room_49.png",
+      "center": [
+        2460,
+        2317
+      ],
+      "bbox": [
+        2448,
+        2307,
+        2473,
+        2328
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 704
+    },
+    {
+      "id": 50,
+      "image": "room_50.png",
+      "center": [
+        1305,
+        236
+      ],
+      "bbox": [
+        1293,
+        226,
+        1318,
+        246
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 672
+    },
+    {
+      "id": 51,
+      "image": "room_51.png",
+      "center": [
+        1283,
+        217
+      ],
+      "bbox": [
+        1271,
+        207,
+        1296,
+        228
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 704
+    },
+    {
+      "id": 52,
+      "image": "room_52.png",
+      "center": [
+        2438,
+        2317
+      ],
+      "bbox": [
+        2426,
+        2307,
+        2451,
+        2328
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 704
+    },
+    {
+      "id": 53,
+      "image": "room_53.png",
+      "center": [
+        1283,
+        236
+      ],
+      "bbox": [
+        1271,
+        226,
+        1296,
+        247
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 704
+    },
+    {
+      "id": 54,
+      "image": "room_54.png",
+      "center": [
+        1283,
+        201
+      ],
+      "bbox": [
+        1271,
+        191,
+        1296,
+        211
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 672
+    },
+    {
+      "id": 55,
+      "image": "room_55.png",
+      "center": [
+        1305,
+        201
+      ],
+      "bbox": [
+        1293,
+        191,
+        1318,
+        211
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 672
+    },
+    {
+      "id": 56,
+      "image": "room_56.png",
+      "center": [
+        2438,
+        2301
+      ],
+      "bbox": [
+        2426,
+        2291,
+        2451,
+        2311
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 672
+    },
+    {
+      "id": 57,
+      "image": "room_57.png",
+      "center": [
+        2460,
+        2301
+      ],
+      "bbox": [
+        2448,
+        2291,
+        2473,
+        2311
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 832,
+      "height_px": 672
+    },
+    {
+      "id": 58,
+      "image": "room_58.png",
+      "center": [
+        1322,
+        252
+      ],
+      "bbox": [
+        1314,
+        242,
+        1331,
+        263
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 704
+    },
+    {
+      "id": 59,
+      "image": "room_59.png",
+      "center": [
+        1322,
+        287
+      ],
+      "bbox": [
+        1314,
+        277,
+        1331,
+        298
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 704
+    },
+    {
+      "id": 60,
+      "image": "room_60.png",
+      "center": [
+        262,
+        1759
+      ],
+      "bbox": [
+        252,
+        1749,
+        272,
+        1769
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 672,
+      "height_px": 672
+    },
+    {
+      "id": 61,
+      "image": "room_61.png",
+      "center": [
+        1322,
+        271
+      ],
+      "bbox": [
+        1314,
+        261,
+        1331,
+        281
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 672
+    },
+    {
+      "id": 62,
+      "image": "room_62.png",
+      "center": [
+        1322,
+        306
+      ],
+      "bbox": [
+        1314,
+        296,
+        1331,
+        316
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 672
+    },
+    {
+      "id": 63,
+      "image": "room_63.png",
+      "center": [
+        2957,
+        1210
+      ],
+      "bbox": [
+        2947,
+        1200,
+        2967,
+        1220
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 672,
+      "height_px": 672
+    },
+    {
+      "id": 64,
+      "image": "room_64.png",
+      "center": [
+        1266,
+        216
+      ],
+      "bbox": [
+        1258,
+        207,
+        1275,
+        225
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 608
+    },
+    {
+      "id": 65,
+      "image": "room_65.png",
+      "center": [
+        1322,
+        216
+      ],
+      "bbox": [
+        1314,
+        207,
+        1331,
+        225
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 608
+    },
+    {
+      "id": 66,
+      "image": "room_66.png",
+      "center": [
+        2421,
+        2316
+      ],
+      "bbox": [
+        2413,
+        2307,
+        2430,
+        2325
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 608
+    },
+    {
+      "id": 67,
+      "image": "room_67.png",
+      "center": [
+        2477,
+        2316
+      ],
+      "bbox": [
+        2469,
+        2307,
+        2486,
+        2325
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 608
+    },
+    {
+      "id": 68,
+      "image": "room_68.png",
+      "center": [
+        1266,
+        181
+      ],
+      "bbox": [
+        1258,
+        173,
+        1275,
+        190
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 69,
+      "image": "room_69.png",
+      "center": [
+        1266,
+        202
+      ],
+      "bbox": [
+        1258,
+        194,
+        1275,
+        211
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 70,
+      "image": "room_70.png",
+      "center": [
+        1266,
+        237
+      ],
+      "bbox": [
+        1258,
+        229,
+        1275,
+        246
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 71,
+      "image": "room_71.png",
+      "center": [
+        1322,
+        181
+      ],
+      "bbox": [
+        1314,
+        173,
+        1331,
+        190
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 72,
+      "image": "room_72.png",
+      "center": [
+        1322,
+        202
+      ],
+      "bbox": [
+        1314,
+        194,
+        1331,
+        211
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 73,
+      "image": "room_73.png",
+      "center": [
+        1322,
+        237
+      ],
+      "bbox": [
+        1314,
+        229,
+        1331,
+        246
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 74,
+      "image": "room_74.png",
+      "center": [
+        2421,
+        2281
+      ],
+      "bbox": [
+        2413,
+        2273,
+        2430,
+        2290
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 75,
+      "image": "room_75.png",
+      "center": [
+        2421,
+        2302
+      ],
+      "bbox": [
+        2413,
+        2294,
+        2430,
+        2311
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 76,
+      "image": "room_76.png",
+      "center": [
+        2421,
+        2337
+      ],
+      "bbox": [
+        2413,
+        2329,
+        2430,
+        2346
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 77,
+      "image": "room_77.png",
+      "center": [
+        2477,
+        2281
+      ],
+      "bbox": [
+        2469,
+        2273,
+        2486,
+        2290
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 78,
+      "image": "room_78.png",
+      "center": [
+        2477,
+        2302
+      ],
+      "bbox": [
+        2469,
+        2294,
+        2486,
+        2311
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 79,
+      "image": "room_79.png",
+      "center": [
+        2477,
+        2337
+      ],
+      "bbox": [
+        2469,
+        2329,
+        2486,
+        2346
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 576
+    },
+    {
+      "id": 80,
+      "image": "room_80.png",
       "center": [
         2538,
         145
@@ -154,8 +1361,93 @@
       "height_px": 448
     },
     {
-      "id": 10,
-      "image": "room_10.png",
+      "id": 81,
+      "image": "room_81.png",
+      "center": [
+        2913,
+        3018
+      ],
+      "bbox": [
+        2905,
+        3010,
+        2921,
+        3026
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 544,
+      "height_px": 544
+    },
+    {
+      "id": 82,
+      "image": "room_82.png",
+      "center": [
+        1266,
+        192
+      ],
+      "bbox": [
+        1258,
+        186,
+        1275,
+        198
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 416
+    },
+    {
+      "id": 83,
+      "image": "room_83.png",
+      "center": [
+        1322,
+        192
+      ],
+      "bbox": [
+        1314,
+        186,
+        1331,
+        198
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 416
+    },
+    {
+      "id": 84,
+      "image": "room_84.png",
+      "center": [
+        2421,
+        2292
+      ],
+      "bbox": [
+        2413,
+        2286,
+        2430,
+        2298
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 416
+    },
+    {
+      "id": 85,
+      "image": "room_85.png",
+      "center": [
+        2477,
+        2292
+      ],
+      "bbox": [
+        2469,
+        2286,
+        2486,
+        2298
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 416
+    },
+    {
+      "id": 86,
+      "image": "room_86.png",
       "center": [
         2150,
         2708
@@ -171,8 +1463,8 @@
       "height_px": 544
     },
     {
-      "id": 11,
-      "image": "room_11.png",
+      "id": 87,
+      "image": "room_87.png",
       "center": [
         2534,
         2078
@@ -188,8 +1480,8 @@
       "height_px": 480
     },
     {
-      "id": 12,
-      "image": "room_12.png",
+      "id": 88,
+      "image": "room_88.png",
       "center": [
         1882,
         2769
@@ -205,8 +1497,8 @@
       "height_px": 416
     },
     {
-      "id": 13,
-      "image": "room_13.png",
+      "id": 89,
+      "image": "room_89.png",
       "center": [
         2641,
         2601
@@ -222,8 +1514,246 @@
       "height_px": 416
     },
     {
-      "id": 14,
-      "image": "room_14.png",
+      "id": 90,
+      "image": "room_90.png",
+      "center": [
+        1278,
+        186
+      ],
+      "bbox": [
+        1271,
+        180,
+        1286,
+        193
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 91,
+      "image": "room_91.png",
+      "center": [
+        1278,
+        197
+      ],
+      "bbox": [
+        1271,
+        191,
+        1286,
+        204
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 92,
+      "image": "room_92.png",
+      "center": [
+        1278,
+        221
+      ],
+      "bbox": [
+        1271,
+        215,
+        1286,
+        228
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 93,
+      "image": "room_93.png",
+      "center": [
+        1278,
+        232
+      ],
+      "bbox": [
+        1271,
+        226,
+        1286,
+        239
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 94,
+      "image": "room_94.png",
+      "center": [
+        1310,
+        186
+      ],
+      "bbox": [
+        1303,
+        180,
+        1318,
+        193
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 95,
+      "image": "room_95.png",
+      "center": [
+        1310,
+        197
+      ],
+      "bbox": [
+        1303,
+        191,
+        1318,
+        204
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 96,
+      "image": "room_96.png",
+      "center": [
+        2433,
+        2286
+      ],
+      "bbox": [
+        2426,
+        2280,
+        2441,
+        2293
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 97,
+      "image": "room_97.png",
+      "center": [
+        2433,
+        2297
+      ],
+      "bbox": [
+        2426,
+        2291,
+        2441,
+        2304
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 98,
+      "image": "room_98.png",
+      "center": [
+        2433,
+        2321
+      ],
+      "bbox": [
+        2426,
+        2315,
+        2441,
+        2328
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 99,
+      "image": "room_99.png",
+      "center": [
+        2433,
+        2332
+      ],
+      "bbox": [
+        2426,
+        2326,
+        2441,
+        2339
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 100,
+      "image": "room_100.png",
+      "center": [
+        2465,
+        2286
+      ],
+      "bbox": [
+        2458,
+        2280,
+        2473,
+        2293
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 101,
+      "image": "room_101.png",
+      "center": [
+        2465,
+        2297
+      ],
+      "bbox": [
+        2458,
+        2291,
+        2473,
+        2304
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 512,
+      "height_px": 448
+    },
+    {
+      "id": 102,
+      "image": "room_102.png",
+      "center": [
+        1263,
+        262
+      ],
+      "bbox": [
+        1258,
+        255,
+        1268,
+        269
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 480
+    },
+    {
+      "id": 103,
+      "image": "room_103.png",
+      "center": [
+        1263,
+        297
+      ],
+      "bbox": [
+        1258,
+        290,
+        1268,
+        304
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 480
+    },
+    {
+      "id": 104,
+      "image": "room_104.png",
       "center": [
         350,
         2967
@@ -239,8 +1769,8 @@
       "height_px": 352
     },
     {
-      "id": 15,
-      "image": "room_15.png",
+      "id": 105,
+      "image": "room_105.png",
       "center": [
         370,
         2967
@@ -256,8 +1786,8 @@
       "height_px": 352
     },
     {
-      "id": 16,
-      "image": "room_16.png",
+      "id": 106,
+      "image": "room_106.png",
       "center": [
         1254,
         2891
@@ -271,6 +1801,839 @@
       "pixelsPerTile": 32,
       "width_px": 320,
       "height_px": 384
+    },
+    {
+      "id": 107,
+      "image": "room_107.png",
+      "center": [
+        1266,
+        224
+      ],
+      "bbox": [
+        1258,
+        221,
+        1275,
+        228
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 256
+    },
+    {
+      "id": 108,
+      "image": "room_108.png",
+      "center": [
+        1266,
+        229
+      ],
+      "bbox": [
+        1258,
+        226,
+        1275,
+        233
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 256
+    },
+    {
+      "id": 109,
+      "image": "room_109.png",
+      "center": [
+        2421,
+        2324
+      ],
+      "bbox": [
+        2413,
+        2321,
+        2430,
+        2328
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 256
+    },
+    {
+      "id": 110,
+      "image": "room_110.png",
+      "center": [
+        2421,
+        2329
+      ],
+      "bbox": [
+        2413,
+        2326,
+        2430,
+        2333
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 576,
+      "height_px": 256
+    },
+    {
+      "id": 111,
+      "image": "room_111.png",
+      "center": [
+        2957,
+        1282
+      ],
+      "bbox": [
+        2832,
+        1128,
+        3082,
+        1437
+      ],
+      "pixelsPerTile": 4,
+      "width_px": 1004,
+      "height_px": 1240
+    },
+    {
+      "id": 112,
+      "image": "room_112.png",
+      "center": [
+        363,
+        3093
+      ],
+      "bbox": [
+        226,
+        3028,
+        501,
+        3159
+      ],
+      "pixelsPerTile": 4,
+      "width_px": 1104,
+      "height_px": 528
+    },
+    {
+      "id": 113,
+      "image": "room_113.png",
+      "center": [
+        1211,
+        2939
+      ],
+      "bbox": [
+        1151,
+        2831,
+        1272,
+        3048
+      ],
+      "pixelsPerTile": 4,
+      "width_px": 488,
+      "height_px": 872
+    },
+    {
+      "id": 114,
+      "image": "room_114.png",
+      "center": [
+        2467,
+        1102
+      ],
+      "bbox": [
+        2410,
+        1010,
+        2524,
+        1194
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 920,
+      "height_px": 1480
+    },
+    {
+      "id": 115,
+      "image": "room_115.png",
+      "center": [
+        227,
+        1802
+      ],
+      "bbox": [
+        172,
+        1712,
+        282,
+        1892
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 888,
+      "height_px": 1448
+    },
+    {
+      "id": 116,
+      "image": "room_116.png",
+      "center": [
+        1312,
+        244
+      ],
+      "bbox": [
+        1255,
+        170,
+        1370,
+        319
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 928,
+      "height_px": 1200
+    },
+    {
+      "id": 117,
+      "image": "room_117.png",
+      "center": [
+        1417,
+        1889
+      ],
+      "bbox": [
+        1360,
+        1815,
+        1474,
+        1964
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 920,
+      "height_px": 1200
+    },
+    {
+      "id": 118,
+      "image": "room_118.png",
+      "center": [
+        2607,
+        1033
+      ],
+      "bbox": [
+        2551,
+        976,
+        2664,
+        1090
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 912,
+      "height_px": 920
+    },
+    {
+      "id": 119,
+      "image": "room_119.png",
+      "center": [
+        1312,
+        2782
+      ],
+      "bbox": [
+        1256,
+        2726,
+        1368,
+        2838
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 904,
+      "height_px": 904
+    },
+    {
+      "id": 120,
+      "image": "room_120.png",
+      "center": [
+        2607,
+        1166
+      ],
+      "bbox": [
+        2563,
+        1115,
+        2651,
+        1217
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 712,
+      "height_px": 824
+    },
+    {
+      "id": 121,
+      "image": "room_121.png",
+      "center": [
+        2677,
+        525
+      ],
+      "bbox": [
+        2658,
+        418,
+        2697,
+        632
+      ],
+      "pixelsPerTile": 4,
+      "width_px": 160,
+      "height_px": 860
+    },
+    {
+      "id": 122,
+      "image": "room_122.png",
+      "center": [
+        227,
+        2309
+      ],
+      "bbox": [
+        173,
+        2273,
+        281,
+        2346
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 872,
+      "height_px": 592
+    },
+    {
+      "id": 123,
+      "image": "room_123.png",
+      "center": [
+        453,
+        2952
+      ],
+      "bbox": [
+        386,
+        2924,
+        520,
+        2980
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 1080,
+      "height_px": 456
+    },
+    {
+      "id": 124,
+      "image": "room_124.png",
+      "center": [
+        453,
+        3005
+      ],
+      "bbox": [
+        386,
+        2980,
+        520,
+        3030
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 1080,
+      "height_px": 408
+    },
+    {
+      "id": 125,
+      "image": "room_125.png",
+      "center": [
+        2029,
+        3079
+      ],
+      "bbox": [
+        1990,
+        3040,
+        2069,
+        3119
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 1280,
+      "height_px": 1280
+    },
+    {
+      "id": 126,
+      "image": "room_126.png",
+      "center": [
+        2449,
+        2309
+      ],
+      "bbox": [
+        2410,
+        2270,
+        2489,
+        2349
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 1280,
+      "height_px": 1280
+    },
+    {
+      "id": 127,
+      "image": "room_127.png",
+      "center": [
+        612,
+        2747
+      ],
+      "bbox": [
+        557,
+        2727,
+        667,
+        2767
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 888,
+      "height_px": 328
+    },
+    {
+      "id": 128,
+      "image": "room_128.png",
+      "center": [
+        962,
+        2922
+      ],
+      "bbox": [
+        943,
+        2868,
+        982,
+        2977
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 320,
+      "height_px": 880
+    },
+    {
+      "id": 129,
+      "image": "room_129.png",
+      "center": [
+        2432,
+        612
+      ],
+      "bbox": [
+        2379,
+        593,
+        2485,
+        632
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 856,
+      "height_px": 320
+    },
+    {
+      "id": 130,
+      "image": "room_130.png",
+      "center": [
+        2432,
+        542
+      ],
+      "bbox": [
+        2379,
+        523,
+        2485,
+        562
+      ],
+      "pixelsPerTile": 8,
+      "width_px": 856,
+      "height_px": 320
+    },
+    {
+      "id": 131,
+      "image": "room_131.png",
+      "center": [
+        787,
+        2764
+      ],
+      "bbox": [
+        767,
+        2727,
+        807,
+        2802
+      ],
+      "pixelsPerTile": 16,
+      "width_px": 656,
+      "height_px": 1216
+    },
+    {
+      "id": 132,
+      "image": "room_132.png",
+      "center": [
+        227,
+        2362
+      ],
+      "bbox": [
+        208,
+        2343,
+        246,
+        2381
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 1248
+    },
+    {
+      "id": 133,
+      "image": "room_133.png",
+      "center": [
+        2954,
+        3025
+      ],
+      "bbox": [
+        2938,
+        3008,
+        2970,
+        3042
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1056,
+      "height_px": 1120
+    },
+    {
+      "id": 134,
+      "image": "room_134.png",
+      "center": [
+        1335,
+        2919
+      ],
+      "bbox": [
+        1324,
+        2899,
+        1347,
+        2939
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 768,
+      "height_px": 1312
+    },
+    {
+      "id": 135,
+      "image": "room_135.png",
+      "center": [
+        1358,
+        2919
+      ],
+      "bbox": [
+        1347,
+        2899,
+        1370,
+        2939
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 768,
+      "height_px": 1312
+    },
+    {
+      "id": 136,
+      "image": "room_136.png",
+      "center": [
+        2957,
+        1210
+      ],
+      "bbox": [
+        2945,
+        1198,
+        2969,
+        1222
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 800,
+      "height_px": 800
+    },
+    {
+      "id": 137,
+      "image": "room_137.png",
+      "center": [
+        2225,
+        301
+      ],
+      "bbox": [
+        2214,
+        291,
+        2236,
+        312
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 736,
+      "height_px": 704
+    },
+    {
+      "id": 138,
+      "image": "room_138.png",
+      "center": [
+        1328,
+        2955
+      ],
+      "bbox": [
+        1323,
+        2935,
+        1334,
+        2976
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 384,
+      "height_px": 1344
+    },
+    {
+      "id": 139,
+      "image": "room_139.png",
+      "center": [
+        1365,
+        2955
+      ],
+      "bbox": [
+        1360,
+        2935,
+        1370,
+        2976
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 1344
+    },
+    {
+      "id": 140,
+      "image": "room_140.png",
+      "center": [
+        1329,
+        3003
+      ],
+      "bbox": [
+        1324,
+        2992,
+        1334,
+        3015
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 768
+    },
+    {
+      "id": 141,
+      "image": "room_141.png",
+      "center": [
+        1365,
+        3003
+      ],
+      "bbox": [
+        1360,
+        2992,
+        1370,
+        3015
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 768
+    },
+    {
+      "id": 142,
+      "image": "room_142.png",
+      "center": [
+        1295,
+        2943
+      ],
+      "bbox": [
+        1290,
+        2935,
+        1300,
+        2952
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 576
+    },
+    {
+      "id": 143,
+      "image": "room_143.png",
+      "center": [
+        1399,
+        2943
+      ],
+      "bbox": [
+        1394,
+        2935,
+        1404,
+        2952
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 576
+    },
+    {
+      "id": 144,
+      "image": "room_144.png",
+      "center": [
+        1295,
+        2904
+      ],
+      "bbox": [
+        1290,
+        2899,
+        1300,
+        2910
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 384
+    },
+    {
+      "id": 145,
+      "image": "room_145.png",
+      "center": [
+        1295,
+        3009
+      ],
+      "bbox": [
+        1290,
+        3004,
+        1300,
+        3015
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 384
+    },
+    {
+      "id": 146,
+      "image": "room_146.png",
+      "center": [
+        1329,
+        2870
+      ],
+      "bbox": [
+        1324,
+        2865,
+        1335,
+        2875
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 384,
+      "height_px": 352
+    },
+    {
+      "id": 147,
+      "image": "room_147.png",
+      "center": [
+        1329,
+        3044
+      ],
+      "bbox": [
+        1324,
+        3039,
+        1335,
+        3049
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 384,
+      "height_px": 352
+    },
+    {
+      "id": 148,
+      "image": "room_148.png",
+      "center": [
+        1364,
+        2870
+      ],
+      "bbox": [
+        1359,
+        2865,
+        1370,
+        2875
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 384,
+      "height_px": 352
+    },
+    {
+      "id": 149,
+      "image": "room_149.png",
+      "center": [
+        1364,
+        3044
+      ],
+      "bbox": [
+        1359,
+        3039,
+        1370,
+        3049
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 384,
+      "height_px": 352
+    },
+    {
+      "id": 150,
+      "image": "room_150.png",
+      "center": [
+        1399,
+        2904
+      ],
+      "bbox": [
+        1394,
+        2899,
+        1404,
+        2910
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 384
+    },
+    {
+      "id": 151,
+      "image": "room_151.png",
+      "center": [
+        1399,
+        3009
+      ],
+      "bbox": [
+        1394,
+        3004,
+        1404,
+        3015
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 384
+    },
+    {
+      "id": 152,
+      "image": "room_152.png",
+      "center": [
+        1295,
+        2870
+      ],
+      "bbox": [
+        1290,
+        2865,
+        1300,
+        2875
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 352
+    },
+    {
+      "id": 153,
+      "image": "room_153.png",
+      "center": [
+        1295,
+        3044
+      ],
+      "bbox": [
+        1290,
+        3039,
+        1300,
+        3049
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 352
+    },
+    {
+      "id": 154,
+      "image": "room_154.png",
+      "center": [
+        1399,
+        2870
+      ],
+      "bbox": [
+        1394,
+        2865,
+        1404,
+        2875
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 352
+    },
+    {
+      "id": 155,
+      "image": "room_155.png",
+      "center": [
+        1399,
+        3044
+      ],
+      "bbox": [
+        1394,
+        3039,
+        1404,
+        3049
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 352,
+      "height_px": 352
     }
   ]
 }

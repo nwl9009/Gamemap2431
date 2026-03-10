@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Game Map Viewer</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #181c24; color: #dcdcd2; font-family: 'Segoe UI', Arial, sans-serif; overflow: hidden; height: 100vh; display: flex; flex-direction: column; }
+
+#toolbar {
+    background: #22262e; padding: 6px 14px; display: flex; align-items: center; gap: 12px;
+    border-bottom: 1px solid #333; font-size: 13px; flex-shrink: 0;
+}
+#toolbar button {
+    background: #3a3e48; color: #ddd; border: 1px solid #555; border-radius: 4px;
+    padding: 4px 10px; cursor: pointer; font-size: 12px;
+}
+#toolbar button:hover { background: #4a4e58; }
+#toolbar .sep { width: 1px; height: 20px; background: #444; }
+#zoomLabel { color: #ffdc64; font-weight: bold; min-width: 50px; text-align: center; }
+
+#main { display: flex; flex: 1; overflow: hidden; }
+
+#sidebar {
+    width: 250px; background: #1e222a; border-left: 1px solid #333;
+    overflow-y: auto; flex-shrink: 0; font-size: 12px; padding: 10px;
+}
+#sidebar.collapsed { width: 0; padding: 0; overflow: hidden; }
+#sidebar h3 { color: #ffdc64; margin: 10px 0 4px 0; font-size: 13px; }
+#sidebar h3:first-child { margin-top: 0; }
+.legend-row { display: flex; align-items: center; gap: 6px; padding: 2px 0; }
+.swatch { width: 14px; height: 14px; border: 1px solid #555; flex-shrink: 0; }
+.town-item { padding: 3px 4px; cursor: pointer; border-radius: 3px; }
+.town-item:hover { background: #2a2e38; }
+
+#canvasWrap { flex: 1; position: relative; overflow: hidden; }
+canvas { display: block; cursor: crosshair; }
+
+#hud {
+    position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.75);
+    padding: 8px 12px; border-radius: 4px; font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px; pointer-events: none; z-index: 10; line-height: 1.5;
+}
+#hud .coord { color: #7df; }
+#hud .town { color: #ffdc64; }
+#hud .tileinfo { color: #aed; font-size: 12px; }
+#hud .tileflags { color: #da8; font-size: 12px; }
+
+#pins-hud {
+    position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.75);
+    padding: 8px 12px; border-radius: 4px; font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 12px; z-index: 10; max-height: 200px; overflow-y: auto; line-height: 1.6;
+}
+#pins-hud:empty { display: none; }
+.pin-entry { color: #f88; cursor: pointer; }
+.pin-entry:hover { text-decoration: line-through; }
+</style>
+</head>
+<body>
+
+<div id="toolbar">
+    <button onclick="zoomTo(1)" title="1:1 pixel">1:1</button>
+    <button onclick="fitToWindow()">Fit</button>
+    <button onclick="adjustZoom(1.5)">Zoom +</button>
+    <button onclick="adjustZoom(1/1.5)">Zoom -</button>
+    <span id="zoomLabel">1.0x</span>
+    <span class="sep"></span>
+    <span>Click: place pin | Right-click: remove last | Scroll: zoom</span>
+    <span class="sep"></span>
+    <button onclick="toggleSidebar()">Legend</button>
+    <span class="sep"></span>
+    <label style="font-size:12px;">Image:
+        <select id="imageSelect" onchange="loadSelectedImage()" style="background:#3a3e48;color:#ddd;border:1px solid #555;padding:2px;">
+            <option value="full_map">Composite</option>
+            <option value="terrain_map">Terrain only</option>
+            <option value="height_map">Height</option>
+            <option value="zones_map">Zones</option>
+        </select>
+    </label>
+</div>
+
+<div id="main">
+    <div id="canvasWrap">
+        <canvas id="mapCanvas"></canvas>
+        <div id="hud"></div>
+        <div id="pins-hud"></div>
+    </div>
+    <div id="sidebar"></div>
+</div>
+
+<script>
+// ---------------------------------------------------------------------------
+// Constants
+// ---------------------------------------------------------------------------
+const MAP_DIM = 3220;
+const LEGEND_PX = 260; // legend strip width baked into full_map.png
+
+const NAMED_LOCATIONS = {
+    "Semel":           [162, 174],
+    "Iterum":          [800, 1066],
+    "Terthius":        [1731, 1949],
+    "Terthius Castle": [1962, 1958],
+    "Scelest":         [262, 1891],
+    "Aridus":          [2668, 2891],
+    "Septen":          [373, 1999],
+    "Palus":           [2806, 588],
+    "Secern":          [762, 571],
+    "Solus":           [2541, 2362],
+    "Castle Solus":    [2590, 2114],
+    "Despair":         [1597, 3082],
+    "Odium":           [2036, 2036],
+    "Oreseth":         [2430, 873],
+};
+
+const LEGEND_SECTIONS = [
+    { header: "GRASS (game textures)", entries: [
+        { color: [42,71,21], label: "Grass primary (0x0E) grass1.jpg" },
+        { color: [61,92,29], label: "Grass variant (0x10) grass2.jpg" },
+        { color: [42,71,21], label: "Forest biome (0xFF)" },
+    ]},
+    { header: "DIRT / BROWN TERRAIN", entries: [
+        { color: [61,33,7], label: "Dirt primary (0x03) dirt1.jpg" },
+        { color: [81,54,25], label: "Dirt2 (0x05) Dirt2.jpg" },
+        { color: [112,78,60], label: "Brown terrain (0x01) tx3.bmp" },
+        { color: [139,125,112], label: "Rocky ground (0x24) rock7.bmp" },
+    ]},
+    { header: "STONE / STRUCTURES", entries: [
+        { color: [110,110,110], label: "Stone (0x07) stone1.bmp" },
+        { color: [145,146,138], label: "Brick (0x08) nbrick1.bmp" },
+        { color: [135,126,118], label: "Old stone (0x0C) ostone2.bmp" },
+        { color: [64,56,46], label: "Dark stone (0x09) stone3.bmp" },
+        { color: [88,45,10], label: "Wood (0x0A) wood2.bmp" },
+        { color: [188,150,116], label: "Sandstone (0x1C) imt1.bmp" },
+    ]},
+    { header: "DUNGEON / CAVE", entries: [
+        { color: [8,19,15], label: "Dark dungeon (0x43) tx30.bmp" },
+        { color: [60,61,62], label: "Dungeon gray (0x44) tx31.bmp" },
+        { color: [92,78,69], label: "Dungeon brown (0x47) tx23.bmp" },
+        { color: [18,20,19], label: "Dark floor (0x38) floor1.bmp" },
+        { color: [54,50,52], label: "Floor (0x3A) floor3.bmp" },
+    ]},
+    { header: "WATER", entries: [
+        { color: [48,80,160], label: "Water (0x12)" },
+        { color: [40,64,140], label: "Water deep (0x13)" },
+        { color: [48,80,160], label: "Water (0x99)" },
+    ]},
+    { header: "LAVA (entities sink)", entries: [
+        { color: [198,24,8], label: "Lava (0xCF-0xD3) lava.bmp" },
+        { color: [70,53,79], label: "Lava pool (0x1E) lava1.jpg" },
+    ]},
+    { header: "SPECIAL ZONES", entries: [
+        { color: [220,220,230], label: "Safe zone (0x2E) protile.bmp" },
+        { color: [200,40,40], label: "Restricted (0x36) rust.bmp" },
+        { color: [255,215,0], label: "No marks zone (0x39)" },
+        { color: [255,0,255], label: "Teleport/imbue (0x3C) bluemr.bmp" },
+    ]},
+    { header: "OBJECTS (from flags)", entries: [
+        { color: [40,80,40], label: "Trees" },
+        { color: [80,60,40], label: "Walls / buildings" },
+        { color: [160,150,128], label: "Roads (overlay)" },
+        { color: [255,180,60], label: "Torches" },
+        { color: [255,128,32], label: "Fire / campfire" },
+        { color: [180,144,96], label: "Bridges" },
+    ]},
+    { header: "OTHER", entries: [
+        { color: [20,28,48], label: "Void ocean (0x50)" },
+        { color: [0,0,0], label: "Void / empty (0x00)" },
+    ]},
+];
+
+// ---------------------------------------------------------------------------
+// Tile type names (from tile definition table and texture mapping)
+// ---------------------------------------------------------------------------
+const TILE_TYPE_NAMES = {
+    0x00: "VOID/EMPTY",
+    0x01: "tx3.bmp (brown terrain A)", 0x02: "tx3.bmp (brown terrain B)",
+    0x03: "dirt1.jpg (standard terrain)", 0x04: "dirt1.jpg (dirt variant)",
+    0x05: "Dirt2.jpg (tan-brown A)", 0x06: "Dirt2.jpg (tan-brown B)",
+    0x07: "stone1.bmp (gray stone)", 0x08: "nbrick1.bmp (pale brick)",
+    0x09: "stone3.bmp (dark stone)", 0x0A: "wood2.bmp (wall)", 0x0B: "wood2.bmp (flat)",
+    0x0C: "ostone2.bmp (old stone)", 0x0D: "nbrick1.bmp (brick TR)",
+    0x0E: "grass1.jpg (GREEN A)", 0x0F: "grass1.jpg (GREEN B)",
+    0x10: "grass2.jpg (bright green A)", 0x11: "grass2.jpg (bright green B)",
+    0x12: "WATER (rock8 overlay)", 0x13: "WATER DEEP (rock8 overlay)",
+    0x14: "tx3.bmp transition", 0x15: "tx3.bmp transition", 0x16: "tx3.bmp transition",
+    0x17: "tx3.bmp transition", 0x18: "tx3.bmp transition", 0x19: "tx3.bmp transition",
+    0x1A: "tx3.bmp transition", 0x1B: "tx3.bmp transition",
+    0x1C: "imt1.bmp (sandstone A)", 0x1D: "imt1.bmp (sandstone B)",
+    0x1E: "lava1.jpg (lava pool A)", 0x1F: "lava1.jpg (lava pool B)",
+    0x20: "Dirt2 transition", 0x21: "Dirt2 transition", 0x22: "Dirt2 transition",
+    0x23: "Dirt2 transition", 0x24: "rock7.bmp (rocky A)", 0x25: "rock7.bmp (rocky B)",
+    0x2E: "SAFE ZONE (protile.bmp)", 0x2F: "rockysp.bmp (dark rock)",
+    0x36: "FULL RESTRICT (barrier)", 0x38: "floor1.bmp (dark floor)",
+    0x39: "NO MARKS ZONE (floor2)", 0x3A: "floor3.bmp (gray floor)",
+    0x3B: "bluemr.bmp (deep blue)", 0x3C: "IMBUE SHRINE (bluemr)",
+    0x3D: "bluemr.bmp (dark green)", 0x43: "tx30.bmp (dark dungeon)",
+    0x44: "tx31.bmp (dungeon gray)", 0x45: "tx32.bmp (dungeon brown)",
+    0x46: "tx33.bmp (warm brown)", 0x47: "tx23.bmp (gray-tan)",
+    0x50: "VOID OCEAN",
+    0x99: "WATER (flat)", 0xCF: "LAVA", 0xD0: "LAVA variant",
+    0xFF: "Forest biome (dark green)"
+};
+
+const FLAG_NAMES = {
+    0x00: "none",
+    0x45: "small tree", 0x46: "small tree",
+    0x47: "snow particles", 0x48: "rain particles", 0x49: "torch",
+    0x4C: "rock", 0x4D: "rock", 0x4E: "rock", 0x4F: "rock",
+    0x55: "cliff face",
+    0x5A: "fence", 0x5B: "fence", 0x5C: "fence",
+    0x67: "fire", 0x73: "campfire", 0x74: "campfire",
+    0x90: "road", 0x91: "road", 0x92: "road", 0x93: "road",
+    0x94: "road", 0x95: "road", 0x96: "road", 0x97: "road",
+    0xBE: "wall", 0xBF: "wall", 0xC0: "wall", 0xC1: "wall",
+    0xC2: "wall", 0xC3: "wall", 0xC4: "wall", 0xC5: "wall",
+    0xD9: "gate", 0xDB: "bridge", 0xDC: "bridge",
+    0xEE: "building",
+    0xF6: "large tree", 0xF7: "large tree", 0xF8: "large tree", 0xF9: "large tree"
+};
+
+function getTileTypeName(t) { return TILE_TYPE_NAMES[t] || ("unknown (0x" + t.toString(16).toUpperCase().padStart(2,'0') + ")"); }
+function getFlagName(f) {
+    if (f === 0) return "none";
+    if (f >= 0x01 && f <= 0x40) return "ground overlay #" + f;
+    if (f >= 0x7E && f <= 0x84) return "wall (0x" + f.toString(16) + ")";
+    if (f >= 0x85 && f <= 0x88) return "slope";
+    return FLAG_NAMES[f] || ("obj 0x" + f.toString(16).toUpperCase().padStart(2,'0'));
+}
+
+// ---------------------------------------------------------------------------
+// State
+// ---------------------------------------------------------------------------
+let img = new Image();
+let tileInfoImg = null;     // tile info data image (R=type, G=flags, B=height)
+let tileInfoCanvas = null;  // offscreen canvas for pixel sampling
+let tileInfoCtx = null;
+let imgW = MAP_DIM, imgH = MAP_DIM;
+let mapW = MAP_DIM; // actual map pixel width (may differ from imgW if legend is baked in)
+
+let scale = 1.0;
+let offsetX = 0, offsetY = 0;
+let isDragging = false;
+let dragStartX, dragStartY, dragOffX, dragOffY;
+let mouseCanvasX = -1, mouseCanvasY = -1;
+
+let pins = []; // [{x, y, label}]
+
+const canvas = document.getElementById('mapCanvas');
+const ctx = canvas.getContext('2d');
+const wrap = document.getElementById('canvasWrap');
+
+// ---------------------------------------------------------------------------
+// Image loading
+// ---------------------------------------------------------------------------
+function getImagePath(name) {
+    return '../map_output/' + name + '.png';
+}
+
+function loadSelectedImage() {
+    const sel = document.getElementById('imageSelect').value;
+    loadImage(getImagePath(sel));
+}
+
+function loadImage(src) {
+    const newImg = new Image();
+    newImg.onload = function() {
+        img = newImg;
+        imgW = img.naturalWidth;
+        imgH = img.naturalHeight;
+        // Detect if this image has the baked-in legend strip
+        if (imgW > MAP_DIM + 100) {
+            mapW = MAP_DIM; // map is left 3220px, rest is legend
+        } else {
+            mapW = imgW;
+        }
+        fitToWindow();
+    };
+    newImg.onerror = function() {
+        console.warn('Failed to load ' + src + '. Try running a local server.');
+    };
+    newImg.src = src;
+
+    // Also load the tile info data image (R=type, G=flags, B=height)
+    const infoPath = src.replace(/[^/]+\.png$/, 'tile_info.png');
+    const infoImg = new Image();
+    infoImg.onload = function() {
+        tileInfoImg = infoImg;
+        // Create offscreen canvas for pixel sampling
+        tileInfoCanvas = document.createElement('canvas');
+        tileInfoCanvas.width = infoImg.naturalWidth;
+        tileInfoCanvas.height = infoImg.naturalHeight;
+        tileInfoCtx = tileInfoCanvas.getContext('2d', { willReadFrequently: true });
+        tileInfoCtx.drawImage(infoImg, 0, 0);
+        console.log('Tile info loaded: ' + infoImg.naturalWidth + 'x' + infoImg.naturalHeight);
+    };
+    infoImg.onerror = function() {
+        console.warn('No tile_info.png found (hover info unavailable)');
+        tileInfoImg = null;
+    };
+    infoImg.src = infoPath;
+}
+
+function getTileData(tx, ty) {
+    // Sample tile info from the data image
+    if (!tileInfoCtx || tx < 0 || ty < 0 ||
+        tx >= tileInfoCanvas.width || ty >= tileInfoCanvas.height) return null;
+    const pixel = tileInfoCtx.getImageData(tx, ty, 1, 1).data;
+    return { type: pixel[0], flags: pixel[1], height: pixel[2] };
+}
+
+// ---------------------------------------------------------------------------
+// Rendering
+// ---------------------------------------------------------------------------
+function resizeCanvas() {
+    canvas.width = wrap.clientWidth;
+    canvas.height = wrap.clientHeight;
+    render();
+}
+
+function render() {
+    const cw = canvas.width, ch = canvas.height;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = '#181c24';
+    ctx.fillRect(0, 0, cw, ch);
+
+    if (!img.complete || !img.naturalWidth) return;
+
+    // Draw image with transform
+    ctx.setTransform(scale, 0, 0, scale, offsetX, offsetY);
+    ctx.imageSmoothingEnabled = scale < 1.5;
+    ctx.drawImage(img, 0, 0);
+
+    // Draw town markers
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    const fontSize = Math.max(10, Math.min(16, 12 * scale));
+    ctx.font = fontSize + 'px Arial, sans-serif';
+
+    for (const [name, [tx, ty]] of Object.entries(NAMED_LOCATIONS)) {
+        const sx = tx * scale + offsetX;
+        const sy = ty * scale + offsetY;
+        if (sx < -100 || sx > cw + 100 || sy < -100 || sy > ch + 100) continue;
+
+        // Dot
+        ctx.beginPath();
+        ctx.arc(sx, sy, Math.max(3, 2 * scale), 0, Math.PI * 2);
+        ctx.fillStyle = '#ffdd00';
+        ctx.fill();
+        ctx.strokeStyle = '#000';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        // Label with outline
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#000';
+        ctx.strokeText(name, sx + 6, sy - 4);
+        ctx.fillStyle = '#ffdd00';
+        ctx.fillText(name, sx + 6, sy - 4);
+    }
+
+    // Draw pins
+    for (let i = 0; i < pins.length; i++) {
+        const p = pins[i];
+        const sx = p.x * scale + offsetX;
+        const sy = p.y * scale + offsetY;
+        if (sx < -50 || sx > cw + 50 || sy < -50 || sy > ch + 50) continue;
+
+        // Pin marker
+        ctx.beginPath();
+        ctx.arc(sx, sy, Math.max(4, 3 * scale), 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 80, 80, 0.8)';
+        ctx.fill();
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // Pin label
+        const label = '#' + (i + 1) + ' (' + p.x + ', ' + p.y + ')';
+        ctx.font = '12px Consolas, Courier New, monospace';
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#000';
+        ctx.strokeText(label, sx + 8, sy - 6);
+        ctx.fillStyle = '#ff8888';
+        ctx.fillText(label, sx + 8, sy - 6);
+    }
+
+    // Draw crosshair at cursor
+    if (mouseCanvasX >= 0) {
+        ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+        ctx.lineWidth = 1;
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath();
+        ctx.moveTo(mouseCanvasX, 0); ctx.lineTo(mouseCanvasX, ch);
+        ctx.moveTo(0, mouseCanvasY); ctx.lineTo(cw, mouseCanvasY);
+        ctx.stroke();
+        ctx.setLineDash([]);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Coordinate helpers
+// ---------------------------------------------------------------------------
+function canvasToTile(cx, cy) {
+    const tx = Math.floor((cx - offsetX) / scale);
+    const ty = Math.floor((cy - offsetY) / scale);
+    return [tx, ty];
+}
+
+function nearestTown(tx, ty) {
+    let best = null, bestDist = Infinity;
+    for (const [name, [lx, ly]] of Object.entries(NAMED_LOCATIONS)) {
+        const d = Math.hypot(tx - lx, ty - ly);
+        if (d < bestDist) { bestDist = d; best = name; }
+    }
+    return bestDist < 300 ? (best + ' (' + Math.round(bestDist) + ' tiles)') : null;
+}
+
+function updateHUD() {
+    const hud = document.getElementById('hud');
+    if (mouseCanvasX < 0) { hud.innerHTML = ''; return; }
+    const [tx, ty] = canvasToTile(mouseCanvasX, mouseCanvasY);
+    let html = '<span class="coord">Tile: (' + tx + ', ' + ty + ')</span>';
+    if (tx >= 0 && tx < mapW && ty >= 0 && ty < MAP_DIM) {
+        const town = nearestTown(tx, ty);
+        if (town) html += '<br><span class="town">Near: ' + town + '</span>';
+
+        // Show tile data from tile_info image
+        const td = getTileData(tx, ty);
+        if (td) {
+            html += '<br><span class="tileinfo">Type: 0x' +
+                td.type.toString(16).toUpperCase().padStart(2,'0') +
+                ' ' + getTileTypeName(td.type) + '</span>';
+            if (td.flags > 0) {
+                html += '<br><span class="tileflags">Flags: 0x' +
+                    td.flags.toString(16).toUpperCase().padStart(2,'0') +
+                    ' ' + getFlagName(td.flags) + '</span>';
+            }
+            html += '<br><span class="tileinfo">Height: ' + td.height + '</span>';
+        }
+    } else {
+        html += '<br><span style="color:#888">Outside map</span>';
+    }
+    hud.innerHTML = html;
+}
+
+function updatePinsHUD() {
+    const el = document.getElementById('pins-hud');
+    if (pins.length === 0) { el.innerHTML = ''; return; }
+    el.innerHTML = pins.map((p, i) =>
+        '<div class="pin-entry" onclick="removePin(' + i + ')" title="Click to remove">' +
+        '#' + (i + 1) + '  (' + p.x + ', ' + p.y + ')' +
+        (p.town ? '  near ' + p.town : '') + '</div>'
+    ).join('');
+}
+
+function removePin(idx) {
+    pins.splice(idx, 1);
+    updatePinsHUD();
+    render();
+}
+
+// ---------------------------------------------------------------------------
+// Zoom / pan controls
+// ---------------------------------------------------------------------------
+function fitToWindow() {
+    const cw = canvas.width, ch = canvas.height;
+    // Fit the map portion (not the legend strip)
+    scale = Math.min(cw / mapW, ch / imgH);
+    offsetX = (cw - imgW * scale) / 2;
+    offsetY = (ch - imgH * scale) / 2;
+    document.getElementById('zoomLabel').textContent = scale.toFixed(2) + 'x';
+    render();
+}
+
+function zoomTo(newScale) {
+    const cw = canvas.width, ch = canvas.height;
+    const cx = cw / 2, cy = ch / 2;
+    const [tx, ty] = canvasToTile(cx, cy);
+    scale = newScale;
+    offsetX = cx - tx * scale;
+    offsetY = cy - ty * scale;
+    document.getElementById('zoomLabel').textContent = scale.toFixed(2) + 'x';
+    render();
+}
+
+function adjustZoom(factor) {
+    const cw = canvas.width, ch = canvas.height;
+    zoomAtPoint(cw / 2, ch / 2, factor);
+}
+
+function zoomAtPoint(px, py, factor) {
+    const newScale = Math.max(0.05, Math.min(20, scale * factor));
+    // Keep the point under (px, py) fixed
+    offsetX = px - (px - offsetX) * (newScale / scale);
+    offsetY = py - (py - offsetY) * (newScale / scale);
+    scale = newScale;
+    document.getElementById('zoomLabel').textContent = scale.toFixed(2) + 'x';
+    render();
+}
+
+function panToTile(tx, ty, targetScale) {
+    if (targetScale) scale = targetScale;
+    const cw = canvas.width, ch = canvas.height;
+    offsetX = cw / 2 - tx * scale;
+    offsetY = ch / 2 - ty * scale;
+    document.getElementById('zoomLabel').textContent = scale.toFixed(2) + 'x';
+    render();
+}
+
+// ---------------------------------------------------------------------------
+// Event handlers
+// ---------------------------------------------------------------------------
+canvas.addEventListener('mousedown', function(e) {
+    if (e.button === 0) {
+        isDragging = true;
+        dragStartX = e.clientX;
+        dragStartY = e.clientY;
+        dragOffX = offsetX;
+        dragOffY = offsetY;
+        canvas.style.cursor = 'grabbing';
+    }
+});
+
+canvas.addEventListener('mousemove', function(e) {
+    const rect = canvas.getBoundingClientRect();
+    mouseCanvasX = e.clientX - rect.left;
+    mouseCanvasY = e.clientY - rect.top;
+
+    if (isDragging) {
+        offsetX = dragOffX + (e.clientX - dragStartX);
+        offsetY = dragOffY + (e.clientY - dragStartY);
+        render();
+    } else {
+        render(); // for crosshair
+    }
+    updateHUD();
+});
+
+canvas.addEventListener('mouseup', function(e) {
+    if (e.button === 0) {
+        const dx = Math.abs(e.clientX - dragStartX);
+        const dy = Math.abs(e.clientY - dragStartY);
+        // If barely moved, treat as a click (place pin)
+        if (dx < 4 && dy < 4) {
+            const [tx, ty] = canvasToTile(mouseCanvasX, mouseCanvasY);
+            if (tx >= 0 && tx < mapW && ty >= 0 && ty < MAP_DIM) {
+                pins.push({ x: tx, y: ty, town: nearestTown(tx, ty) });
+                updatePinsHUD();
+            }
+        }
+        isDragging = false;
+        canvas.style.cursor = 'crosshair';
+        render();
+    }
+});
+
+canvas.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    if (pins.length > 0) {
+        pins.pop();
+        updatePinsHUD();
+        render();
+    }
+});
+
+canvas.addEventListener('mouseleave', function() {
+    mouseCanvasX = -1; mouseCanvasY = -1;
+    updateHUD();
+    render();
+});
+
+canvas.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const px = e.clientX - rect.left;
+    const py = e.clientY - rect.top;
+    const factor = e.deltaY < 0 ? 1.25 : 0.8;
+    zoomAtPoint(px, py, factor);
+}, { passive: false });
+
+window.addEventListener('keydown', function(e) {
+    const PAN = 80;
+    switch (e.key) {
+        case '+': case '=': adjustZoom(1.25); break;
+        case '-': adjustZoom(0.8); break;
+        case 'f': case 'F': fitToWindow(); break;
+        case '1': zoomTo(1); break;
+        case '2': zoomTo(2); break;
+        case '4': zoomTo(4); break;
+        case 'ArrowLeft': offsetX += PAN; render(); break;
+        case 'ArrowRight': offsetX -= PAN; render(); break;
+        case 'ArrowUp': offsetY += PAN; render(); break;
+        case 'ArrowDown': offsetY -= PAN; render(); break;
+    }
+});
+
+window.addEventListener('resize', resizeCanvas);
+
+// ---------------------------------------------------------------------------
+// Sidebar
+// ---------------------------------------------------------------------------
+function buildSidebar() {
+    const sb = document.getElementById('sidebar');
+    let html = '<h3>TOWNS</h3>';
+    for (const [name, [tx, ty]] of Object.entries(NAMED_LOCATIONS)) {
+        html += '<div class="town-item" onclick="panToTile(' + tx + ',' + ty + ',2)">' +
+                name + ' <span style="color:#888">(' + tx + ', ' + ty + ')</span></div>';
+    }
+
+    for (const section of LEGEND_SECTIONS) {
+        html += '<h3>' + section.header + '</h3>';
+        for (const entry of section.entries) {
+            const c = 'rgb(' + entry.color[0] + ',' + entry.color[1] + ',' + entry.color[2] + ')';
+            html += '<div class="legend-row">' +
+                    '<span class="swatch" style="background:' + c + '"></span>' +
+                    '<span>' + entry.label + '</span></div>';
+        }
+    }
+
+    html += '<h3>HEIGHT SHADING</h3>';
+    html += '<div style="padding:2px 0;color:#b4b4aa">Brighter = higher elevation</div>';
+    html += '<div style="padding:2px 0;color:#b4b4aa">Neutral = ground level (h=17)</div>';
+    html += '<div style="padding:2px 0;color:#b4b4aa">Slightly darker = below ground</div>';
+
+    html += '<h3>KEYBOARD</h3>';
+    html += '<div style="padding:2px 0;color:#b4b4aa">+/- : Zoom in/out</div>';
+    html += '<div style="padding:2px 0;color:#b4b4aa">1/2/4 : Zoom 1x/2x/4x</div>';
+    html += '<div style="padding:2px 0;color:#b4b4aa">F : Fit to window</div>';
+    html += '<div style="padding:2px 0;color:#b4b4aa">Arrows : Pan</div>';
+
+    sb.innerHTML = html;
+}
+
+function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('collapsed');
+    setTimeout(resizeCanvas, 10);
+}
+
+// ---------------------------------------------------------------------------
+// Init
+// ---------------------------------------------------------------------------
+buildSidebar();
+resizeCanvas();
+loadImage(getImagePath('full_map'));
+</script>
+</body>
+</html>

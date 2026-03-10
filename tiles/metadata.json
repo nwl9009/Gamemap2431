@@ -1,0 +1,17 @@
+{
+  "minZoom": 0,
+  "maxZoom": 7,
+  "tileSize": 256,
+  "mapDim": 3220,
+  "oceanColor": "#141C30",
+  "bounds": [
+    [
+      0,
+      0
+    ],
+    [
+      3220,
+      3220
+    ]
+  ]
+}

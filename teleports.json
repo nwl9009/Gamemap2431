@@ -1,0 +1,684 @@
+{
+  "entries": [
+    {
+      "name": "",
+      "x": 3843,
+      "y": 3299,
+      "wrappedX": 623,
+      "wrappedY": 79,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3912,
+      "y": 3333,
+      "wrappedX": 692,
+      "wrappedY": 113,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3906,
+      "y": 3466,
+      "wrappedX": 686,
+      "wrappedY": 246,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3600,
+      "y": 3583,
+      "wrappedX": 380,
+      "wrappedY": 363,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3831,
+      "y": 3624,
+      "wrappedX": 611,
+      "wrappedY": 404,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3881,
+      "y": 3633,
+      "wrappedX": 661,
+      "wrappedY": 413,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3918,
+      "y": 3724,
+      "wrappedX": 698,
+      "wrappedY": 504,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3756,
+      "y": 3741,
+      "wrappedX": 536,
+      "wrappedY": 521,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3531,
+      "y": 3808,
+      "wrappedX": 311,
+      "wrappedY": 588,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3387,
+      "y": 3866,
+      "wrappedX": 167,
+      "wrappedY": 646,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 4100,
+      "y": 4083,
+      "wrappedX": 880,
+      "wrappedY": 863,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3625,
+      "y": 3966,
+      "wrappedX": 405,
+      "wrappedY": 746,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3550,
+      "y": 3958,
+      "wrappedX": 330,
+      "wrappedY": 738,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2381,
+      "y": 999,
+      "wrappedX": 2381,
+      "wrappedY": 999,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1981,
+      "y": 1174,
+      "wrappedX": 1981,
+      "wrappedY": 1174,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2431,
+      "y": 1141,
+      "wrappedX": 2431,
+      "wrappedY": 1141,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2487,
+      "y": 1108,
+      "wrappedX": 2487,
+      "wrappedY": 1108,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2081,
+      "y": 1274,
+      "wrappedX": 2081,
+      "wrappedY": 1274,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1968,
+      "y": 1299,
+      "wrappedX": 1968,
+      "wrappedY": 1299,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1881,
+      "y": 1224,
+      "wrappedX": 1881,
+      "wrappedY": 1224,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1856,
+      "y": 1333,
+      "wrappedX": 1856,
+      "wrappedY": 1333,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1887,
+      "y": 1416,
+      "wrappedX": 1887,
+      "wrappedY": 1416,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2000,
+      "y": 1516,
+      "wrappedX": 2000,
+      "wrappedY": 1516,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1762,
+      "y": 1433,
+      "wrappedX": 1762,
+      "wrappedY": 1433,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3600,
+      "y": 3858,
+      "wrappedX": 380,
+      "wrappedY": 638,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1350,
+      "y": 1999,
+      "wrappedX": 1350,
+      "wrappedY": 1999,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1187,
+      "y": 2124,
+      "wrappedX": 1187,
+      "wrappedY": 2124,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 1325,
+      "y": 2233,
+      "wrappedX": 1325,
+      "wrappedY": 2233,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 8847,
+      "y": 9049,
+      "wrappedX": 2407,
+      "wrappedY": 2609,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 9042,
+      "y": 9244,
+      "wrappedX": 2602,
+      "wrappedY": 2804,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 9130,
+      "y": 9166,
+      "wrappedX": 2690,
+      "wrappedY": 2726,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2597,
+      "y": 8437,
+      "wrappedX": 2597,
+      "wrappedY": 1997,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2695,
+      "y": 8411,
+      "wrappedX": 2695,
+      "wrappedY": 1971,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2685,
+      "y": 8619,
+      "wrappedX": 2685,
+      "wrappedY": 2179,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2822,
+      "y": 8632,
+      "wrappedX": 2822,
+      "wrappedY": 2192,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3896,
+      "y": 3893,
+      "wrappedX": 676,
+      "wrappedY": 673,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3759,
+      "y": 3945,
+      "wrappedX": 539,
+      "wrappedY": 725,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 3740,
+      "y": 3515,
+      "wrappedX": 520,
+      "wrappedY": 295,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 2675,
+      "y": 8909,
+      "wrappedX": 2675,
+      "wrappedY": 2469,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 8931,
+      "y": 5405,
+      "wrappedX": 2491,
+      "wrappedY": 2185,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 9111,
+      "y": 5431,
+      "wrappedX": 2671,
+      "wrappedY": 2211,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    },
+    {
+      "name": "",
+      "x": 9111,
+      "y": 5613,
+      "wrappedX": 2671,
+      "wrappedY": 2393,
+      "zoneType": "0x1B",
+      "zoneTypeName": "Dungeon Entrance"
+    }
+  ],
+  "byType": {
+    "0x1B": {
+      "name": "Dungeon Entrance",
+      "color": "#8B00FF",
+      "entries": [
+        {
+          "name": "",
+          "x": 3843,
+          "y": 3299,
+          "wrappedX": 623,
+          "wrappedY": 79
+        },
+        {
+          "name": "",
+          "x": 3912,
+          "y": 3333,
+          "wrappedX": 692,
+          "wrappedY": 113
+        },
+        {
+          "name": "",
+          "x": 3906,
+          "y": 3466,
+          "wrappedX": 686,
+          "wrappedY": 246
+        },
+        {
+          "name": "",
+          "x": 3600,
+          "y": 3583,
+          "wrappedX": 380,
+          "wrappedY": 363
+        },
+        {
+          "name": "",
+          "x": 3831,
+          "y": 3624,
+          "wrappedX": 611,
+          "wrappedY": 404
+        },
+        {
+          "name": "",
+          "x": 3881,
+          "y": 3633,
+          "wrappedX": 661,
+          "wrappedY": 413
+        },
+        {
+          "name": "",
+          "x": 3918,
+          "y": 3724,
+          "wrappedX": 698,
+          "wrappedY": 504
+        },
+        {
+          "name": "",
+          "x": 3756,
+          "y": 3741,
+          "wrappedX": 536,
+          "wrappedY": 521
+        },
+        {
+          "name": "",
+          "x": 3531,
+          "y": 3808,
+          "wrappedX": 311,
+          "wrappedY": 588
+        },
+        {
+          "name": "",
+          "x": 3387,
+          "y": 3866,
+          "wrappedX": 167,
+          "wrappedY": 646
+        },
+        {
+          "name": "",
+          "x": 4100,
+          "y": 4083,
+          "wrappedX": 880,
+          "wrappedY": 863
+        },
+        {
+          "name": "",
+          "x": 3625,
+          "y": 3966,
+          "wrappedX": 405,
+          "wrappedY": 746
+        },
+        {
+          "name": "",
+          "x": 3550,
+          "y": 3958,
+          "wrappedX": 330,
+          "wrappedY": 738
+        },
+        {
+          "name": "",
+          "x": 2381,
+          "y": 999,
+          "wrappedX": 2381,
+          "wrappedY": 999
+        },
+        {
+          "name": "",
+          "x": 1981,
+          "y": 1174,
+          "wrappedX": 1981,
+          "wrappedY": 1174
+        },
+        {
+          "name": "",
+          "x": 2431,
+          "y": 1141,
+          "wrappedX": 2431,
+          "wrappedY": 1141
+        },
+        {
+          "name": "",
+          "x": 2487,
+          "y": 1108,
+          "wrappedX": 2487,
+          "wrappedY": 1108
+        },
+        {
+          "name": "",
+          "x": 2081,
+          "y": 1274,
+          "wrappedX": 2081,
+          "wrappedY": 1274
+        },
+        {
+          "name": "",
+          "x": 1968,
+          "y": 1299,
+          "wrappedX": 1968,
+          "wrappedY": 1299
+        },
+        {
+          "name": "",
+          "x": 1881,
+          "y": 1224,
+          "wrappedX": 1881,
+          "wrappedY": 1224
+        },
+        {
+          "name": "",
+          "x": 1856,
+          "y": 1333,
+          "wrappedX": 1856,
+          "wrappedY": 1333
+        },
+        {
+          "name": "",
+          "x": 1887,
+          "y": 1416,
+          "wrappedX": 1887,
+          "wrappedY": 1416
+        },
+        {
+          "name": "",
+          "x": 2000,
+          "y": 1516,
+          "wrappedX": 2000,
+          "wrappedY": 1516
+        },
+        {
+          "name": "",
+          "x": 1762,
+          "y": 1433,
+          "wrappedX": 1762,
+          "wrappedY": 1433
+        },
+        {
+          "name": "",
+          "x": 3600,
+          "y": 3858,
+          "wrappedX": 380,
+          "wrappedY": 638
+        },
+        {
+          "name": "",
+          "x": 1350,
+          "y": 1999,
+          "wrappedX": 1350,
+          "wrappedY": 1999
+        },
+        {
+          "name": "",
+          "x": 1187,
+          "y": 2124,
+          "wrappedX": 1187,
+          "wrappedY": 2124
+        },
+        {
+          "name": "",
+          "x": 1325,
+          "y": 2233,
+          "wrappedX": 1325,
+          "wrappedY": 2233
+        },
+        {
+          "name": "",
+          "x": 8847,
+          "y": 9049,
+          "wrappedX": 2407,
+          "wrappedY": 2609
+        },
+        {
+          "name": "",
+          "x": 9042,
+          "y": 9244,
+          "wrappedX": 2602,
+          "wrappedY": 2804
+        },
+        {
+          "name": "",
+          "x": 9130,
+          "y": 9166,
+          "wrappedX": 2690,
+          "wrappedY": 2726
+        },
+        {
+          "name": "",
+          "x": 2597,
+          "y": 8437,
+          "wrappedX": 2597,
+          "wrappedY": 1997
+        },
+        {
+          "name": "",
+          "x": 2695,
+          "y": 8411,
+          "wrappedX": 2695,
+          "wrappedY": 1971
+        },
+        {
+          "name": "",
+          "x": 2685,
+          "y": 8619,
+          "wrappedX": 2685,
+          "wrappedY": 2179
+        },
+        {
+          "name": "",
+          "x": 2822,
+          "y": 8632,
+          "wrappedX": 2822,
+          "wrappedY": 2192
+        },
+        {
+          "name": "",
+          "x": 3896,
+          "y": 3893,
+          "wrappedX": 676,
+          "wrappedY": 673
+        },
+        {
+          "name": "",
+          "x": 3759,
+          "y": 3945,
+          "wrappedX": 539,
+          "wrappedY": 725
+        },
+        {
+          "name": "",
+          "x": 3740,
+          "y": 3515,
+          "wrappedX": 520,
+          "wrappedY": 295
+        },
+        {
+          "name": "",
+          "x": 2675,
+          "y": 8909,
+          "wrappedX": 2675,
+          "wrappedY": 2469
+        },
+        {
+          "name": "",
+          "x": 8931,
+          "y": 5405,
+          "wrappedX": 2491,
+          "wrappedY": 2185
+        },
+        {
+          "name": "",
+          "x": 9111,
+          "y": 5431,
+          "wrappedX": 2671,
+          "wrappedY": 2211
+        },
+        {
+          "name": "",
+          "x": 9111,
+          "y": 5613,
+          "wrappedX": 2671,
+          "wrappedY": 2393
+        }
+      ]
+    }
+  }
+}

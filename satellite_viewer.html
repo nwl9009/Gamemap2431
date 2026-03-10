@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satellite Map Viewer</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #0a0e1a;
+        color: #c8d0e0;
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: #141C30;
+    }
+
+    /* ── Sidebar ── */
+    #sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background: rgba(14, 18, 32, 0.92);
+        border-right: 1px solid rgba(100, 120, 180, 0.25);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        transition: transform 0.3s ease;
+    }
+
+    #sidebar.collapsed {
+        transform: translateX(-300px);
+    }
+
+    #sidebar-toggle {
+        position: absolute;
+        top: 12px;
+        left: 308px;
+        z-index: 1001;
+        background: rgba(14, 18, 32, 0.92);
+        border: 1px solid rgba(100, 120, 180, 0.25);
+        border-left: none;
+        color: #8a9cc5;
+        padding: 8px 6px;
+        cursor: pointer;
+        border-radius: 0 6px 6px 0;
+        font-size: 14px;
+        line-height: 1;
+        transition: left 0.3s ease, background 0.2s;
+    }
+
+    #sidebar.collapsed + #sidebar-toggle {
+        left: 8px;
+        border-left: 1px solid rgba(100, 120, 180, 0.25);
+        border-radius: 6px;
+    }
+
+    #sidebar-toggle:hover {
+        background: rgba(30, 40, 70, 0.95);
+        color: #b0c0f0;
+    }
+
+    .sidebar-header {
+        padding: 16px 18px 12px;
+        border-bottom: 1px solid rgba(100, 120, 180, 0.15);
+        flex-shrink: 0;
+    }
+
+    .sidebar-header h1 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #d0daf0;
+        letter-spacing: 0.5px;
+    }
+
+    .sidebar-header .subtitle {
+        font-size: 11px;
+        color: #5a6a90;
+        margin-top: 2px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* ── Search Section ── */
+    .search-section {
+        padding: 14px 18px;
+        border-bottom: 1px solid rgba(100, 120, 180, 0.15);
+        flex-shrink: 0;
+    }
+
+    .search-section label {
+        display: block;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: #6a7aaa;
+        margin-bottom: 6px;
+    }
+
+    #tile-type-select {
+        width: 100%;
+        padding: 8px 12px;
+        background: rgba(20, 28, 48, 0.8);
+        border: 1px solid rgba(100, 120, 180, 0.3);
+        border-radius: 6px;
+        color: #c8d0e0;
+        font-size: 13px;
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236a7aaa' d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+    }
+
+    #tile-type-select:hover {
+        border-color: rgba(100, 120, 180, 0.5);
+    }
+
+    #tile-type-select:focus {
+        border-color: rgba(120, 150, 220, 0.6);
+        box-shadow: 0 0 0 2px rgba(100, 130, 200, 0.15);
+    }
+
+    #tile-type-select option {
+        background: #141C30;
+        color: #c8d0e0;
+    }
+
+    #tile-type-select optgroup {
+        background: #0e1220;
+        color: #6a7aaa;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    /* ── Cluster List ── */
+    .cluster-list-container {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cluster-list-header {
+        padding: 10px 18px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: #6a7aaa;
+        flex-shrink: 0;
+    }
+
+    #cluster-list {
+        flex: 1;
+        overflow-y: auto;
+        padding: 0 10px 10px;
+    }
+
+    #cluster-list::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #cluster-list::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    #cluster-list::-webkit-scrollbar-thumb {
+        background: rgba(100, 120, 180, 0.25);
+        border-radius: 3px;
+    }
+
+    #cluster-list::-webkit-scrollbar-thumb:hover {
+        background: rgba(100, 120, 180, 0.4);
+    }
+
+    .cluster-item {
+        padding: 10px 12px;
+        margin-bottom: 4px;
+        background: rgba(20, 28, 48, 0.5);
+        border: 1px solid rgba(100, 120, 180, 0.1);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cluster-item:hover {
+        background: rgba(30, 42, 72, 0.6);
+        border-color: rgba(100, 120, 180, 0.25);
+    }
+
+    .cluster-item.active {
+        background: rgba(40, 55, 95, 0.6);
+        border-color: rgba(120, 150, 220, 0.4);
+    }
+
+    .cluster-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .cluster-info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .cluster-coords {
+        font-size: 13px;
+        color: #b0bce0;
+        font-weight: 500;
+    }
+
+    .cluster-size {
+        font-size: 11px;
+        color: #5a6a90;
+        margin-top: 1px;
+    }
+
+    .cluster-empty {
+        padding: 24px 18px;
+        text-align: center;
+        color: #4a5a80;
+        font-size: 13px;
+        font-style: italic;
+    }
+
+    /* ── Pin List ── */
+    .pin-section {
+        border-top: 1px solid rgba(100, 120, 180, 0.15);
+        flex-shrink: 0;
+        max-height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pin-section-header {
+        padding: 10px 18px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: #6a7aaa;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .pin-section-header .clear-pins {
+        font-size: 10px;
+        color: #8a5050;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 2px 6px;
+        border-radius: 3px;
+        transition: color 0.15s, background 0.15s;
+    }
+
+    .pin-section-header .clear-pins:hover {
+        color: #cc6060;
+        background: rgba(180, 60, 60, 0.1);
+    }
+
+    #pin-list {
+        overflow-y: auto;
+        padding: 0 10px 10px;
+        flex: 1;
+    }
+
+    #pin-list::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #pin-list::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    #pin-list::-webkit-scrollbar-thumb {
+        background: rgba(100, 120, 180, 0.25);
+        border-radius: 3px;
+    }
+
+    .pin-item {
+        padding: 7px 12px;
+        margin-bottom: 3px;
+        background: rgba(20, 28, 48, 0.5);
+        border: 1px solid rgba(100, 120, 180, 0.1);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .pin-item:hover {
+        background: rgba(30, 42, 72, 0.6);
+        border-color: rgba(100, 120, 180, 0.25);
+    }
+
+    .pin-number {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #cc3a3a;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 700;
+        flex-shrink: 0;
+    }
+
+    .pin-coords {
+        color: #b0bce0;
+    }
+
+    .pin-empty {
+        padding: 12px 18px;
+        text-align: center;
+        color: #4a5a80;
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    /* ── Info Panel (bottom-right) ── */
+    #info-panel {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        z-index: 1000;
+        background: rgba(14, 18, 32, 0.88);
+        border: 1px solid rgba(100, 120, 180, 0.2);
+        border-radius: 8px;
+        padding: 10px 16px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        font-size: 12px;
+        min-width: 160px;
+        pointer-events: none;
+    }
+
+    #info-panel .info-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 2px 0;
+    }
+
+    #info-panel .info-label {
+        color: #5a6a90;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+    }
+
+    #info-panel .info-value {
+        color: #b0c0e0;
+        font-weight: 500;
+        font-variant-numeric: tabular-nums;
+    }
+
+    #info-panel .info-tile-type {
+        margin-top: 4px;
+        padding-top: 4px;
+        border-top: 1px solid rgba(100, 120, 180, 0.12);
+        color: #8a9cc5;
+        font-size: 11px;
+        text-align: right;
+    }
+
+    /* ── Leaflet Overrides ── */
+    .leaflet-container {
+        background: #141C30 !important;
+    }
+
+    .leaflet-control-zoom {
+        border: 1px solid rgba(100, 120, 180, 0.25) !important;
+        border-radius: 6px !important;
+        overflow: hidden;
+    }
+
+    .leaflet-control-zoom a {
+        background: rgba(14, 18, 32, 0.9) !important;
+        color: #8a9cc5 !important;
+        border-color: rgba(100, 120, 180, 0.15) !important;
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        font-size: 16px !important;
+    }
+
+    .leaflet-control-zoom a:hover {
+        background: rgba(30, 40, 70, 0.95) !important;
+        color: #b0c0f0 !important;
+    }
+
+    .leaflet-control-attribution {
+        display: none !important;
+    }
+
+    /* Pin label tooltip */
+    .pin-tooltip {
+        background: rgba(14, 18, 32, 0.92) !important;
+        border: 1px solid rgba(100, 120, 180, 0.3) !important;
+        color: #c8d0e0 !important;
+        padding: 3px 8px !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        border-radius: 4px !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
+    }
+
+    .pin-tooltip::before {
+        border-top-color: rgba(100, 120, 180, 0.3) !important;
+    }
+
+    /* Leaflet popup overrides for hover info */
+    .leaflet-popup-content-wrapper {
+        background: rgba(14, 18, 32, 0.92) !important;
+        border: 1px solid rgba(100, 120, 180, 0.3) !important;
+        color: #c8d0e0 !important;
+        border-radius: 6px !important;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.5) !important;
+    }
+
+    .leaflet-popup-tip {
+        background: rgba(14, 18, 32, 0.92) !important;
+        border: 1px solid rgba(100, 120, 180, 0.3) !important;
+        box-shadow: none !important;
+    }
+
+    .leaflet-popup-close-button {
+        color: #6a7aaa !important;
+    }
+
+    .leaflet-popup-close-button:hover {
+        color: #b0c0f0 !important;
+    }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+    <div class="sidebar-header">
+        <h1>Satellite Map</h1>
+        <div class="subtitle">Satellite Viewer</div>
+    </div>
+
+    <div class="search-section">
+        <label for="tile-type-select">Search Tiles &amp; Teleports</label>
+        <select id="tile-type-select">
+            <option value="">-- Select a type --</option>
+        </select>
+        <label class="toggle-row" style="margin-top:10px;display:flex;align-items:center;gap:8px;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;font-size:12px;color:#8a9cc5">
+            <input type="checkbox" id="tp-overlay-toggle" checked style="accent-color:#8B00FF">
+            Show teleport markers
+        </label>
+        <label class="toggle-row" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;font-size:12px;color:#8a9cc5">
+            <input type="checkbox" id="mongen-overlay-toggle" style="accent-color:#4a6a5a">
+            Monster Zones
+        </label>
+    </div>
+
+    <div class="cluster-list-container">
+        <div class="cluster-list-header">
+            <span id="cluster-count">Clusters</span>
+        </div>
+        <div id="cluster-list">
+            <div class="cluster-empty">Select a tile type to search</div>
+        </div>
+    </div>
+
+    <div class="pin-section">
+        <div class="pin-section-header">
+            <span>Pins</span>
+            <span class="clear-pins" id="clear-pins" title="Remove all pins">Clear All</span>
+        </div>
+        <div id="pin-list">
+            <div class="pin-empty">Click map to place pins</div>
+        </div>
+    </div>
+</div>
+
+<button id="sidebar-toggle" title="Toggle sidebar">&#9776;</button>
+
+<!-- Info Panel -->
+<div id="info-panel">
+    <div class="info-row">
+        <span class="info-label">Position</span>
+        <span class="info-value" id="info-coords">--, --</span>
+    </div>
+    <div class="info-row">
+        <span class="info-label">Zoom</span>
+        <span class="info-value" id="info-zoom">0</span>
+    </div>
+    <div class="info-tile-type" id="info-tile-type"></div>
+</div>
+
+<script>
+(function () {
+    'use strict';
+
+    // ────────────────────────────────────────────
+    // Constants
+    // ────────────────────────────────────────────
+    var MAP_SIZE = 3220;
+    var MIN_ZOOM = 0;
+    var MAX_ZOOM = 7;
+    var NAV_ZOOM = 4;
+    var TILE_SIZE = 256;
+
+    var DEFAULT_COLOR = '#8090c0';
+
+    // ────────────────────────────────────────────
+    // Coordinate helpers
+    // Game coordinates: (0,0) = top-left, (3220,3220) = bottom-right
+    // Leaflet latlng:   lat = -gameY (so north = top = lat 0),
+    //                   lng = gameX
+    // ────────────────────────────────────────────
+    function gameToLatLng(gx, gy) {
+        return L.latLng(-gy, gx);
+    }
+
+    function latLngToGame(latlng) {
+        return { x: Math.round(latlng.lng), y: Math.round(-latlng.lat) };
+    }
+
+    // ────────────────────────────────────────────
+    // Custom CRS: scale so that at zoom 0, the 3220-unit map = 1 tile (256px).
+    // L.Transformation(a, b, c, d): pixel_x = a*lng + b, pixel_y = c*lat + d
+    // We need: px = (256/3220)*gx, py = (256/3220)*gy
+    // Since lat = -gy: py = -(256/3220)*lat = c*lat → c = -256/3220
+    // ────────────────────────────────────────────
+    var pxScale = TILE_SIZE / MAP_SIZE;  // 256/3220 ≈ 0.0795
+    var MapCRS = L.Util.extend({}, L.CRS.Simple, {
+        transformation: new L.Transformation(pxScale, 0, -pxScale, 0)
+    });
+
+    // ────────────────────────────────────────────
+    // Map Setup
+    // ────────────────────────────────────────────
+    var southWest = gameToLatLng(0, MAP_SIZE);   // lat=-3220, lng=0
+    var northEast = gameToLatLng(MAP_SIZE, 0);   // lat=0,     lng=3220
+    var mapBounds = L.latLngBounds(southWest, northEast);
+
+    var map = L.map('map', {
+        crs: MapCRS,
+        minZoom: MIN_ZOOM,
+        maxZoom: MAX_ZOOM,
+        maxBounds: mapBounds.pad(0.1),
+        maxBoundsViscosity: 1.0,
+        zoomControl: true,
+        attributionControl: false
+    });
+
+    map.fitBounds(mapBounds);
+
+    // ────────────────────────────────────────────
+    // Tile Layer — direct mapping, no Y-flip needed.
+    // Our tiles: {z}/{tx}_{ty}.png with ty=0 at top.
+    // Leaflet default (non-TMS): coords.y=0 at top.
+    // ────────────────────────────────────────────
+    var tileLayer = L.tileLayer('tiles/{z}/{x}_{y}.png', {
+        tileSize: TILE_SIZE,
+        noWrap: true,
+        bounds: mapBounds,
+        minZoom: MIN_ZOOM,
+        maxZoom: MAX_ZOOM,
+        errorTileUrl: ''
+    });
+
+    // Suppress tile load errors silently (ocean areas have no tiles)
+    tileLayer.on('tileerror', function (e) {
+        e.tile.style.display = 'none';
+    });
+
+    tileLayer.addTo(map);
+
+    // ────────────────────────────────────────────
+    // State
+    // ────────────────────────────────────────────
+    var specialTilesData = null;
+    var teleportsData = null;
+    var dataReady = false;
+    var clusterMarkers = L.layerGroup().addTo(map);
+    var teleportOverlay = L.layerGroup().addTo(map);
+    var pinMarkers = L.layerGroup().addTo(map);
+    var pins = [];
+    var pinCounter = 0;
+    var activeClusterItem = null;
+    var selectedHighlight = null;
+    var showTeleportOverlay = true;
+    var mongenZonesData = null;
+    var mongenOverlay = L.layerGroup();
+    var showMongenOverlay = false;
+
+    // Unified entries: array of { key, label, group, color, entries }
+    // entries[] = { x, y, size, name }
+    var unifiedData = [];
+
+    // ────────────────────────────────────────────
+    // Load both JSON files, then build unified data
+    // ────────────────────────────────────────────
+    function loadAllData(callback) {
+        if (dataReady) { callback(); return; }
+
+        var pending = 3;
+        function done() {
+            pending--;
+            if (pending === 0) {
+                buildUnifiedData();
+                dataReady = true;
+                populateDropdown();
+                renderTeleportOverlay();
+                if (showMongenOverlay) renderMongenOverlay();
+                callback();
+            }
+        }
+
+        fetch('special_tiles.json')
+            .then(function (r) { return r.ok ? r.json() : {}; })
+            .then(function (d) { specialTilesData = d; done(); })
+            .catch(function () { specialTilesData = {}; done(); });
+
+        fetch('teleports.json')
+            .then(function (r) { return r.ok ? r.json() : {}; })
+            .then(function (d) { teleportsData = d; done(); })
+            .catch(function () { teleportsData = {}; done(); });
+
+        fetch('mongen_zones.json')
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (d) { mongenZonesData = d; done(); })
+            .catch(function () { mongenZonesData = null; done(); });
+    }
+
+    function buildUnifiedData() {
+        unifiedData = [];
+
+        // ── Special tile types ──
+        if (specialTilesData && specialTilesData.types) {
+            var types = specialTilesData.types;
+            for (var hexKey in types) {
+                if (!types.hasOwnProperty(hexKey)) continue;
+                var t = types[hexKey];
+                if (!t.clusters || t.clusters.length === 0) continue;
+                unifiedData.push({
+                    key: 'tile:' + hexKey,
+                    label: t.name + ' (' + hexKey + ')',
+                    group: 'Tile Types',
+                    color: t.color || DEFAULT_COLOR,
+                    totalTiles: t.totalTiles || 0,
+                    entries: t.clusters.map(function (c) {
+                        return { x: c.x, y: c.y, size: c.size, name: '' };
+                    })
+                });
+            }
+        }
+
+        // ── Teleport types (from byType) ──
+        if (teleportsData && teleportsData.byType) {
+            var bt = teleportsData.byType;
+            for (var zt in bt) {
+                if (!bt.hasOwnProperty(zt)) continue;
+                var group = bt[zt];
+                if (!group.entries || group.entries.length === 0) continue;
+                unifiedData.push({
+                    key: 'tp:' + zt,
+                    label: group.name + ' (' + group.entries.length + ')',
+                    group: 'Teleports',
+                    color: group.color || '#c040e0',
+                    totalTiles: group.entries.length,
+                    entries: group.entries.map(function (e) {
+                        return {
+                            x: e.wrappedX,
+                            y: e.wrappedY,
+                            size: 1,
+                            name: e.name || ''
+                        };
+                    })
+                });
+            }
+        }
+
+        // Sort: tile types first (alphabetical), then teleports
+        unifiedData.sort(function (a, b) {
+            if (a.group !== b.group) return a.group < b.group ? -1 : 1;
+            return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+        });
+    }
+
+    // ────────────────────────────────────────────
+    // Populate Dropdown with optgroups
+    // ────────────────────────────────────────────
+    function populateDropdown() {
+        var select = document.getElementById('tile-type-select');
+        while (select.options.length > 1) select.remove(1);
+
+        var currentGroup = '';
+        var optgroup = null;
+
+        unifiedData.forEach(function (item) {
+            if (item.group !== currentGroup) {
+                currentGroup = item.group;
+                optgroup = document.createElement('optgroup');
+                optgroup.label = currentGroup;
+                select.appendChild(optgroup);
+            }
+            var opt = document.createElement('option');
+            opt.value = item.key;
+            opt.textContent = item.label;
+            (optgroup || select).appendChild(opt);
+        });
+    }
+
+    function getUnifiedEntry(key) {
+        for (var i = 0; i < unifiedData.length; i++) {
+            if (unifiedData[i].key === key) return unifiedData[i];
+        }
+        return null;
+    }
+
+    // ────────────────────────────────────────────
+    // Render Entry List (clusters or teleport points)
+    // ────────────────────────────────────────────
+    function renderEntryList(entry) {
+        var listEl = document.getElementById('cluster-list');
+        var countEl = document.getElementById('cluster-count');
+        var color = entry.color;
+        var isTeleport = entry.key.indexOf('tp:') === 0;
+        var label = isTeleport ? 'Locations' : 'Clusters';
+
+        clusterMarkers.clearLayers();
+        activeClusterItem = null;
+
+        if (!entry.entries || entry.entries.length === 0) {
+            listEl.innerHTML = '<div class="cluster-empty">No entries found</div>';
+            countEl.textContent = label + ' (0)';
+            return;
+        }
+
+        countEl.textContent = label + ' (' + entry.entries.length + ')';
+        listEl.innerHTML = '';
+
+        // Add all markers on the map at once for this selection
+        entry.entries.forEach(function (pt) {
+            var latlng = gameToLatLng(pt.x, pt.y);
+            var marker;
+            if (isTeleport) {
+                // Diamond shape via rotated square div icon
+                marker = L.marker(latlng, {
+                    icon: L.divIcon({
+                        className: '',
+                        html: '<div style="width:10px;height:10px;background:' + color +
+                              ';border:1.5px solid #fff;transform:rotate(45deg);opacity:0.7;"></div>',
+                        iconSize: [10, 10],
+                        iconAnchor: [5, 5]
+                    })
+                });
+            } else {
+                marker = L.circleMarker(latlng, {
+                    radius: 5,
+                    color: color,
+                    fillColor: color,
+                    fillOpacity: 0.4,
+                    weight: 1,
+                    opacity: 0.6
+                });
+            }
+            marker.addTo(clusterMarkers);
+        });
+
+        entry.entries.forEach(function (pt, index) {
+            var item = document.createElement('div');
+            item.className = 'cluster-item';
+
+            var nameStr = pt.name ? ('<span style="color:#b0c0e0;font-weight:500">' + pt.name + '</span> ') : '';
+            var sizeStr = isTeleport ? '' :
+                '<div class="cluster-size">' + pt.size + ' tile' + (pt.size !== 1 ? 's' : '') + '</div>';
+
+            item.innerHTML =
+                '<div class="cluster-dot" style="background:' + color +
+                    (isTeleport ? ';transform:rotate(45deg);border-radius:1px' : '') + '"></div>' +
+                '<div class="cluster-info">' +
+                    '<div class="cluster-coords">' + nameStr + '(' + pt.x + ', ' + pt.y + ')</div>' +
+                    sizeStr +
+                '</div>';
+
+            item.addEventListener('click', function () {
+                navigateToEntry(pt.x, pt.y, color, isTeleport, item);
+            });
+
+            listEl.appendChild(item);
+        });
+    }
+
+    function navigateToEntry(cx, cy, color, isTeleport, itemEl) {
+        if (activeClusterItem) activeClusterItem.classList.remove('active');
+        if (itemEl) { itemEl.classList.add('active'); activeClusterItem = itemEl; }
+
+        if (selectedHighlight) clusterMarkers.removeLayer(selectedHighlight);
+
+        var latlng = gameToLatLng(cx, cy);
+
+        // Pulsing highlight ring
+        selectedHighlight = L.circleMarker(latlng, {
+            radius: 16,
+            color: color,
+            fillColor: color,
+            fillOpacity: 0.25,
+            weight: 2.5,
+            opacity: 0.9
+        }).addTo(clusterMarkers);
+
+        // Center dot
+        L.circleMarker(latlng, {
+            radius: 5,
+            color: '#fff',
+            fillColor: color,
+            fillOpacity: 0.9,
+            weight: 1.5
+        }).addTo(clusterMarkers);
+
+        map.setView(latlng, NAV_ZOOM, { animate: true, duration: 0.5 });
+    }
+
+    // ────────────────────────────────────────────
+    // Persistent teleport overlay (always visible)
+    // ────────────────────────────────────────────
+    function renderTeleportOverlay() {
+        teleportOverlay.clearLayers();
+        if (!teleportsData || !teleportsData.byType || !showTeleportOverlay) return;
+
+        var bt = teleportsData.byType;
+        for (var zt in bt) {
+            if (!bt.hasOwnProperty(zt)) continue;
+            var group = bt[zt];
+            var color = group.color || '#c040e0';
+            (group.entries || []).forEach(function (e) {
+                var latlng = gameToLatLng(e.wrappedX, e.wrappedY);
+                var label = e.name || group.name;
+
+                var marker = L.circleMarker(latlng, {
+                    radius: 4,
+                    color: color,
+                    fillColor: color,
+                    fillOpacity: 0.5,
+                    weight: 1,
+                    opacity: 0.7
+                }).addTo(teleportOverlay);
+
+                marker.bindTooltip(label + ' (' + e.wrappedX + ', ' + e.wrappedY + ')', {
+                    direction: 'top',
+                    className: 'pin-tooltip',
+                    offset: [0, -6]
+                });
+            });
+        }
+    }
+
+    // ────────────────────────────────────────────
+    // Monster spawn zone overlay (mongen_zones.json)
+    // ────────────────────────────────────────────
+    function renderMongenOverlay() {
+        mongenOverlay.clearLayers();
+        if (!mongenZonesData || !mongenZonesData.types) return;
+
+        var gridDim = mongenZonesData.gridDim || 92;
+        var cellSizeMap = MAP_SIZE / gridDim;  // tile units per cell
+        var types = mongenZonesData.types;
+
+        for (var hexKey in types) {
+            if (!types.hasOwnProperty(hexKey)) continue;
+            var t = types[hexKey];
+            var color = t.color || '#888';
+            var cells = t.cells || [];
+            var name = t.name || hexKey;
+            var flags = t.flags || '';
+
+            for (var i = 0; i < cells.length; i++) {
+                var col = cells[i][0];
+                var row = cells[i][1];
+                var x1 = col * cellSizeMap;
+                var y1 = row * cellSizeMap;
+                var x2 = x1 + cellSizeMap;
+                var y2 = y1 + cellSizeMap;
+
+                var sw = gameToLatLng(x1, y2);
+                var ne = gameToLatLng(x2, y1);
+                var bounds = L.latLngBounds(sw, ne);
+
+                var rect = L.rectangle(bounds, {
+                    color: color,
+                    weight: 1,
+                    opacity: 0.5,
+                    fillColor: color,
+                    fillOpacity: 0.25
+                });
+
+                rect.bindTooltip(
+                    '<b>' + name + '</b><br>Flags: ' + flags +
+                    '<br>Cell: (' + col + ', ' + row + ')' +
+                    '<br>Tiles: (' + Math.round(x1) + ',' + Math.round(y1) +
+                    ') - (' + Math.round(x2) + ',' + Math.round(y2) + ')',
+                    { sticky: true, className: 'pin-tooltip', direction: 'top' }
+                );
+
+                rect.addTo(mongenOverlay);
+            }
+        }
+    }
+
+    // ────────────────────────────────────────────
+    // Tile Type / Teleport Selection
+    // ────────────────────────────────────────────
+    document.getElementById('tile-type-select').addEventListener('change', function () {
+        var key = this.value;
+        if (!key) {
+            document.getElementById('cluster-list').innerHTML =
+                '<div class="cluster-empty">Select a type to search</div>';
+            document.getElementById('cluster-count').textContent = 'Clusters';
+            clusterMarkers.clearLayers();
+            activeClusterItem = null;
+            selectedHighlight = null;
+            return;
+        }
+
+        loadAllData(function () {
+            var entry = getUnifiedEntry(key);
+            if (entry) renderEntryList(entry);
+        });
+    });
+
+    // ────────────────────────────────────────────
+    // Pin System
+    // ────────────────────────────────────────────
+    function addPin(latlng) {
+        pinCounter++;
+        var game = latLngToGame(latlng);
+        var pin = {
+            id: pinCounter,
+            latlng: latlng,
+            gx: game.x,
+            gy: game.y,
+            marker: null
+        };
+
+        // Create pin marker
+        var marker = L.circleMarker(latlng, {
+            radius: 10,
+            color: '#cc3a3a',
+            fillColor: '#cc3a3a',
+            fillOpacity: 0.7,
+            weight: 2
+        }).addTo(pinMarkers);
+
+        marker.bindTooltip(String(pin.id), {
+            permanent: true,
+            direction: 'center',
+            className: 'pin-tooltip',
+            offset: [0, 0]
+        });
+
+        pin.marker = marker;
+        pins.push(pin);
+        renderPinList();
+    }
+
+    function removeLastPin() {
+        if (pins.length === 0) return;
+        var pin = pins.pop();
+        pinMarkers.removeLayer(pin.marker);
+        renderPinList();
+    }
+
+    function clearAllPins() {
+        pins.forEach(function (pin) {
+            pinMarkers.removeLayer(pin.marker);
+        });
+        pins = [];
+        pinCounter = 0;
+        renderPinList();
+    }
+
+    function renderPinList() {
+        var listEl = document.getElementById('pin-list');
+
+        if (pins.length === 0) {
+            listEl.innerHTML = '<div class="pin-empty">Click map to place pins</div>';
+            return;
+        }
+
+        listEl.innerHTML = '';
+        pins.forEach(function (pin) {
+            var item = document.createElement('div');
+            item.className = 'pin-item';
+            item.innerHTML =
+                '<div class="pin-number">' + pin.id + '</div>' +
+                '<div class="pin-coords">(' + pin.gx + ', ' + pin.gy + ')</div>';
+
+            item.addEventListener('click', function () {
+                map.setView(pin.latlng, Math.max(map.getZoom(), NAV_ZOOM), {
+                    animate: true,
+                    duration: 0.4
+                });
+            });
+
+            listEl.appendChild(item);
+        });
+    }
+
+    // Map click — place pin
+    map.on('click', function (e) {
+        addPin(e.latlng);
+    });
+
+    // Right-click — remove last pin
+    map.on('contextmenu', function (e) {
+        L.DomEvent.preventDefault(e);
+        removeLastPin();
+    });
+
+    document.getElementById('clear-pins').addEventListener('click', function () {
+        clearAllPins();
+    });
+
+    // ────────────────────────────────────────────
+    // Info Display — Mouse Position & Zoom
+    // ────────────────────────────────────────────
+    var coordsEl = document.getElementById('info-coords');
+    var zoomEl = document.getElementById('info-zoom');
+    var tileTypeEl = document.getElementById('info-tile-type');
+
+    map.on('mousemove', function (e) {
+        var game = latLngToGame(e.latlng);
+        var gx = game.x;
+        var gy = game.y;
+
+        gx = Math.max(0, Math.min(MAP_SIZE - 1, gx));
+        gy = Math.max(0, Math.min(MAP_SIZE - 1, gy));
+
+        coordsEl.textContent = gx + ', ' + gy;
+
+        if (dataReady) {
+            var typeName = getTileTypeAt(gx, gy);
+            tileTypeEl.textContent = typeName || '';
+            tileTypeEl.style.display = typeName ? 'block' : 'none';
+        }
+    });
+
+    map.on('zoomend', function () {
+        zoomEl.textContent = map.getZoom();
+    });
+
+    // Initial zoom display
+    zoomEl.textContent = map.getZoom();
+
+    // ────────────────────────────────────────────
+    // Tile type lookup at coordinate (hover info)
+    // ────────────────────────────────────────────
+    function getTileTypeAt(gx, gy) {
+        if (!dataReady) return null;
+
+        // Check teleports first (exact or near-match)
+        if (teleportsData && teleportsData.entries) {
+            for (var i = 0; i < teleportsData.entries.length; i++) {
+                var te = teleportsData.entries[i];
+                if (Math.abs(gx - te.wrappedX) <= 2 && Math.abs(gy - te.wrappedY) <= 2) {
+                    var tpLabel = te.zoneTypeName;
+                    if (te.name) tpLabel = te.name + ' (' + tpLabel + ')';
+                    return tpLabel;
+                }
+            }
+        }
+
+        // Check special tile clusters (approximate by radius)
+        if (specialTilesData && specialTilesData.types) {
+            var types = specialTilesData.types;
+            for (var hexKey in types) {
+                if (!types.hasOwnProperty(hexKey)) continue;
+                var t = types[hexKey];
+                var clusters = t.clusters || [];
+                for (var j = 0; j < clusters.length; j++) {
+                    var c = clusters[j];
+                    var radius = Math.max(2, Math.ceil(Math.sqrt(c.size)));
+                    if (Math.abs(gx - c.x) <= radius && Math.abs(gy - c.y) <= radius) {
+                        return t.name;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+    // ────────────────────────────────────────────
+    // Sidebar Toggle
+    // ────────────────────────────────────────────
+    var sidebar = document.getElementById('sidebar');
+    var sidebarToggle = document.getElementById('sidebar-toggle');
+
+    sidebarToggle.addEventListener('click', function () {
+        sidebar.classList.toggle('collapsed');
+        // Invalidate map size after transition completes
+        setTimeout(function () {
+            map.invalidateSize();
+        }, 320);
+    });
+
+    // Prevent map click when clicking sidebar
+    L.DomEvent.disableClickPropagation(sidebar);
+    L.DomEvent.disableScrollPropagation(sidebar);
+
+    // Teleport overlay toggle
+    document.getElementById('tp-overlay-toggle').addEventListener('change', function () {
+        showTeleportOverlay = this.checked;
+        if (showTeleportOverlay) {
+            renderTeleportOverlay();
+        } else {
+            teleportOverlay.clearLayers();
+        }
+    });
+
+    // Monster zones overlay toggle
+    document.getElementById('mongen-overlay-toggle').addEventListener('change', function () {
+        showMongenOverlay = this.checked;
+        if (showMongenOverlay) {
+            mongenOverlay.addTo(map);
+            if (mongenZonesData) {
+                renderMongenOverlay();
+            }
+        } else {
+            mongenOverlay.clearLayers();
+            map.removeLayer(mongenOverlay);
+        }
+    });
+
+    // ────────────────────────────────────────────
+    // Initial data load
+    // ────────────────────────────────────────────
+    loadAllData(function () {
+        // Both special_tiles.json and teleports.json loaded
+    });
+
+})();
+</script>
+</body>
+</html>

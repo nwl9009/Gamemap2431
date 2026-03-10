@@ -1,0 +1,276 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "image": "room_01.png",
+      "center": [
+        1242,
+        2117
+      ],
+      "bbox": [
+        1223,
+        2098,
+        1261,
+        2136
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1248,
+      "height_px": 1248
+    },
+    {
+      "id": 2,
+      "image": "room_02.png",
+      "center": [
+        227,
+        1837
+      ],
+      "bbox": [
+        209,
+        1819,
+        245,
+        1855
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1184,
+      "height_px": 1184
+    },
+    {
+      "id": 3,
+      "image": "room_03.png",
+      "center": [
+        262,
+        1837
+      ],
+      "bbox": [
+        244,
+        1819,
+        280,
+        1855
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1184,
+      "height_px": 1184
+    },
+    {
+      "id": 4,
+      "image": "room_04.png",
+      "center": [
+        262,
+        1802
+      ],
+      "bbox": [
+        244,
+        1784,
+        280,
+        1820
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1184,
+      "height_px": 1184
+    },
+    {
+      "id": 5,
+      "image": "room_05.png",
+      "center": [
+        227,
+        1872
+      ],
+      "bbox": [
+        209,
+        1854,
+        245,
+        1890
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1184,
+      "height_px": 1184
+    },
+    {
+      "id": 6,
+      "image": "room_06.png",
+      "center": [
+        1836,
+        2778
+      ],
+      "bbox": [
+        1819,
+        2757,
+        1853,
+        2799
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1120,
+      "height_px": 1376
+    },
+    {
+      "id": 7,
+      "image": "room_07.png",
+      "center": [
+        857,
+        2782
+      ],
+      "bbox": [
+        840,
+        2765,
+        875,
+        2800
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 1152,
+      "height_px": 1152
+    },
+    {
+      "id": 8,
+      "image": "room_08.png",
+      "center": [
+        2913,
+        3018
+      ],
+      "bbox": [
+        2905,
+        3010,
+        2921,
+        3026
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 544,
+      "height_px": 544
+    },
+    {
+      "id": 9,
+      "image": "room_09.png",
+      "center": [
+        2538,
+        145
+      ],
+      "bbox": [
+        2528,
+        139,
+        2548,
+        152
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 672,
+      "height_px": 448
+    },
+    {
+      "id": 10,
+      "image": "room_10.png",
+      "center": [
+        2150,
+        2708
+      ],
+      "bbox": [
+        2142,
+        2700,
+        2158,
+        2716
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 544,
+      "height_px": 544
+    },
+    {
+      "id": 11,
+      "image": "room_11.png",
+      "center": [
+        2534,
+        2078
+      ],
+      "bbox": [
+        2527,
+        2071,
+        2541,
+        2085
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 480,
+      "height_px": 480
+    },
+    {
+      "id": 12,
+      "image": "room_12.png",
+      "center": [
+        1882,
+        2769
+      ],
+      "bbox": [
+        1876,
+        2763,
+        1888,
+        2775
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 416,
+      "height_px": 416
+    },
+    {
+      "id": 13,
+      "image": "room_13.png",
+      "center": [
+        2641,
+        2601
+      ],
+      "bbox": [
+        2635,
+        2595,
+        2647,
+        2607
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 416,
+      "height_px": 416
+    },
+    {
+      "id": 14,
+      "image": "room_14.png",
+      "center": [
+        350,
+        2967
+      ],
+      "bbox": [
+        345,
+        2962,
+        356,
+        2972
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 384,
+      "height_px": 352
+    },
+    {
+      "id": 15,
+      "image": "room_15.png",
+      "center": [
+        370,
+        2967
+      ],
+      "bbox": [
+        365,
+        2962,
+        376,
+        2972
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 384,
+      "height_px": 352
+    },
+    {
+      "id": 16,
+      "image": "room_16.png",
+      "center": [
+        1254,
+        2891
+      ],
+      "bbox": [
+        1250,
+        2886,
+        1259,
+        2897
+      ],
+      "pixelsPerTile": 32,
+      "width_px": 320,
+      "height_px": 384
+    }
+  ]
+}

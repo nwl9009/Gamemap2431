@@ -472,6 +472,50 @@
     .leaflet-popup-close-button:hover {
         color: #b0c0f0 !important;
     }
+
+    /* ── Room breakout popup ── */
+    .room-popup .leaflet-popup-content-wrapper {
+        padding: 0 !important;
+        overflow: hidden;
+    }
+
+    .room-popup .leaflet-popup-content {
+        margin: 0 !important;
+        max-width: none !important;
+        width: auto !important;
+    }
+
+    .room-popup-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-popup-header {
+        padding: 8px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #d0daf0;
+        background: rgba(20, 28, 48, 0.95);
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(100, 120, 180, 0.2);
+    }
+
+    .room-popup-header span {
+        font-weight: 400;
+        color: #6a7aaa;
+        font-size: 11px;
+    }
+
+    .room-popup-img {
+        display: block;
+        max-width: 420px;
+        max-height: 420px;
+        width: auto;
+        height: auto;
+        image-rendering: pixelated;
+    }
 </style>
 </head>
 <body>
@@ -497,6 +541,10 @@
         <label class="toggle-row" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;font-size:12px;color:#8a9cc5">
             <input type="checkbox" id="mongen-overlay-toggle" style="accent-color:#4a6a5a">
             Monster Zones
+        </label>
+        <label class="toggle-row" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;font-size:12px;color:#8a9cc5">
+            <input type="checkbox" id="rooms-overlay-toggle" style="accent-color:#cc6633">
+            Dungeon Rooms
         </label>
     </div>
 
@@ -632,6 +680,9 @@
     var mongenZonesData = null;
     var mongenOverlay = L.layerGroup();
     var showMongenOverlay = false;
+    var roomsData = null;
+    var roomsOverlay = L.layerGroup();
+    var showRoomsOverlay = false;
 
     // Unified entries: array of { key, label, group, color, entries }
     // entries[] = { x, y, size, name }
@@ -643,7 +694,7 @@
     function loadAllData(callback) {
         if (dataReady) { callback(); return; }
 
-        var pending = 3;
+        var pending = 4;
         function done() {
             pending--;
             if (pending === 0) {
@@ -652,6 +703,7 @@
                 populateDropdown();
                 renderTeleportOverlay();
                 if (showMongenOverlay) renderMongenOverlay();
+                if (showRoomsOverlay) renderRoomsOverlay();
                 callback();
             }
         }
@@ -670,6 +722,11 @@
             .then(function (r) { return r.ok ? r.json() : null; })
             .then(function (d) { mongenZonesData = d; done(); })
             .catch(function () { mongenZonesData = null; done(); });
+
+        fetch('rooms/rooms_index.json')
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (d) { roomsData = d; done(); })
+            .catch(function () { roomsData = null; done(); });
     }
 
     function buildUnifiedData() {
@@ -1170,6 +1227,101 @@
         } else {
             mongenOverlay.clearLayers();
             map.removeLayer(mongenOverlay);
+        }
+    });
+
+    // ────────────────────────────────────────────
+    // Dungeon Rooms overlay
+    // ────────────────────────────────────────────
+    function renderRoomsOverlay() {
+        roomsOverlay.clearLayers();
+        if (!roomsData || !roomsData.rooms) return;
+
+        var rooms = roomsData.rooms;
+        for (var i = 0; i < rooms.length; i++) {
+            (function (room) {
+                var bbox = room.bbox;
+                var sw = gameToLatLng(bbox[0], bbox[3]);
+                var ne = gameToLatLng(bbox[2], bbox[1]);
+                var bounds = L.latLngBounds(sw, ne);
+
+                // Room boundary rectangle
+                var rect = L.rectangle(bounds, {
+                    color: '#cc6633',
+                    weight: 2,
+                    opacity: 0.7,
+                    fillColor: '#cc6633',
+                    fillOpacity: 0.12,
+                    dashArray: '6,4'
+                });
+
+                rect.addTo(roomsOverlay);
+
+                // Center marker with room number
+                var centerLatLng = gameToLatLng(room.center[0], room.center[1]);
+                var marker = L.marker(centerLatLng, {
+                    icon: L.divIcon({
+                        className: '',
+                        html: '<div style="width:22px;height:22px;background:rgba(204,102,51,0.85);' +
+                              'border:2px solid #fff;border-radius:4px;color:#fff;font-size:11px;' +
+                              'font-weight:700;display:flex;align-items:center;justify-content:center;' +
+                              'box-shadow:0 2px 6px rgba(0,0,0,0.5);cursor:pointer">' +
+                              room.id + '</div>',
+                        iconSize: [22, 22],
+                        iconAnchor: [11, 11]
+                    })
+                });
+
+                // Click to show breakout image popup
+                marker.on('click', function (e) {
+                    L.DomEvent.stopPropagation(e);
+
+                    var imgW = Math.min(room.width_px, 420);
+                    var scale = imgW / room.width_px;
+                    var imgH = Math.round(room.height_px * scale);
+
+                    var popup = L.popup({
+                        maxWidth: imgW + 32,
+                        minWidth: imgW + 12,
+                        className: 'room-popup',
+                        closeButton: true,
+                        autoPan: true
+                    })
+                    .setLatLng(centerLatLng)
+                    .setContent(
+                        '<div class="room-popup-inner">' +
+                        '<div class="room-popup-header">Room ' + room.id +
+                        ' <span>(' + room.center[0] + ', ' + room.center[1] + ')</span></div>' +
+                        '<img class="room-popup-img" src="rooms/' + room.image + '" ' +
+                        'width="' + imgW + '" height="' + imgH + '" ' +
+                        'alt="Room ' + room.id + ' breakout">' +
+                        '</div>'
+                    )
+                    .openOn(map);
+                });
+
+                marker.bindTooltip('Room ' + room.id + ' (' + room.center[0] + ', ' + room.center[1] + ')', {
+                    direction: 'top',
+                    className: 'pin-tooltip',
+                    offset: [0, -14]
+                });
+
+                marker.addTo(roomsOverlay);
+            })(rooms[i]);
+        }
+    }
+
+    // Dungeon rooms overlay toggle
+    document.getElementById('rooms-overlay-toggle').addEventListener('change', function () {
+        showRoomsOverlay = this.checked;
+        if (showRoomsOverlay) {
+            roomsOverlay.addTo(map);
+            if (roomsData) {
+                renderRoomsOverlay();
+            }
+        } else {
+            roomsOverlay.clearLayers();
+            map.removeLayer(roomsOverlay);
         }
     });
 

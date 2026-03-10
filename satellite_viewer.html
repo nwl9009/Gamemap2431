@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Satellite Map Viewer</title>
+<title>Satellite Viewer</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
@@ -525,7 +525,7 @@
 <!-- Sidebar -->
 <div id="sidebar">
     <div class="sidebar-header">
-        <h1>Satellite Map</h1>
+        <h1>GameMap</h1>
         <div class="subtitle">Satellite Viewer</div>
     </div>
 
@@ -545,6 +545,10 @@
         <label class="toggle-row" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;font-size:12px;color:#8a9cc5">
             <input type="checkbox" id="rooms-overlay-toggle" style="accent-color:#cc6633">
             Dungeon Rooms
+        </label>
+        <label class="toggle-row" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;font-size:12px;color:#8a9cc5">
+            <input type="checkbox" id="hazards-overlay-toggle" style="accent-color:#FF4444">
+            Hazard Tiles
         </label>
     </div>
 
@@ -683,6 +687,9 @@
     var roomsData = null;
     var roomsOverlay = L.layerGroup();
     var showRoomsOverlay = false;
+    var hazardsData = null;
+    var hazardsOverlay = L.layerGroup();
+    var showHazardsOverlay = false;
 
     // Unified entries: array of { key, label, group, color, entries }
     // entries[] = { x, y, size, name }
@@ -694,7 +701,7 @@
     function loadAllData(callback) {
         if (dataReady) { callback(); return; }
 
-        var pending = 4;
+        var pending = 5;
         function done() {
             pending--;
             if (pending === 0) {
@@ -704,6 +711,7 @@
                 renderTeleportOverlay();
                 if (showMongenOverlay) renderMongenOverlay();
                 if (showRoomsOverlay) renderRoomsOverlay();
+                if (showHazardsOverlay) renderHazardsOverlay();
                 callback();
             }
         }
@@ -727,6 +735,11 @@
             .then(function (r) { return r.ok ? r.json() : null; })
             .then(function (d) { roomsData = d; done(); })
             .catch(function () { roomsData = null; done(); });
+
+        fetch('hazards.json')
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (d) { hazardsData = d; done(); })
+            .catch(function () { hazardsData = null; done(); });
     }
 
     function buildUnifiedData() {
@@ -1231,6 +1244,52 @@
     });
 
     // ────────────────────────────────────────────
+    // Hazard tiles overlay (hazards.json)
+    // ────────────────────────────────────────────
+    function renderHazardsOverlay() {
+        hazardsOverlay.clearLayers();
+        if (!hazardsData || !hazardsData.confirmed) return;
+
+        var tiles = hazardsData.confirmed;
+        // Group nearby tiles into clusters for performance
+        var groups = { mana_drain: [], hp_damage: [], firepit: [] };
+        for (var i = 0; i < tiles.length; i++) {
+            var t = tiles[i];
+            if (groups[t.effect]) groups[t.effect].push(t);
+        }
+
+        var effectInfo = {
+            hp_damage: { color: '#FF4444', label: 'HP Damage Cloud', radius: 3 },
+            mana_drain: { color: '#FFD700', label: 'MP Drain Cloud', radius: 3 },
+            firepit: { color: '#FF6600', label: 'Firepit', radius: 5 }
+        };
+
+        for (var effect in groups) {
+            if (!groups.hasOwnProperty(effect)) continue;
+            var info = effectInfo[effect];
+            var arr = groups[effect];
+            for (var j = 0; j < arr.length; j++) {
+                var h = arr[j];
+                var ll = gameToLatLng(h.x, h.y);
+                var dot = L.circleMarker(ll, {
+                    radius: info.radius,
+                    color: info.color,
+                    fillColor: info.color,
+                    fillOpacity: 0.6,
+                    weight: 1,
+                    opacity: 0.8
+                });
+                dot.bindTooltip(
+                    '<b>' + info.label + '</b><br>(' + h.x + ', ' + h.y + ')' +
+                    '<br>Flag: ' + h.flag + ' | Tile: ' + h.tileType,
+                    { sticky: true, className: 'pin-tooltip', direction: 'top' }
+                );
+                dot.addTo(hazardsOverlay);
+            }
+        }
+    }
+
+    // ────────────────────────────────────────────
     // Dungeon Rooms overlay
     // ────────────────────────────────────────────
     function renderRoomsOverlay() {
@@ -1322,6 +1381,20 @@
         } else {
             roomsOverlay.clearLayers();
             map.removeLayer(roomsOverlay);
+        }
+    });
+
+    // Hazard tiles overlay toggle
+    document.getElementById('hazards-overlay-toggle').addEventListener('change', function () {
+        showHazardsOverlay = this.checked;
+        if (showHazardsOverlay) {
+            hazardsOverlay.addTo(map);
+            if (hazardsData) {
+                renderHazardsOverlay();
+            }
+        } else {
+            hazardsOverlay.clearLayers();
+            map.removeLayer(hazardsOverlay);
         }
     });
 

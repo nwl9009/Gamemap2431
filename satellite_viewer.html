@@ -937,32 +937,87 @@
     // ────────────────────────────────────────────
     function renderTeleportOverlay() {
         teleportOverlay.clearLayers();
-        if (!teleportsData || !teleportsData.byType || !showTeleportOverlay) return;
+        if (!teleportsData || !showTeleportOverlay) return;
 
-        var bt = teleportsData.byType;
-        for (var zt in bt) {
-            if (!bt.hasOwnProperty(zt)) continue;
-            var group = bt[zt];
-            var color = group.color || '#c040e0';
-            (group.entries || []).forEach(function (e) {
-                var latlng = gameToLatLng(e.wrappedX, e.wrappedY);
-                var label = e.name || group.name;
+        // Render known teleport types
+        if (teleportsData.byType) {
+            var bt = teleportsData.byType;
+            for (var zt in bt) {
+                if (!bt.hasOwnProperty(zt)) continue;
+                var group = bt[zt];
+                var color = group.color || '#c040e0';
+                (group.entries || []).forEach(function (e) {
+                    var latlng = gameToLatLng(e.wrappedX, e.wrappedY);
+                    var label = e.name || group.name;
 
-                var marker = L.circleMarker(latlng, {
-                    radius: 4,
-                    color: color,
-                    fillColor: color,
-                    fillOpacity: 0.5,
-                    weight: 1,
-                    opacity: 0.7
+                    var marker = L.circleMarker(latlng, {
+                        radius: 4,
+                        color: color,
+                        fillColor: color,
+                        fillOpacity: 0.5,
+                        weight: 1,
+                        opacity: 0.7
+                    }).addTo(teleportOverlay);
+
+                    marker.bindTooltip(label + ' (' + e.wrappedX + ', ' + e.wrappedY + ')', {
+                        direction: 'top',
+                        className: 'pin-tooltip',
+                        offset: [0, -6]
+                    });
+                });
+            }
+        }
+
+        // Render discovered teleports from logger
+        if (teleportsData.discovered) {
+            var disc = teleportsData.discovered;
+            for (var i = 0; i < disc.length; i++) {
+                var d = disc[i];
+                var srcLL = gameToLatLng(d.sourceX, d.sourceY);
+                var dstLL = gameToLatLng(d.destX, d.destY);
+
+                // Source marker (cyan diamond-ish)
+                var srcMarker = L.circleMarker(srcLL, {
+                    radius: 5,
+                    color: '#00FFFF',
+                    fillColor: '#00FFFF',
+                    fillOpacity: 0.7,
+                    weight: 2,
+                    opacity: 1.0
                 }).addTo(teleportOverlay);
 
-                marker.bindTooltip(label + ' (' + e.wrappedX + ', ' + e.wrappedY + ')', {
-                    direction: 'top',
-                    className: 'pin-tooltip',
-                    offset: [0, -6]
-                });
-            });
+                srcMarker.bindTooltip(
+                    '<b>Teleport Source</b><br>(' + d.sourceX + ', ' + d.sourceY + ')' +
+                    '<br>Tile: 0x' + d.sourceTileType.toString(16).toUpperCase() +
+                    ' | Flags: 0x' + d.sourceFlags.toString(16).toUpperCase() +
+                    '<br>Used: ' + d.count + 'x',
+                    { sticky: true, className: 'pin-tooltip', direction: 'top' }
+                );
+
+                // Destination marker (magenta)
+                var dstMarker = L.circleMarker(dstLL, {
+                    radius: 4,
+                    color: '#FF00FF',
+                    fillColor: '#FF00FF',
+                    fillOpacity: 0.5,
+                    weight: 1,
+                    opacity: 0.8
+                }).addTo(teleportOverlay);
+
+                dstMarker.bindTooltip(
+                    '<b>Teleport Dest</b><br>(' + d.destX + ', ' + d.destY + ')' +
+                    '<br>Tile: 0x' + d.destTileType.toString(16).toUpperCase(),
+                    { sticky: true, className: 'pin-tooltip', direction: 'top' }
+                );
+
+                // Line connecting source to dest
+                var line = L.polyline([srcLL, dstLL], {
+                    color: '#00FFFF',
+                    weight: 1,
+                    opacity: 0.4,
+                    dashArray: '4 4'
+                }).addTo(teleportOverlay);
+            }
         }
     }
 
@@ -1248,28 +1303,23 @@
     // ────────────────────────────────────────────
     function renderHazardsOverlay() {
         hazardsOverlay.clearLayers();
-        if (!hazardsData || !hazardsData.confirmed) return;
-
-        var tiles = hazardsData.confirmed;
-        // Group nearby tiles into clusters for performance
-        var groups = { mana_drain: [], hp_damage: [], firepit: [] };
-        for (var i = 0; i < tiles.length; i++) {
-            var t = tiles[i];
-            if (groups[t.effect]) groups[t.effect].push(t);
-        }
+        if (!hazardsData) return;
 
         var effectInfo = {
-            hp_damage: { color: '#FF4444', label: 'HP Damage Cloud', radius: 3 },
+            hp_damage:  { color: '#FF4444', label: 'HP Damage Cloud', radius: 3 },
+            HP_DAMAGE:  { color: '#FF4444', label: 'HP Damage Cloud', radius: 3 },
             mana_drain: { color: '#FFD700', label: 'MP Drain Cloud', radius: 3 },
-            firepit: { color: '#FF6600', label: 'Firepit', radius: 5 }
+            MP_DRAIN:   { color: '#FFD700', label: 'MP Drain Cloud', radius: 3 },
+            firepit:    { color: '#FF6600', label: 'Firepit', radius: 5 }
         };
 
-        for (var effect in groups) {
-            if (!groups.hasOwnProperty(effect)) continue;
-            var info = effectInfo[effect];
-            var arr = groups[effect];
-            for (var j = 0; j < arr.length; j++) {
-                var h = arr[j];
+        // Render confirmed tiles from static map analysis
+        if (hazardsData.confirmed) {
+            var tiles = hazardsData.confirmed;
+            for (var i = 0; i < tiles.length; i++) {
+                var h = tiles[i];
+                var info = effectInfo[h.effect];
+                if (!info) continue;
                 var ll = gameToLatLng(h.x, h.y);
                 var dot = L.circleMarker(ll, {
                     radius: info.radius,
@@ -1285,6 +1335,33 @@
                     { sticky: true, className: 'pin-tooltip', direction: 'top' }
                 );
                 dot.addTo(hazardsOverlay);
+            }
+        }
+
+        // Render observed hazards from live scanner
+        if (hazardsData.observed) {
+            var obs = hazardsData.observed;
+            for (var j = 0; j < obs.length; j++) {
+                var o = obs[j];
+                var oInfo = effectInfo[o.effect];
+                if (!oInfo) continue;
+                var oll = gameToLatLng(o.x, o.y);
+                var oDot = L.circleMarker(oll, {
+                    radius: o.confirmed ? 5 : 4,
+                    color: oInfo.color,
+                    fillColor: oInfo.color,
+                    fillOpacity: o.confirmed ? 0.9 : 0.4,
+                    weight: 2,
+                    opacity: 1.0,
+                    dashArray: o.confirmed ? null : '3 3'
+                });
+                var hitInfo = (o.hits || 0) + ' hit' + ((o.hits || 0) !== 1 ? 's' : '');
+                oDot.bindTooltip(
+                    '<b>' + oInfo.label + ' (observed)</b><br>(' + o.x + ', ' + o.y + ')' +
+                    '<br>' + hitInfo + (o.confirmed ? ' (confirmed)' : ' (unconfirmed)'),
+                    { sticky: true, className: 'pin-tooltip', direction: 'top' }
+                );
+                oDot.addTo(hazardsOverlay);
             }
         }
     }

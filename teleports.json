@@ -379,6 +379,80 @@
       "zoneTypeName": "Dungeon Entrance"
     }
   ],
+  "discovered": [
+    {
+      "sourceX": 3028,
+      "sourceY": 1360,
+      "destX": 2581,
+      "destY": 2031,
+      "sourceTileType": 67,
+      "destTileType": 3,
+      "sourceFlags": 0,
+      "destFlags": 0,
+      "count": 1,
+      "source": "logger"
+    },
+    {
+      "sourceX": 46,
+      "sourceY": 60,
+      "destX": 46,
+      "destY": 60,
+      "sourceTileType": 46,
+      "destTileType": 46,
+      "sourceFlags": 0,
+      "destFlags": 0,
+      "count": 1,
+      "source": "logger"
+    },
+    {
+      "sourceX": 749,
+      "sourceY": 2310,
+      "destX": 46,
+      "destY": 60,
+      "sourceTileType": 46,
+      "destTileType": 46,
+      "sourceFlags": 93,
+      "destFlags": 0,
+      "count": 1,
+      "source": "logger"
+    },
+    {
+      "sourceX": 860,
+      "sourceY": 930,
+      "destX": 861,
+      "destY": 931,
+      "sourceTileType": 46,
+      "destTileType": 46,
+      "sourceFlags": 0,
+      "destFlags": 0,
+      "count": 1,
+      "source": "logger"
+    },
+    {
+      "sourceX": 875,
+      "sourceY": 933,
+      "destX": 895,
+      "destY": 932,
+      "sourceTileType": 14,
+      "destTileType": 14,
+      "sourceFlags": 0,
+      "destFlags": 0,
+      "count": 1,
+      "source": "logger"
+    },
+    {
+      "sourceX": 890,
+      "sourceY": 958,
+      "destX": 893,
+      "destY": 953,
+      "sourceTileType": 14,
+      "destTileType": 14,
+      "sourceFlags": 0,
+      "destFlags": 0,
+      "count": 1,
+      "source": "logger"
+    }
+  ],
   "byType": {
     "0x1B": {
       "name": "Dungeon Entrance",

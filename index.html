@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xenimus Game Map</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #0a0e1a;
+    color: #c8d0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    text-align: center;
+    max-width: 500px;
+    padding: 40px;
+}
+h1 {
+    font-size: 28px;
+    color: #d0daf0;
+    margin-bottom: 8px;
+}
+.subtitle {
+    font-size: 14px;
+    color: #5a6a90;
+    margin-bottom: 40px;
+}
+a.card {
+    display: block;
+    padding: 24px;
+    margin: 16px 0;
+    background: rgba(14, 18, 32, 0.92);
+    border: 1px solid rgba(100, 120, 180, 0.25);
+    border-radius: 8px;
+    color: #8ab4f8;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.2s, border-color 0.2s;
+}
+a.card:hover {
+    background: rgba(30, 40, 70, 0.95);
+    border-color: rgba(130, 160, 220, 0.5);
+}
+a.card .desc {
+    font-size: 13px;
+    color: #5a6a90;
+    margin-top: 6px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Xenimus Game Map</h1>
+    <p class="subtitle">World 2431 Map Viewer</p>
+    <a class="card" href="satellite_viewer.html">
+        Satellite Viewer
+        <div class="desc">Leaflet-based tiled map with overlays, monsters, hazards, rooms</div>
+    </a>
+    <a class="card" href="map_viewer.html">
+        Map Viewer
+        <div class="desc">Canvas-based composite map with tile inspection</div>
+    </a>
+</div>
+</body>
+</html>

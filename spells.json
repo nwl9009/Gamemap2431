@@ -1,0 +1,121 @@
+{
+  "7": {
+    "name": "Nocte Visus",
+    "manaCostPct": 5,
+    "measuredCooldownMs": 35307,
+    "minCooldownMs": 1135,
+    "castCount": 25
+  },
+  "9": {
+    "name": "Tueri",
+    "manaCostPct": 8,
+    "measuredCooldownMs": 27829,
+    "minCooldownMs": 245,
+    "castCount": 35
+  },
+  "11": {
+    "name": "Omni Extrudere",
+    "manaCostPct": 12,
+    "measuredCooldownMs": 27842,
+    "minCooldownMs": 232,
+    "castCount": 34
+  },
+  "17": {
+    "name": "Minor Velocitas",
+    "manaCostPct": 8,
+    "measuredCooldownMs": 31138,
+    "minCooldownMs": 329,
+    "castCount": 32
+  },
+  "20": {
+    "name": "Mutatio Nimbus",
+    "manaCostPct": 8,
+    "measuredCooldownMs": 21682,
+    "minCooldownMs": 6344,
+    "castCount": 6
+  },
+  "24": {
+    "name": "Venenum Nimbus",
+    "manaCostPct": 8,
+    "measuredCooldownMs": 16591,
+    "minCooldownMs": 3736,
+    "castCount": 6
+  },
+  "25": {
+    "name": "Minor Robur",
+    "manaCostPct": 10,
+    "measuredCooldownMs": 32027,
+    "minCooldownMs": 3189,
+    "castCount": 23
+  },
+  "34": {
+    "name": "Fulgur",
+    "manaCostPct": 8,
+    "measuredCooldownMs": 138,
+    "minCooldownMs": 136,
+    "castCount": 4
+  },
+  "38": {
+    "name": "Pergere Trans",
+    "manaCostPct": 4,
+    "measuredCooldownMs": 1139,
+    "minCooldownMs": 105,
+    "castCount": 4161
+  },
+  "39": {
+    "name": "Arcessere Flamma",
+    "manaCostPct": 10,
+    "measuredCooldownMs": 0,
+    "minCooldownMs": 0,
+    "castCount": 1
+  },
+  "40": {
+    "name": "Vastare Malus",
+    "manaCostPct": 10,
+    "measuredCooldownMs": 693,
+    "minCooldownMs": 116,
+    "castCount": 11782
+  },
+  "41": {
+    "name": "Tabes Viscera",
+    "manaCostPct": 10,
+    "measuredCooldownMs": 1656,
+    "minCooldownMs": 158,
+    "castCount": 158
+  },
+  "44": {
+    "name": "Creare Porta",
+    "manaCostPct": 30,
+    "measuredCooldownMs": 0,
+    "minCooldownMs": 0,
+    "castCount": 1
+  },
+  "45": {
+    "name": "Lunae Lumen Nex",
+    "manaCostPct": 8,
+    "measuredCooldownMs": 0,
+    "minCooldownMs": 0,
+    "castCount": 1
+  },
+  "50": {
+    "name": "Praesentis Trans",
+    "manaCostPct": 6,
+    "measuredCooldownMs": 13792,
+    "minCooldownMs": 761,
+    "castCount": 96
+  },
+  "56": {
+    "name": "Fierce",
+    "manaCostPct": 0,
+    "measuredCooldownMs": 1597,
+    "minCooldownMs": 118,
+    "castCount": 21
+  },
+  "97": {
+    "name": "Disintegration",
+    "manaCostPct": 0,
+    "measuredCooldownMs": 14280,
+    "minCooldownMs": 915,
+    "castCount": 20
+  }
+}

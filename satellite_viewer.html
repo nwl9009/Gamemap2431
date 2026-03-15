@@ -550,6 +550,14 @@
             <input type="checkbox" id="hazards-overlay-toggle" style="accent-color:#FF4444">
             Hazard Tiles
         </label>
+        <div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(100,120,180,0.12)">
+            <label style="display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;color:#6a7aaa;margin-bottom:6px">Go to Coordinates</label>
+            <div style="display:flex;gap:6px;align-items:center">
+                <input type="number" id="goto-x" placeholder="X" style="width:45%;padding:6px 8px;background:rgba(20,28,48,0.8);border:1px solid rgba(100,120,180,0.3);border-radius:5px;color:#c8d0e0;font-size:13px;outline:none" min="0" max="3220">
+                <input type="number" id="goto-y" placeholder="Y" style="width:45%;padding:6px 8px;background:rgba(20,28,48,0.8);border:1px solid rgba(100,120,180,0.3);border-radius:5px;color:#c8d0e0;font-size:13px;outline:none" min="0" max="3220">
+                <button id="goto-btn" style="padding:6px 10px;background:rgba(60,80,140,0.5);border:1px solid rgba(100,120,180,0.3);border-radius:5px;color:#a0b4e0;font-size:13px;cursor:pointer;white-space:nowrap" title="Go">&#10132;</button>
+            </div>
+        </div>
     </div>
 
     <div class="cluster-list-container">
@@ -1473,6 +1481,22 @@
             map.removeLayer(hazardsOverlay);
         }
     });
+
+    // ────────────────────────────────────────────
+    // Go to Coordinates
+    // ────────────────────────────────────────────
+    function gotoCoords() {
+        var x = parseInt(document.getElementById('goto-x').value);
+        var y = parseInt(document.getElementById('goto-y').value);
+        if (isNaN(x) || isNaN(y)) return;
+        x = Math.max(0, Math.min(MAP_SIZE, x));
+        y = Math.max(0, Math.min(MAP_SIZE, y));
+        var latlng = gameToLatLng(x, y);
+        map.setView(latlng, Math.max(map.getZoom(), NAV_ZOOM), { animate: true, duration: 0.5 });
+    }
+    document.getElementById('goto-btn').addEventListener('click', gotoCoords);
+    document.getElementById('goto-x').addEventListener('keydown', function(e) { if (e.key === 'Enter') gotoCoords(); });
+    document.getElementById('goto-y').addEventListener('keydown', function(e) { if (e.key === 'Enter') gotoCoords(); });
 
     // ────────────────────────────────────────────
     // Initial data load

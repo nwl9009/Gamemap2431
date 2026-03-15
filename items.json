@@ -1,0 +1,4106 @@
+{
+  "0": {
+    "name": "-",
+    "cat": "X",
+    "slot": 1,
+    "iLv": 0,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "1": {
+    "name": "dagger",
+    "cat": "M",
+    "slot": 1,
+    "iLv": 1,
+    "eLv": 1,
+    "price": 10,
+    "stat": 1
+  },
+  "2": {
+    "name": "staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 1,
+    "eLv": 1,
+    "price": 20,
+    "stat": 2
+  },
+  "3": {
+    "name": "mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 2,
+    "eLv": 2,
+    "price": 30,
+    "stat": 2
+  },
+  "4": {
+    "name": "throwing star",
+    "cat": "M",
+    "slot": 12,
+    "iLv": 2,
+    "eLv": 2,
+    "price": 40,
+    "stat": 2
+  },
+  "5": {
+    "name": "club",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 3,
+    "eLv": 3,
+    "price": 5,
+    "stat": 3
+  },
+  "6": {
+    "name": "axe",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 3,
+    "eLv": 3,
+    "price": 50,
+    "stat": 3
+  },
+  "7": {
+    "name": "sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 3,
+    "eLv": 3,
+    "price": 80,
+    "stat": 3
+  },
+  "8": {
+    "name": "battle axe",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 4,
+    "eLv": 4,
+    "price": 120,
+    "stat": 5
+  },
+  "9": {
+    "name": "long sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 4,
+    "eLv": 4,
+    "price": 120,
+    "stat": 4
+  },
+  "10": {
+    "name": "two handed swrd",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 4,
+    "eLv": 4,
+    "price": 130,
+    "stat": 5
+  },
+  "11": {
+    "name": "short sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 5,
+    "eLv": 5,
+    "price": 80,
+    "stat": 5
+  },
+  "12": {
+    "name": "halberd",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 6,
+    "eLv": 6,
+    "price": 150,
+    "stat": 8
+  },
+  "13": {
+    "name": "spiked mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 6,
+    "eLv": 6,
+    "price": 120,
+    "stat": 6
+  },
+  "14": {
+    "name": "long bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 6,
+    "eLv": 179,
+    "price": 100,
+    "stat": 4
+  },
+  "15": {
+    "name": "war hammr",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 7,
+    "eLv": 7,
+    "price": 150,
+    "stat": 7
+  },
+  "16": {
+    "name": "silver word",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 7,
+    "eLv": 7,
+    "price": 300,
+    "stat": 7
+  },
+  "17": {
+    "name": "battle@hammer",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 7,
+    "eLv": 7,
+    "price": 300,
+    "stat": 9
+  },
+  "18": {
+    "name": "drago claw",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 8,
+    "eLv": 8,
+    "price": 320,
+    "stat": 8
+  },
+  "19": {
+    "name": "rapir",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 2147483648,
+    "eLv": 8,
+    "price": 80,
+    "stat": 8
+  },
+  "20": {
+    "name": "magc throwing star",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 8.9,
+    "eLv": 8,
+    "price": 1200,
+    "stat": 8
+  },
+  "21": {
+    "name": "maic dagger",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 9,
+    "eLv": 9,
+    "price": 1300,
+    "stat": 4
+  },
+  "22": {
+    "name": "aprentice magic staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 5,
+    "eLv": 5,
+    "price": 1400,
+    "stat": 5
+  },
+  "23": {
+    "name": "magic short sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 10,
+    "eLv": 10,
+    "price": 1600,
+    "stat": 11
+  },
+  "24": {
+    "name": "magic mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 10,
+    "eLv": 10,
+    "price": 1500,
+    "stat": 11
+  },
+  "25": {
+    "name": "magic sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 11,
+    "eLv": 11,
+    "price": 1600,
+    "stat": 12
+  },
+  "26": {
+    "name": "magic battle axe",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 11,
+    "eLv": 11,
+    "price": 1800,
+    "stat": 15
+  },
+  "27": {
+    "name": "magic wolf blades",
+    "cat": "F",
+    "slot": 1,
+    "iLv": 12,
+    "eLv": 12,
+    "price": 2000,
+    "stat": 13
+  },
+  "28": {
+    "name": "magic throwing star",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 12,
+    "eLv": 12,
+    "price": 2050,
+    "stat": 13
+  },
+  "29": {
+    "name": "magic long bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 12,
+    "eLv": 12,
+    "price": 2100,
+    "stat": 10
+  },
+  "30": {
+    "name": "magic rapier",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 13,
+    "eLv": 13,
+    "price": 1610614336,
+    "stat": 15
+  },
+  "31": {
+    "name": "fire dagger",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 14,
+    "eLv": 14,
+    "price": 6293556,
+    "stat": 8
+  },
+  "32": {
+    "name": "fire staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 14,
+    "eLv": 14,
+    "price": 26776,
+    "stat": 16
+  },
+  "33": {
+    "name": "fire mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 14,
+    "eLv": 14,
+    "price": 2500,
+    "stat": 16
+  },
+  "34": {
+    "name": "fire sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 2800,
+    "stat": 18
+  },
+  "35": {
+    "name": "silver mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 7,
+    "eLv": 7,
+    "price": 280,
+    "stat": 7
+  },
+  "36": {
+    "name": "magic 2H swoxd",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 3000,
+    "stat": 25
+  },
+  "37": {
+    "name": "magic silve sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 3500,
+    "stat": 20
+  },
+  "38": {
+    "name": "magic axe",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 3500,
+    "stat": 20
+  },
+  "39": {
+    "name": "dragon swird",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 3500,
+    "stat": 20
+  },
+  "40": {
+    "name": "silver a~e",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 7,
+    "eLv": 7,
+    "price": 320,
+    "stat": 7
+  },
+  "41": {
+    "name": "acid dager",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 17,
+    "eLv": 17,
+    "price": 3200,
+    "stat": 11
+  },
+  "42": {
+    "name": "acid hglberd",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 3400,
+    "stat": 30
+  },
+  "43": {
+    "name": "acid cace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 3600,
+    "stat": 24
+  },
+  "44": {
+    "name": "acid&sword",
+    "cat": "W",
+    "slot": 24577,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 3800,
+    "stat": 26
+  },
+  "45": {
+    "name": "acij axe",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 4000,
+    "stat": 26
+  },
+  "46": {
+    "name": "sibver short sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 7,
+    "eLv": 7,
+    "price": 320,
+    "stat": 7
+  },
+  "47": {
+    "name": "dgspell mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 4500,
+    "stat": 26
+  },
+  "48": {
+    "name": "ispell axe",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 4500,
+    "stat": 24604
+  },
+  "49": {
+    "name": "specteral dagger",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 4800,
+    "stat": 14
+  },
+  "50": {
+    "name": "specteral mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 21,
+    "eLv": 21,
+    "price": 5000,
+    "stat": 30
+  },
+  "51": {
+    "name": "earth hammer",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 21,
+    "eLv": 21,
+    "price": 5000,
+    "stat": 38
+  },
+  "52": {
+    "name": "staff of omnis",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 21,
+    "eLv": 21,
+    "price": 5000,
+    "stat": 30
+  },
+  "53": {
+    "name": "vlswo0d",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 10.9,
+    "eLv": 22,
+    "price": 5532,
+    "stat": 33
+  },
+  "54": {
+    "name": "blood rapier",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 5600,
+    "stat": 33
+  },
+  "55": {
+    "name": "ice blade",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 23,
+    "eLv": 23,
+    "price": 4194309000,
+    "stat": 35
+  },
+  "56": {
+    "name": "ice mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 23,
+    "eLv": 23,
+    "price": 5000,
+    "stat": 35
+  },
+  "57": {
+    "name": "scimitar",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 23,
+    "eLv": 23,
+    "price": 4464,
+    "stat": 35
+  },
+  "58": {
+    "name": "life hammer",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 23,
+    "eLv": 23,
+    "price": 6506,
+    "stat": 35
+  },
+  "59": {
+    "name": "acid staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 3200,
+    "stat": 24
+  },
+  "60": {
+    "name": "lightning dagger",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 24,
+    "eLv": 24,
+    "price": 7000,
+    "stat": 19
+  },
+  "61": {
+    "name": "lightning staff",
+    "cat": "P",
+    "slot": 12,
+    "iLv": 25,
+    "eLv": 25,
+    "price": 7200,
+    "stat": 40
+  },
+  "62": {
+    "name": "lightning mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 25,
+    "eLv": 25,
+    "price": 7400,
+    "stat": 40
+  },
+  "63": {
+    "name": "lightning sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 25,
+    "eLv": 25,
+    "price": 7600,
+    "stat": 40
+  },
+  "64": {
+    "name": "lightning bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 26,
+    "eLv": 26,
+    "price": 8000,
+    "stat": 32
+  },
+  "65": {
+    "name": "vorpal battle axe",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 5520,
+    "stat": 41
+  },
+  "66": {
+    "name": "giant sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 3080,
+    "stat": 18
+  },
+  "67": {
+    "name": "bone mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 27,
+    "eLv": 27,
+    "price": 10400,
+    "stat": 45
+  },
+  "68": {
+    "name": "sanctus blade",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 28,
+    "eLv": 28,
+    "price": 12000,
+    "stat": 59
+  },
+  "69": {
+    "name": "lucrum animus staff",
+    "cat": "P",
+    "slot": -1535,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 12000,
+    "stat": 50
+  },
+  "70": {
+    "name": "mystic rapier",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 30,
+    "eLv": 30,
+    "price": 16600,
+    "stat": 52
+  },
+  "71": {
+    "name": "mystic short sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 17000,
+    "stat": 55
+  },
+  "72": {
+    "name": "mystic dagger",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 10000,
+    "stat": 27
+  },
+  "73": {
+    "name": "mystic staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 12000,
+    "stat": 3639
+  },
+  "74": {
+    "name": "mystic mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 15000,
+    "stat": 212
+  },
+  "75": {
+    "name": "mystic sword",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 17000,
+    "stat": 58
+  },
+  "76": {
+    "name": "mystic battle axe",
+    "cat": "T",
+    "slot": 12,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 20000,
+    "stat": 73
+  },
+  "77": {
+    "name": "mystic wolf blades",
+    "cat": "F",
+    "slot": 1,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 25000,
+    "stat": 58
+  },
+  "78": {
+    "name": "tadiUer rapier",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 126,
+    "eLv": 33,
+    "price": 356180,
+    "stat": 201
+  },
+  "79": {
+    "name": "vitadimere halberd",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 30000,
+    "stat": 76
+  },
+  "80": {
+    "name": "mystic bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 30000,
+    "stat": 45
+  },
+  "81": {
+    "name": "Sword of the Dead",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 35,
+    "eLv": 35,
+    "price": 35000,
+    "stat": 66
+  },
+  "82": {
+    "name": "Staff of Almus",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 35,
+    "eLv": 35,
+    "price": 42000,
+    "stat": 66
+  },
+  "83": {
+    "name": "Staff of Viarum",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 36,
+    "eLv": 36,
+    "price": 47000,
+    "stat": 69
+  },
+  "85": {
+    "name": "Oreseth halberd",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 37,
+    "eLv": 37,
+    "price": 43000,
+    "stat": 90
+  },
+  "86": {
+    "name": "mystic throwing star",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 45500,
+    "stat": 75
+  },
+  "109": {
+    "name": "leather armor",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 2,
+    "eLv": 2,
+    "price": 250,
+    "stat": 1
+  },
+  "110": {
+    "name": "leather gloves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 2,
+    "eLv": 2,
+    "price": 25,
+    "stat": 1
+  },
+  "111": {
+    "name": "small shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 2,
+    "eLv": 2,
+    "price": 25,
+    "stat": 1
+  },
+  "112": {
+    "name": "studded leather",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 3,
+    "eLv": 3,
+    "price": 300,
+    "stat": 2
+  },
+  "113": {
+    "name": "specteral dragon claw",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 4320,
+    "stat": 28
+  },
+  "114": {
+    "name": "chain hood",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 4,
+    "eLv": 4,
+    "price": 30,
+    "stat": 1
+  },
+  "115": {
+    "name": "chain gloves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 5,
+    "eLv": 5,
+    "price": 30,
+    "stat": 2
+  },
+  "116": {
+    "name": "chain mail",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 5,
+    "eLv": 5,
+    "price": 700,
+    "stat": 3
+  },
+  "117": {
+    "name": "iron shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 5,
+    "eLv": 5,
+    "price": 50,
+    "stat": 2
+  },
+  "118": {
+    "name": "large shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 5,
+    "eLv": 5,
+    "price": 60,
+    "stat": 2
+  },
+  "119": {
+    "name": "vorpal scimitar",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 5500,
+    "stat": 33
+  },
+  "120": {
+    "name": "elven leather",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 6,
+    "eLv": 6,
+    "price": 1000,
+    "stat": 3
+  },
+  "121": {
+    "name": "iron helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 6,
+    "eLv": 6,
+    "price": 50,
+    "stat": 2
+  },
+  "122": {
+    "name": "apprentice robe",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 7,
+    "eLv": 7,
+    "price": 1500,
+    "stat": 3
+  },
+  "123": {
+    "name": "plate mail",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 8,
+    "eLv": 8,
+    "price": 3000,
+    "stat": 6
+  },
+  "124": {
+    "name": "elven chain",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 9,
+    "eLv": 9,
+    "price": 3500,
+    "stat": 6
+  },
+  "125": {
+    "name": "blood mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 5600,
+    "stat": 33
+  },
+  "126": {
+    "name": "magic leather",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 0,
+    "eLv": 10,
+    "price": 4500,
+    "stat": 6
+  },
+  "127": {
+    "name": "magic shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 9,
+    "eLv": 9,
+    "price": 500,
+    "stat": 4
+  },
+  "128": {
+    "name": "magic helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 9.1,
+    "eLv": 9,
+    "price": 500,
+    "stat": 3
+  },
+  "129": {
+    "name": "magic Chain gloves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 10,
+    "eLv": 10,
+    "price": 500,
+    "stat": 4
+  },
+  "130": {
+    "name": "magic Chain mail",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 10,
+    "eLv": 10,
+    "price": 6500,
+    "stat": 7
+  },
+  "131": {
+    "name": "magic Elven leather",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 11,
+    "eLv": 11,
+    "price": 7000,
+    "stat": 7
+  },
+  "132": {
+    "name": "blood axe",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 5500,
+    "stat": 33
+  },
+  "133": {
+    "name": "mage robe",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 12,
+    "eLv": 12,
+    "price": 7500,
+    "stat": 6
+  },
+  "134": {
+    "name": "magic Plate mail",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 12,
+    "eLv": 12,
+    "price": 8000,
+    "stat": 9
+  },
+  "135": {
+    "name": "magic Elven chain",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 12,
+    "eLv": 12,
+    "price": 8500,
+    "stat": 8
+  },
+  "136": {
+    "name": "magic Elven plate",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 13,
+    "eLv": 13,
+    "price": 9000,
+    "stat": 10
+  },
+  "137": {
+    "name": "magic buckler",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 13,
+    "eLv": 7,
+    "price": 500,
+    "stat": 7
+  },
+  "138": {
+    "name": "ice hammer",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 23,
+    "eLv": 23,
+    "price": 5000,
+    "stat": 44
+  },
+  "139": {
+    "name": "reflective shiel",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 17,
+    "eLv": 17,
+    "price": 9000,
+    "stat": 11
+  },
+  "140": {
+    "name": "reflective helmt",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 17,
+    "eLv": 65,
+    "price": 9000,
+    "stat": 8
+  },
+  "141": {
+    "name": "reflective rob",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 17,
+    "eLv": 17,
+    "price": 10000,
+    "stat": 11
+  },
+  "142": {
+    "name": "reflective chin",
+    "cat": "A",
+    "slot": 2,
+    "iLv": -73728,
+    "eLv": 18,
+    "price": 12500,
+    "stat": 15
+  },
+  "143": {
+    "name": "reflective plate",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 17.2,
+    "eLv": 18,
+    "price": 14000,
+    "stat": 16
+  },
+  "144": {
+    "name": "specteral goves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 5000,
+    "stat": 11
+  },
+  "145": {
+    "name": "dragon helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 0,
+    "eLv": 20,
+    "price": 13000,
+    "stat": 11
+  },
+  "146": {
+    "name": "dragon sheld",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 27,
+    "eLv": 21,
+    "price": 15000,
+    "stat": 15
+  },
+  "147": {
+    "name": "gloves o strength",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 21,
+    "eLv": 21,
+    "price": 20000,
+    "stat": 12
+  },
+  "148": {
+    "name": "arcane ow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 37,
+    "eLv": 37,
+    "price": 38000,
+    "stat": 54
+  },
+  "149": {
+    "name": "elemenal shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 24,
+    "eLv": 24,
+    "price": 25000,
+    "stat": 19
+  },
+  "150": {
+    "name": "elemetal helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 24,
+    "eLv": 24,
+    "price": 26000,
+    "stat": 15
+  },
+  "151": {
+    "name": "elemental leather",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 25,
+    "eLv": 25,
+    "price": 27000,
+    "stat": 24
+  },
+  "152": {
+    "name": "eleental chain",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 27,
+    "eLv": 27,
+    "price": 28500,
+    "stat": 29
+  },
+  "153": {
+    "name": "elmental plate",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 29000,
+    "stat": 35
+  },
+  "155": {
+    "name": "xcelsus shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 26,
+    "eLv": 26,
+    "price": 25000,
+    "stat": 21
+  },
+  "156": {
+    "name": "mage hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 26,
+    "eLv": 26,
+    "price": 20000,
+    "stat": 17
+  },
+  "157": {
+    "name": "gloves of skilj",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 27,
+    "eLv": 27,
+    "price": 30000,
+    "stat": 18
+  },
+  "158": {
+    "name": "sanctus shielj",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 28,
+    "eLv": 28,
+    "price": 30000,
+    "stat": 23
+  },
+  "159": {
+    "name": "bone staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 27,
+    "eLv": 27,
+    "price": 9200,
+    "stat": 45
+  },
+  "160": {
+    "name": "sanctus macc",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 28,
+    "eLv": 28,
+    "price": 12300,
+    "stat": 47
+  },
+  "161": {
+    "name": "mystic shi_ld",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 30,
+    "eLv": 30,
+    "price": 40000,
+    "stat": 26
+  },
+  "162": {
+    "name": "mystic hejmeD",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 30,
+    "eLv": 30,
+    "price": 3758136384,
+    "stat": 21
+  },
+  "163": {
+    "name": "mystic l_at8er",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 42000,
+    "stat": 33
+  },
+  "164": {
+    "name": "energy ob",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 20424,
+    "stat": 27
+  },
+  "165": {
+    "name": "mysticpl1te",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 40096,
+    "stat": 38
+  },
+  "166": {
+    "name": "sanctss Qxe",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 28,
+    "eLv": 28,
+    "price": 13000,
+    "stat": 47
+  },
+  "167": {
+    "name": "adepr hQt",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 25000,
+    "stat": 24
+  },
+  "168": {
+    "name": "glopesof rage",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 35,
+    "eLv": 35,
+    "price": 30000,
+    "stat": 26
+  },
+  "169": {
+    "name": "myutiW hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 35,
+    "eLv": 35,
+    "price": 25000,
+    "stat": 26
+  },
+  "170": {
+    "name": "OtesUth claymore",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 36,
+    "eLv": 36,
+    "price": 45000,
+    "stat": 87
+  },
+  "171": {
+    "name": "un9c scimitar",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 0,
+    "eLv": 28,
+    "price": 12000,
+    "stat": 47
+  },
+  "172": {
+    "name": "ruic mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 28,
+    "eLv": 28,
+    "price": 12000,
+    "stat": 47
+  },
+  "173": {
+    "name": "rEnic staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 29.1,
+    "eLv": 29,
+    "price": 12000,
+    "stat": 50
+  },
+  "175": {
+    "name": "Spirit Shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 70000,
+    "stat": 37
+  },
+  "176": {
+    "name": "Spirit Helmet",
+    "cat": "A",
+    "slot": -8191,
+    "iLv": 39,
+    "eLv": 39,
+    "price": 70000,
+    "stat": 31
+  },
+  "179": {
+    "name": "arcane axe",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 37,
+    "eLv": 37,
+    "price": 16431500,
+    "stat": 72
+  },
+  "188": {
+    "name": "blue pearl",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 1,
+    "eLv": 1,
+    "price": 10,
+    "stat": 0
+  },
+  "189": {
+    "name": "white pearl",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 1,
+    "eLv": 1,
+    "price": 15,
+    "stat": 0
+  },
+  "190": {
+    "name": "amulet detect evil",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 2,
+    "eLv": 0,
+    "price": 20,
+    "stat": 0
+  },
+  "191": {
+    "name": "vitality otion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 2,
+    "eLv": 0,
+    "price": 300,
+    "stat": 0
+  },
+  "192": {
+    "name": "velocita potion",
+    "cat": "I",
+    "slot": 1536,
+    "iLv": 3,
+    "eLv": 0,
+    "price": 300,
+    "stat": 0
+  },
+  "193": {
+    "name": "food",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 1,
+    "eLv": 1,
+    "price": 3,
+    "stat": 0
+  },
+  "194": {
+    "name": "potionof curing",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 4,
+    "eLv": 0,
+    "price": 300,
+    "stat": 0
+  },
+  "195": {
+    "name": "battl scroll",
+    "cat": "I",
+    "slot": 12288,
+    "iLv": 5,
+    "eLv": 0,
+    "price": 150,
+    "stat": 0
+  },
+  "196": {
+    "name": "pine shaft arrows",
+    "cat": "R",
+    "slot": 48,
+    "iLv": 6,
+    "eLv": 6,
+    "price": 1,
+    "stat": 1541
+  },
+  "197": {
+    "name": "gol",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 8,
+    "eLv": 8,
+    "price": 1,
+    "stat": 0
+  },
+  "198": {
+    "name": "rage potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 8,
+    "eLv": 0,
+    "price": 300,
+    "stat": 0
+  },
+  "199": {
+    "name": "snsus scroll",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 8,
+    "eLv": 0,
+    "price": 160,
+    "stat": -12288
+  },
+  "200": {
+    "name": "ey (low)",
+    "cat": "A",
+    "slot": 8,
+    "iLv": 9,
+    "eLv": 9,
+    "price": 0,
+    "stat": 208
+  },
+  "201": {
+    "name": "ife oaving amulet",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 9,
+    "eLv": 0,
+    "price": 6554372,
+    "stat": 168
+  },
+  "202": {
+    "name": "magic potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 10,
+    "eLv": 0,
+    "price": 300,
+    "stat": 0
+  },
+  "203": {
+    "name": "strength amulet",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 11,
+    "eLv": 0,
+    "price": 220,
+    "stat": 0
+  },
+  "204": {
+    "name": "hSntJe e~",
+    "cat": "@",
+    "slot": 0,
+    "iLv": 23,
+    "eLv": 12,
+    "price": 10944532,
+    "stat": 0
+  },
+  "205": {
+    "name": "gas form potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 13,
+    "eLv": 0,
+    "price": 400,
+    "stat": 0
+  },
+  "206": {
+    "name": "hit amulet",
+    "cat": "A",
+    "slot": 8,
+    "iLv": 19,
+    "eLv": 0,
+    "price": 450,
+    "stat": 0
+  },
+  "207": {
+    "name": "wand of transport",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 14,
+    "eLv": 0,
+    "price": 3489661428,
+    "stat": 0
+  },
+  "208": {
+    "name": "wand of mederi",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 14,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "209": {
+    "name": "minor shadow ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 50556,
+    "stat": 0
+  },
+  "210": {
+    "name": "emerald",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 292,
+    "stat": 0
+  },
+  "211": {
+    "name": "red opal",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 500,
+    "stat": 0
+  },
+  "212": {
+    "name": "fulgur wand",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 17,
+    "eLv": 0,
+    "price": 520,
+    "stat": 0
+  },
+  "213": {
+    "name": "vis baritus scroll",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 17,
+    "eLv": 0,
+    "price": 1550,
+    "stat": 0
+  },
+  "214": {
+    "name": "tueri ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 17,
+    "eLv": 17,
+    "price": 10080,
+    "stat": 0
+  },
+  "215": {
+    "name": "arcflamma scroll",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 18,
+    "eLv": 0,
+    "price": 2100,
+    "stat": 0
+  },
+  "217": {
+    "name": "key",
+    "cat": "A",
+    "slot": 8,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 0,
+    "stat": 0
+  },
+  "218": {
+    "name": "salubris ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 12250,
+    "stat": 0
+  },
+  "219": {
+    "name": "magic arrows",
+    "cat": "R",
+    "slot": 0,
+    "iLv": 24,
+    "eLv": 24,
+    "price": 25,
+    "stat": 10
+  },
+  "220": {
+    "name": "magic bag",
+    "cat": "A",
+    "slot": 8,
+    "iLv": 23,
+    "eLv": 0,
+    "price": 2500,
+    "stat": 0
+  },
+  "221": {
+    "name": "maximus potion",
+    "cat": "I",
+    "slot": -12288,
+    "iLv": 45,
+    "eLv": 0,
+    "price": 15000,
+    "stat": 0
+  },
+  "222": {
+    "name": "reditus amulet",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 30,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "223": {
+    "name": "scroll creare porta",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 23,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "224": {
+    "name": "sanctus scroll",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 40,
+    "eLv": 0,
+    "price": 3900,
+    "stat": 0
+  },
+  "225": {
+    "name": "arcane halberd",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 37,
+    "eLv": 37,
+    "price": 47500,
+    "stat": -12198
+  },
+  "226": {
+    "name": "white potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 24,
+    "eLv": 0,
+    "price": 25000,
+    "stat": 0
+  },
+  "227": {
+    "name": "maximus amulet",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 27,
+    "eLv": 0,
+    "price": 4200,
+    "stat": 0
+  },
+  "228": {
+    "name": "salutaris ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 25,
+    "eLv": 25,
+    "price": 30500,
+    "stat": 0
+  },
+  "229": {
+    "name": "black pearl",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 27,
+    "eLv": 27,
+    "price": 50000,
+    "stat": 0
+  },
+  "230": {
+    "name": "animus ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 28,
+    "eLv": 28,
+    "price": 50500,
+    "stat": 0
+  },
+  "231": {
+    "name": "lucranimus ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 56000,
+    "stat": 0
+  },
+  "232": {
+    "name": "scientia ring",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 68000,
+    "stat": 0
+  },
+  "233": {
+    "name": "nex arrows",
+    "cat": "R",
+    "slot": 0,
+    "iLv": 42,
+    "eLv": 42,
+    "price": 5000,
+    "stat": 20
+  },
+  "234": {
+    "name": "arcane staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 37,
+    "eLv": 37,
+    "price": 47500,
+    "stat": 72
+  },
+  "235": {
+    "name": "vis mederi ring",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 90000,
+    "stat": 0
+  },
+  "236": {
+    "name": "vis tueri ring",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 90000,
+    "stat": 0
+  },
+  "237": {
+    "name": "vis animus ring",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 35,
+    "eLv": 35,
+    "price": 90000,
+    "stat": 0
+  },
+  "238": {
+    "name": "arcane sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 47500,
+    "stat": 75
+  },
+  "241": {
+    "name": "black sapphire",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 39,
+    "eLv": 39,
+    "price": 550000,
+    "stat": 0
+  },
+  "244": {
+    "name": "arcane robe",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 70000,
+    "stat": 37
+  },
+  "249": {
+    "name": "green elixir",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 29,
+    "eLv": 0,
+    "price": 200000,
+    "stat": 0
+  },
+  "250": {
+    "name": "blue elixir",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 0,
+    "eLv": 0,
+    "price": 200000,
+    "stat": 0
+  },
+  "251": {
+    "name": "white elixir",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 38,
+    "eLv": 0,
+    "price": 500000,
+    "stat": 0
+  },
+  "254": {
+    "name": "glowing potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 58,
+    "eLv": 0,
+    "price": 100000,
+    "stat": 0
+  },
+  "261": {
+    "name": "Arachnid Eye",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 80,
+    "eLv": 80,
+    "price": 2000,
+    "stat": 0
+  },
+  "264": {
+    "name": "velocitas ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 28,
+    "eLv": 28,
+    "price": 50500,
+    "stat": 0
+  },
+  "265": {
+    "name": "elven dagger",
+    "cat": "M",
+    "slot": 1,
+    "iLv": 4,
+    "eLv": 4,
+    "price": 10,
+    "stat": 2
+  },
+  "266": {
+    "name": "barbed oak arows",
+    "cat": "R",
+    "slot": 0,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 10,
+    "stat": 9
+  },
+  "267": {
+    "name": "oak shaft arrows",
+    "cat": "R",
+    "slot": 0,
+    "iLv": 12,
+    "eLv": 12,
+    "price": 5,
+    "stat": 7
+  },
+  "268": {
+    "name": "barbed magi arrows",
+    "cat": "R",
+    "slot": 0,
+    "iLv": 30,
+    "eLv": 30,
+    "price": 30,
+    "stat": 12
+  },
+  "269": {
+    "name": "magic battle hammer",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 12,
+    "eLv": 12,
+    "price": 300,
+    "stat": 17
+  },
+  "274": {
+    "name": "magic@staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 9,
+    "eLv": 9,
+    "price": 1400,
+    "stat": 9
+  },
+  "275": {
+    "name": "mage@magic staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 3221225472,
+    "eLv": 12,
+    "price": 1400,
+    "stat": 13
+  },
+  "276": {
+    "name": "magc sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 11.9,
+    "eLv": 11,
+    "price": 1600,
+    "stat": 12
+  },
+  "277": {
+    "name": "maic sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 11,
+    "eLv": 11,
+    "price": 1600,
+    "stat": 12
+  },
+  "278": {
+    "name": "mgic Elven plate",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 13,
+    "eLv": 13,
+    "price": 9000,
+    "stat": 10
+  },
+  "279": {
+    "name": "magic Chain gloves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 10,
+    "eLv": 10,
+    "price": 500,
+    "stat": 4
+  },
+  "280": {
+    "name": "fire staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 2200,
+    "stat": 20
+  },
+  "281": {
+    "name": "fire mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 14,
+    "eLv": 14,
+    "price": 2500,
+    "stat": 16
+  },
+  "282": {
+    "name": "fire sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 14,
+    "eLv": 14,
+    "price": 2800,
+    "stat": 16
+  },
+  "283": {
+    "name": "acid halberd",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 3400,
+    "stat": 30
+  },
+  "284": {
+    "name": "acid mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 3600,
+    "stat": 24
+  },
+  "285": {
+    "name": "acid staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 3200,
+    "stat": 28
+  },
+  "286": {
+    "name": "specteral mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 21,
+    "eLv": 21,
+    "price": 1610617736,
+    "stat": 30
+  },
+  "287": {
+    "name": "lightning bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 26,
+    "eLv": 26,
+    "price": 6299456,
+    "stat": 32
+  },
+  "288": {
+    "name": "sanctus shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 5424,
+    "stat": 25
+  },
+  "289": {
+    "name": "runic scimitar",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 12000,
+    "stat": 50
+  },
+  "290": {
+    "name": "mystic battle xe",
+    "cat": "T",
+    "slot": 12,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 20000,
+    "stat": 73
+  },
+  "291": {
+    "name": "mystic wolf bbades",
+    "cat": "F",
+    "slot": 1,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 25000,
+    "stat": 58
+  },
+  "292": {
+    "name": "mystic plate",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 40000,
+    "stat": 40
+  },
+  "293": {
+    "name": "arcane hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 25000,
+    "stat": 30
+  },
+  "295": {
+    "name": "mage hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 27,
+    "eLv": 27,
+    "price": 20000,
+    "stat": 18
+  },
+  "298": {
+    "name": "Spirit&Helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 39,
+    "eLv": 39,
+    "price": 70000,
+    "stat": 31
+  },
+  "299": {
+    "name": "elven.long bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 9,
+    "eLv": 9,
+    "price": 100,
+    "stat": 7
+  },
+  "300": {
+    "name": "mystoc bow",
+    "cat": "B",
+    "slot": 24588,
+    "iLv": 34,
+    "eLv": 34,
+    "price": 30000,
+    "stat": 48
+  },
+  "301": {
+    "name": "arcone bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 38000,
+    "stat": 56
+  },
+  "303": {
+    "name": "t{eri ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 10080,
+    "stat": 0
+  },
+  "304": {
+    "name": "alubris ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 12250,
+    "stat": 24576
+  },
+  "305": {
+    "name": "salutaris ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 25,
+    "eLv": 25,
+    "price": 30500,
+    "stat": 0
+  },
+  "306": {
+    "name": "vis velocitas ring",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 36,
+    "eLv": 36,
+    "price": 50500,
+    "stat": 0
+  },
+  "307": {
+    "name": "scientia ring",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 68000,
+    "stat": 0
+  },
+  "309": {
+    "name": "anicebmge r'!",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 75,
+    "eLv": 34,
+    "price": 89968,
+    "stat": 0
+  },
+  "312": {
+    "name": "apprentice fighter ring",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 34,
+    "eLv": 34,
+    "price": 90000,
+    "stat": 0
+  },
+  "317": {
+    "name": "excelsus shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 27,
+    "eLv": 27,
+    "price": 25000,
+    "stat": 22
+  },
+  "318": {
+    "name": "mystic shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 35,
+    "eLv": 35,
+    "price": 40000,
+    "stat": 33
+  },
+  "319": {
+    "name": "Spirit Shield",
+    "cat": "A",
+    "slot": 3,
+    "iLv": 39,
+    "eLv": 39,
+    "price": 70000,
+    "stat": 39
+  },
+  "322": {
+    "name": "magic elven helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 13,
+    "eLv": 13,
+    "price": 500,
+    "stat": 6
+  },
+  "323": {
+    "name": "black dragon helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 13000,
+    "stat": 24
+  },
+  "324": {
+    "name": "mystic helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 30,
+    "eLv": 30,
+    "price": 40000,
+    "stat": 21
+  },
+  "325": {
+    "name": "elven leather gloves",
+    "cat": "A",
+    "slot": -1532,
+    "iLv": 7,
+    "eLv": 7,
+    "price": 25,
+    "stat": 2
+  },
+  "326": {
+    "name": "elven chain gloves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 8,
+    "eLv": 8,
+    "price": 30,
+    "stat": 3
+  },
+  "327": {
+    "name": "mage gloves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 30,
+    "eLv": 30,
+    "price": 30000,
+    "stat": 21
+  },
+  "329": {
+    "name": "specteral gloves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 5000,
+    "stat": 3595
+  },
+  "330": {
+    "name": "gloves of strength",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 21,
+    "eLv": 21,
+    "price": 20000,
+    "stat": 254
+  },
+  "333": {
+    "name": "lightning staff",
+    "cat": "P",
+    "slot": 12,
+    "iLv": 24,
+    "eLv": 24,
+    "price": 7200,
+    "stat": 38
+  },
+  "334": {
+    "name": "ne sLaf",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 12.5,
+    "eLv": 27,
+    "price": 336888,
+    "stat": 217
+  },
+  "335": {
+    "name": "lucrum animus staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 12000,
+    "stat": 50
+  },
+  "336": {
+    "name": "runic staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 12000,
+    "stat": 50
+  },
+  "337": {
+    "name": "runic staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 12000,
+    "stat": 50
+  },
+  "338": {
+    "name": "runic staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 12000,
+    "stat": 50
+  },
+  "339": {
+    "name": "tueri ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 10080,
+    "stat": 0
+  },
+  "340": {
+    "name": "minor fire ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 5500,
+    "stat": 0
+  },
+  "341": {
+    "name": "minor energy ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 5500,
+    "stat": 0
+  },
+  "342": {
+    "name": "minor ice ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 5500,
+    "stat": 0
+  },
+  "343": {
+    "name": "minor spirit ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 5500,
+    "stat": 0
+  },
+  "345": {
+    "name": "staff of vis omnis",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 5000,
+    "stat": 61
+  },
+  "351": {
+    "name": "fire helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 26,
+    "eLv": 26,
+    "price": 9000,
+    "stat": 17
+  },
+  "352": {
+    "name": "fire helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 26,
+    "eLv": 26,
+    "price": 9000,
+    "stat": 17
+  },
+  "355": {
+    "name": "mystic arrows",
+    "cat": "R",
+    "slot": 0,
+    "iLv": 36,
+    "eLv": 36,
+    "price": 120,
+    "stat": 15
+  },
+  "364": {
+    "name": "respec elixir",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 0,
+    "price": 80000,
+    "stat": 0
+  },
+  "365": {
+    "name": "spirit key",
+    "cat": "A",
+    "slot": 8,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 0,
+    "stat": 0
+  },
+  "366": {
+    "name": "Hell Sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 3080,
+    "stat": 18
+  },
+  "376": {
+    "name": "candle",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "379": {
+    "name": "crystal",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "382": {
+    "name": "mystic ore",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 0,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "383": {
+    "name": "notebook",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "384": {
+    "name": "flask",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 501.8,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "386": {
+    "name": "Holy Mystic Helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 40000,
+    "stat": 22
+  },
+  "402": {
+    "name": "skill resec elixir",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 1358,
+    "eLv": 0,
+    "price": 80000,
+    "stat": 0
+  },
+  "405": {
+    "name": "Oreset guard ring",
+    "cat": "A",
+    "slot": 7,
+    "iLv": 25,
+    "eLv": 25,
+    "price": 90000,
+    "stat": 0
+  },
+  "406": {
+    "name": "fire ow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 17,
+    "eLv": 17,
+    "price": 4500,
+    "stat": 16
+  },
+  "418": {
+    "name": "Glacialis&scFoll",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 11,
+    "eLv": 0,
+    "price": 3758096544,
+    "stat": 0
+  },
+  "419": {
+    "name": "good vit[liDy potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 15,
+    "eLv": 0,
+    "price": 1000,
+    "stat": 0
+  },
+  "420": {
+    "name": "greaterviality potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 25,
+    "eLv": 0,
+    "price": 50960,
+    "stat": 0
+  },
+  "421": {
+    "name": "super it1lity potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 35,
+    "eLv": 0,
+    "price": 10224,
+    "stat": 0
+  },
+  "422": {
+    "name": "stranae Liquid",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "423": {
+    "name": "hazatdoEs liquid",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 13,
+    "eLv": 13,
+    "price": 0,
+    "stat": 0
+  },
+  "424": {
+    "name": "danaerCus liquid",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 24,
+    "eLv": 24,
+    "price": 0,
+    "stat": 0
+  },
+  "425": {
+    "name": "baa oJ junk",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 4,
+    "eLv": 0,
+    "price": 3,
+    "stat": 0
+  },
+  "426": {
+    "name": "hcalDh potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 15,
+    "eLv": 0,
+    "price": 1500,
+    "stat": 0
+  },
+  "427": {
+    "name": "re1ter health potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 0,
+    "eLv": 0,
+    "price": 10000,
+    "stat": 0
+  },
+  "428": {
+    "name": "poerful health potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 35,
+    "eLv": 0,
+    "price": 10000,
+    "stat": 0
+  },
+  "429": {
+    "name": "m1gic regen potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 11.1,
+    "eLv": 0,
+    "price": 400,
+    "stat": 0
+  },
+  "430": {
+    "name": "6ast gas form potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 13,
+    "eLv": 0,
+    "price": 450,
+    "stat": 0
+  },
+  "431": {
+    "name": "power potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 24,
+    "eLv": 0,
+    "price": 40000,
+    "stat": 0
+  },
+  "441": {
+    "name": "spCrtcylT",
+    "cat": "I",
+    "slot": 225,
+    "iLv": 348,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "442": {
+    "name": "dragon blades",
+    "cat": "F",
+    "slot": 1,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 2000,
+    "stat": 20
+  },
+  "443": {
+    "name": "Vorpal wolf bades",
+    "cat": "F",
+    "slot": 1,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 2000,
+    "stat": 33
+  },
+  "451": {
+    "name": "hit aulet",
+    "cat": "A",
+    "slot": 12296,
+    "iLv": 14,
+    "eLv": 0,
+    "price": 450,
+    "stat": 0
+  },
+  "452": {
+    "name": "hit amulet",
+    "cat": "A",
+    "slot": 56,
+    "iLv": 26,
+    "eLv": 0,
+    "price": 450,
+    "stat": 1536
+  },
+  "460": {
+    "name": "k",
+    "cat": "G",
+    "slot": 12,
+    "iLv": 41,
+    "eLv": 0,
+    "price": 10883440,
+    "stat": 197
+  },
+  "480": {
+    "name": "Full respec elixir",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 0,
+    "price": 80000,
+    "stat": 0
+  },
+  "481": {
+    "name": "giant sword",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 3080,
+    "stat": -12270
+  },
+  "488": {
+    "name": "Vishabus Elixir",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 110,
+    "eLv": 0,
+    "price": 99000,
+    "stat": 0
+  },
+  "489": {
+    "name": "Omnihabus Elixir",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 111,
+    "eLv": 0,
+    "price": 99000,
+    "stat": 0
+  },
+  "503": {
+    "name": "fighter gloves",
+    "cat": "A",
+    "slot": 4,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 500,
+    "stat": 9
+  },
+  "530": {
+    "name": "Diamod",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 44,
+    "eLv": 44,
+    "price": 3000000,
+    "stat": 0
+  },
+  "531": {
+    "name": "gold@small pile",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 4091904,
+    "eLv": 0,
+    "price": 1,
+    "stat": 0
+  },
+  "532": {
+    "name": "gol medium pile",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 991,
+    "eLv": 0,
+    "price": 1,
+    "stat": 0
+  },
+  "533": {
+    "name": "god large pile",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999.2,
+    "eLv": 0,
+    "price": 1,
+    "stat": 0
+  },
+  "534": {
+    "name": "gld huge pile",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 0,
+    "price": 1,
+    "stat": 0
+  },
+  "537": {
+    "name": "apprentice hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 10,
+    "eLv": 10,
+    "price": 20000,
+    "stat": 4
+  },
+  "538": {
+    "name": "magic hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 20000,
+    "stat": 7
+  },
+  "539": {
+    "name": "apprentice energy hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 20000,
+    "stat": 9
+  },
+  "540": {
+    "name": "apprentice fire hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 20,
+    "eLv": 20,
+    "price": 20000,
+    "stat": 11
+  },
+  "541": {
+    "name": "apprentice shadow hot",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 20000,
+    "stat": 13
+  },
+  "543": {
+    "name": "Nex Crystal",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 6291456,
+    "stat": 0
+  },
+  "544": {
+    "name": "Mystic Repair Hacmer",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 0,
+    "price": 11808,
+    "stat": 0
+  },
+  "545": {
+    "name": "mystic war mace",
+    "cat": "T",
+    "slot": 1,
+    "iLv": 34,
+    "eLv": 34,
+    "price": 20000,
+    "stat": 80
+  },
+  "557": {
+    "name": "maggc spiked plate",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 14000,
+    "stat": 23
+  },
+  "558": {
+    "name": "shodow robe",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 45000,
+    "stat": 27
+  },
+  "559": {
+    "name": "s~irit robe",
+    "cat": "A",
+    "slot": 2,
+    "iLv": 31,
+    "eLv": 31,
+    "price": 45000,
+    "stat": 27
+  },
+  "589": {
+    "name": "dentibus mace",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 36,
+    "eLv": 36,
+    "price": 45400,
+    "stat": 69
+  },
+  "593": {
+    "name": "life hammer",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 6500,
+    "stat": 75
+  },
+  "617": {
+    "name": "Boots of Dodging",
+    "cat": "A",
+    "slot": 5,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 500,
+    "stat": 6
+  },
+  "618": {
+    "name": "Boots of Fortitude",
+    "cat": "A",
+    "slot": 5,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 500,
+    "stat": 6
+  },
+  "619": {
+    "name": "Dragon Boots",
+    "cat": "A",
+    "slot": 5,
+    "iLv": 28,
+    "eLv": 28,
+    "price": 500,
+    "stat": 11
+  },
+  "620": {
+    "name": "Arcane Boots",
+    "cat": "A",
+    "slot": 5,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 500,
+    "stat": 18
+  },
+  "621": {
+    "name": "Fighter Boots",
+    "cat": "A",
+    "slot": 5,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 500,
+    "stat": 18
+  },
+  "630": {
+    "name": "Cloak of Protection",
+    "cat": "A",
+    "slot": 9,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 500,
+    "stat": 0
+  },
+  "631": {
+    "name": "Cape of Resistance",
+    "cat": "A",
+    "slot": 9,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 500,
+    "stat": 0
+  },
+  "632": {
+    "name": "Cloak of Accuracy",
+    "cat": "A",
+    "slot": 9,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 500,
+    "stat": 0
+  },
+  "633": {
+    "name": "Cape of Defense",
+    "cat": "A",
+    "slot": 9,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 500,
+    "stat": 0
+  },
+  "634": {
+    "name": "Mystic Cloak",
+    "cat": "A",
+    "slot": 9,
+    "iLv": 32,
+    "eLv": 32,
+    "price": 500,
+    "stat": 0
+  },
+  "651": {
+    "name": "Shadow Crystal",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "652": {
+    "name": "Energized Steel",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 47,
+    "price": 10,
+    "stat": 0
+  },
+  "653": {
+    "name": "Shadow Steel",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 5000,
+    "stat": 0
+  },
+  "654": {
+    "name": "vis maximus ption",
+    "cat": "I",
+    "slot": 0,
+    "iLv": -800,
+    "eLv": 0,
+    "price": 30000,
+    "stat": 0
+  },
+  "659": {
+    "name": "arcane dgger",
+    "cat": "W",
+    "slot": 1,
+    "iLv": 35,
+    "eLv": 35,
+    "price": 47500,
+    "stat": 33
+  },
+  "671": {
+    "name": "Magic Wand",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 10,
+    "eLv": 10,
+    "price": 60000,
+    "stat": 5
+  },
+  "672": {
+    "name": "Fire Wand",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 15,
+    "eLv": 15,
+    "price": 60000,
+    "stat": 9
+  },
+  "673": {
+    "name": "Ice Wand",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 60000,
+    "stat": 16
+  },
+  "674": {
+    "name": "Mystic Wahd",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 30,
+    "eLv": 30,
+    "price": 3758156384,
+    "stat": 26
+  },
+  "675": {
+    "name": "Mystic W[nd",
+    "cat": "W",
+    "slot": 12,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 60000,
+    "stat": 30
+  },
+  "695": {
+    "name": "animus cloth",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 10120,
+    "stat": 0
+  },
+  "696": {
+    "name": "divinus cloth",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 4952,
+    "stat": 0
+  },
+  "697": {
+    "name": "diKblcDslT",
+    "cat": "I",
+    "slot": 225,
+    "iLv": 695,
+    "eLv": 255,
+    "price": 32648,
+    "stat": 0
+  },
+  "698": {
+    "name": "vexar titanium",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 5000,
+    "stat": 0
+  },
+  "699": {
+    "name": "demon leather",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 5000,
+    "stat": 0
+  },
+  "700": {
+    "name": "oblivion leather",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 5000,
+    "stat": 0
+  },
+  "701": {
+    "name": "demon blood",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 5000,
+    "stat": 0
+  },
+  "702": {
+    "name": "demon claw",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 5000,
+    "stat": 0
+  },
+  "703": {
+    "name": "animus esence",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 5000,
+    "stat": 0
+  },
+  "704": {
+    "name": "moon dus",
+    "cat": "I",
+    "slot": 1536,
+    "iLv": 999,
+    "eLv": 255,
+    "price": 5000,
+    "stat": 0
+  },
+  "708": {
+    "name": "mage hat",
+    "cat": "A",
+    "slot": 49,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 20000,
+    "stat": 1555
+  },
+  "715": {
+    "name": "Rune Duo ducvig",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 255,
+    "price": 15,
+    "stat": 0
+  },
+  "716": {
+    "name": "uReQMae 8",
+    "cat": "@",
+    "slot": 0,
+    "iLv": 242,
+    "eLv": 255,
+    "price": 10944527,
+    "stat": 0
+  },
+  "717": {
+    "name": "Rune Octocent Dra",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 255,
+    "price": 15,
+    "stat": 0
+  },
+  "718": {
+    "name": "Rune Sedtrig Quin",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 255,
+    "price": 15,
+    "stat": 0
+  },
+  "719": {
+    "name": "Rune Trig Quatent",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 255,
+    "price": 3489660943,
+    "stat": 0
+  },
+  "720": {
+    "name": "Rune Agin Octoquin",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 255,
+    "price": 15,
+    "stat": 0
+  },
+  "721": {
+    "name": "Rune Cent Duovig",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 255,
+    "price": 53263,
+    "stat": 0
+  },
+  "722": {
+    "name": "Rune Ducagin Octi",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 255,
+    "price": 223,
+    "stat": 0
+  },
+  "730": {
+    "name": "acid bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 30,
+    "eLv": 30,
+    "price": 8000,
+    "stat": 39
+  },
+  "731": {
+    "name": "magic hat of spirit",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 20000,
+    "stat": 7
+  },
+  "732": {
+    "name": "magic hat of shadow",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 16,
+    "eLv": 16,
+    "price": 20000,
+    "stat": 7
+  },
+  "733": {
+    "name": "rage helmet",
+    "cat": "A",
+    "slot": -12287,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 9000,
+    "stat": 9
+  },
+  "734": {
+    "name": "strike helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 18,
+    "eLv": 18,
+    "price": 9000,
+    "stat": 9
+  },
+  "735": {
+    "name": "apprentice spirit hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 21,
+    "eLv": 21,
+    "price": 20000,
+    "stat": 12
+  },
+  "736": {
+    "name": "apprentice energy hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 23,
+    "eLv": 23,
+    "price": 20000,
+    "stat": 14
+  },
+  "737": {
+    "name": "frost helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 26,
+    "eLv": 26,
+    "price": 9000,
+    "stat": -12271
+  },
+  "738": {
+    "name": "energy helmet",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 26,
+    "eLv": 26,
+    "price": 9000,
+    "stat": 17
+  },
+  "739": {
+    "name": "elemental adept hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 25000,
+    "stat": 24
+  },
+  "740": {
+    "name": "holy adept hat",
+    "cat": "A",
+    "slot": 1,
+    "iLv": 33,
+    "eLv": 33,
+    "price": 25000,
+    "stat": 24
+  },
+  "750": {
+    "name": "tueri strength ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 10080,
+    "stat": 0
+  },
+  "751": {
+    "name": "tueri agility ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 10080,
+    "stat": 0
+  },
+  "752": {
+    "name": "tueri intelligence ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 10080,
+    "stat": 0
+  },
+  "753": {
+    "name": "tueri wisdom ring",
+    "cat": "E",
+    "slot": 7,
+    "iLv": 19,
+    "eLv": 19,
+    "price": 10080,
+    "stat": 0
+  },
+  "761": {
+    "name": "Adept Lucrum Staff",
+    "cat": "P",
+    "slot": 1,
+    "iLv": 29,
+    "eLv": 29,
+    "price": 12000,
+    "stat": 50
+  },
+  "762": {
+    "name": "Teasel",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 0,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "763": {
+    "name": "Blue Cohosh",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 600,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "764": {
+    "name": "Pennyroyal",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 601.5,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "765": {
+    "name": "Tonsy",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 600,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "766": {
+    "name": "Burdock",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 600,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "767": {
+    "name": "Jewelweed",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 600,
+    "eLv": 0,
+    "price": 0,
+    "stat": 0
+  },
+  "768": {
+    "name": "clensing potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 15,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "770": {
+    "name": "Strange Orb",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 50,
+    "eLv": 50,
+    "price": 80,
+    "stat": 0
+  },
+  "791": {
+    "name": "Mystic Cloak",
+    "cat": "A",
+    "slot": 9,
+    "iLv": 38,
+    "eLv": 38,
+    "price": 500,
+    "stat": 0
+  },
+  "799": {
+    "name": "vis magic potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 15,
+    "eLv": 0,
+    "price": 6294456,
+    "stat": 0
+  },
+  "800": {
+    "name": "super magic potian",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 15,
+    "eLv": 0,
+    "price": 28576,
+    "stat": 0
+  },
+  "801": {
+    "name": "dragon bow",
+    "cat": "B",
+    "slot": 12,
+    "iLv": 22,
+    "eLv": 22,
+    "price": 4500,
+    "stat": 24
+  },
+  "815": {
+    "name": "Navice Alchemy Kit",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "816": {
+    "name": ";dvanced Alchemy Kit",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 5000,
+    "stat": 24576
+  },
+  "817": {
+    "name": "Master Alchemy Kit",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 5000,
+    "stat": 0
+  },
+  "818": {
+    "name": "Novice Smith Tools",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "819": {
+    "name": "Advanced Smith Tools",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 5000,
+    "stat": 0
+  },
+  "820": {
+    "name": "Master Smith Tools",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 5000,
+    "stat": 0
+  },
+  "821": {
+    "name": "NeJew'lr Ki",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 228,
+    "eLv": 0,
+    "price": 1840,
+    "stat": 0
+  },
+  "822": {
+    "name": "Advanced Jeweler Kit",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 5000,
+    "stat": 0
+  },
+  "823": {
+    "name": "Master Jeweler Kit",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 4194309000,
+    "stat": 0
+  },
+  "824": {
+    "name": "Novice Tailor Kit",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "825": {
+    "name": "Advanced Tailor Kit",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 3464,
+    "stat": 0
+  },
+  "826": {
+    "name": "Master Tailor Kit",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 5006,
+    "stat": 0
+  },
+  "827": {
+    "name": "Tailoring Cloth",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "828": {
+    "name": "Mage Cloth",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "829": {
+    "name": "Animus Cloth",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "830": {
+    "name": "Adept Cloth",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "831": {
+    "name": "Wolf Hide",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "832": {
+    "name": "Hell Hound Hide",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "833": {
+    "name": "Demon Hide",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "834": {
+    "name": "Iron Ore",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "835": {
+    "name": "Iron Bar",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "836": {
+    "name": "High Carbon Steel",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "837": {
+    "name": "Mystic Bar",
+    "cat": "I",
+    "slot": -1536,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "838": {
+    "name": "Spirit Bar",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "839": {
+    "name": "Coal",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "840": {
+    "name": "Limestone",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "841": {
+    "name": "Empty Vial",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 3584
+  },
+  "842": {
+    "name": "Spirit Essence",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 250
+  },
+  "843": {
+    "name": "Raw Blank Rune",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "844": {
+    "name": "Armor Pad Min",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "845": {
+    "name": "Armor Pad Arc",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "846": {
+    "name": "mor 0ad Max",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 230,
+    "eLv": 0,
+    "price": 329688,
+    "stat": 244
+  },
+  "847": {
+    "name": "Armor Pad Vis",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "848": {
+    "name": "Armor Plate Min",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "849": {
+    "name": "Armor Plate Arc",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "850": {
+    "name": "Armor Plate Max",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "851": {
+    "name": "Armor Plate Vis",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "852": {
+    "name": "Armor Pad Omni",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "853": {
+    "name": "Armor Pad Vexar",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "854": {
+    "name": "Armor Plate Omni",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "855": {
+    "name": "Armor Plate Vexar",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "856": {
+    "name": "Damage Rune Min",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "857": {
+    "name": "Damage Rune Arc",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "858": {
+    "name": "Damage Rune Max",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "859": {
+    "name": "Damage Rune Vis",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "860": {
+    "name": "Damage Rune Omni",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "861": {
+    "name": "Saving Amulet Arc",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "862": {
+    "name": "Saving Amulet Vis",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "863": {
+    "name": "Saving Amulet Omni",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "864": {
+    "name": "emerald dust",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 1000,
+    "stat": 0
+  },
+  "865": {
+    "name": "red opal dust",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 1000,
+    "stat": 0
+  },
+  "866": {
+    "name": "black pearl dust",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "867": {
+    "name": "Fragor Amulet",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "868": {
+    "name": "Amulet Blank",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2500,
+    "stat": 0
+  },
+  "869": {
+    "name": "Max Amulet Arc",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "870": {
+    "name": "Max Amulet Vis",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "871": {
+    "name": "Max Amulet Omni",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 500,
+    "eLv": 0,
+    "price": 2000,
+    "stat": 0
+  },
+  "872": {
+    "name": "ultra max potion",
+    "cat": "I",
+    "slot": 0,
+    "iLv": 50,
+    "eLv": 0,
+    "price": 45000,
+    "stat": 0
+  },
+  "873": {
+    "name": "Fire Amulet",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 130,
+    "eLv": 130,
+    "price": 2500,
+    "stat": 0
+  },
+  "874": {
+    "name": "Ice Amulet",
+    "cat": "E",
+    "slot": 6,
+    "iLv": 130,
+    "eLv": 130,
+    "price": 2500,
+    "stat": 0
+  }
+}

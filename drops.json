@@ -1,0 +1,2649 @@
+{
+  "6": {
+    "kills": 114,
+    "drops": [
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 66,
+        "rate": 57.9
+      },
+      {
+        "itemId": 63,
+        "name": "lightning sword",
+        "count": 24,
+        "rate": 21.1
+      },
+      {
+        "itemId": 61,
+        "name": "lightning staff",
+        "count": 23,
+        "rate": 20.2
+      },
+      {
+        "itemId": 738,
+        "name": "energy helmet",
+        "count": 23,
+        "rate": 20.2
+      },
+      {
+        "itemId": 149,
+        "name": "elemenal shield",
+        "count": 22,
+        "rate": 19.3
+      },
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 21,
+        "rate": 18.4
+      },
+      {
+        "itemId": 452,
+        "name": "hit amulet",
+        "count": 19,
+        "rate": 16.7
+      },
+      {
+        "itemId": 736,
+        "name": "apprentice energy hat",
+        "count": 19,
+        "rate": 16.7
+      },
+      {
+        "itemId": 737,
+        "name": "frost helmet",
+        "count": 17,
+        "rate": 14.9
+      },
+      {
+        "itemId": 60,
+        "name": "lightning dagger",
+        "count": 16,
+        "rate": 14.0
+      },
+      {
+        "itemId": 150,
+        "name": "elemetal helmet",
+        "count": 16,
+        "rate": 14.0
+      },
+      {
+        "itemId": 351,
+        "name": "fire helmet",
+        "count": 15,
+        "rate": 13.2
+      },
+      {
+        "itemId": 57,
+        "name": "scimitar",
+        "count": 14,
+        "rate": 12.3
+      },
+      {
+        "itemId": 58,
+        "name": "life hammer",
+        "count": 14,
+        "rate": 12.3
+      },
+      {
+        "itemId": 151,
+        "name": "elemental leather",
+        "count": 14,
+        "rate": 12.3
+      },
+      {
+        "itemId": 219,
+        "name": "magic arrows",
+        "count": 12,
+        "rate": 10.5
+      },
+      {
+        "itemId": 155,
+        "name": "xcelsus shield",
+        "count": 11,
+        "rate": 9.6
+      },
+      {
+        "itemId": 65,
+        "name": "vorpal battle axe",
+        "count": 9,
+        "rate": 7.9
+      },
+      {
+        "itemId": 53,
+        "name": "vlswo0d",
+        "count": 8,
+        "rate": 7.0
+      },
+      {
+        "itemId": 156,
+        "name": "mage hat",
+        "count": 8,
+        "rate": 7.0
+      },
+      {
+        "itemId": 56,
+        "name": "ice mace",
+        "count": 7,
+        "rate": 6.1
+      },
+      {
+        "itemId": 55,
+        "name": "ice blade",
+        "count": 6,
+        "rate": 5.3
+      },
+      {
+        "itemId": 64,
+        "name": "lightning bow",
+        "count": 6,
+        "rate": 5.3
+      },
+      {
+        "itemId": 132,
+        "name": "blood axe",
+        "count": 6,
+        "rate": 5.3
+      },
+      {
+        "itemId": 228,
+        "name": "salutaris ring",
+        "count": 6,
+        "rate": 5.3
+      },
+      {
+        "itemId": 54,
+        "name": "blood rapier",
+        "count": 5,
+        "rate": 4.4
+      },
+      {
+        "itemId": 119,
+        "name": "vorpal scimitar",
+        "count": 5,
+        "rate": 4.4
+      },
+      {
+        "itemId": 334,
+        "name": "ne sLaf",
+        "count": 5,
+        "rate": 4.4
+      },
+      {
+        "itemId": 138,
+        "name": "ice hammer",
+        "count": 4,
+        "rate": 3.5
+      },
+      {
+        "itemId": 223,
+        "name": "scroll creare porta",
+        "count": 4,
+        "rate": 3.5
+      },
+      {
+        "itemId": 801,
+        "name": "dragon bow",
+        "count": 4,
+        "rate": 3.5
+      },
+      {
+        "itemId": 226,
+        "name": "white potion",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 305,
+        "name": "salutaris ring",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 62,
+        "name": "lightning mace",
+        "count": 2,
+        "rate": 1.8
+      },
+      {
+        "itemId": 632,
+        "name": "Cloak of Accuracy",
+        "count": 2,
+        "rate": 1.8
+      },
+      {
+        "itemId": 333,
+        "name": "lightning staff",
+        "count": 1,
+        "rate": 0.9
+      },
+      {
+        "itemId": 619,
+        "name": "Dragon Boots",
+        "count": 1,
+        "rate": 0.9
+      },
+      {
+        "itemId": 633,
+        "name": "Cape of Defense",
+        "count": 1,
+        "rate": 0.9
+      }
+    ]
+  },
+  "39": {
+    "kills": 119,
+    "drops": [
+      {
+        "itemId": 66,
+        "name": "giant sword",
+        "count": 77,
+        "rate": 64.7
+      },
+      {
+        "itemId": 45,
+        "name": "acij axe",
+        "count": 20,
+        "rate": 16.8
+      },
+      {
+        "itemId": 51,
+        "name": "earth hammer",
+        "count": 12,
+        "rate": 10.1
+      },
+      {
+        "itemId": 60,
+        "name": "lightning dagger",
+        "count": 12,
+        "rate": 10.1
+      },
+      {
+        "itemId": 119,
+        "name": "vorpal scimitar",
+        "count": 12,
+        "rate": 10.1
+      },
+      {
+        "itemId": 157,
+        "name": "gloves of skilj",
+        "count": 11,
+        "rate": 9.2
+      },
+      {
+        "itemId": 159,
+        "name": "bone staff",
+        "count": 11,
+        "rate": 9.2
+      },
+      {
+        "itemId": 143,
+        "name": "reflective plate",
+        "count": 10,
+        "rate": 8.4
+      },
+      {
+        "itemId": 752,
+        "name": "tueri intelligence ring",
+        "count": 10,
+        "rate": 8.4
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 9,
+        "rate": 7.6
+      },
+      {
+        "itemId": 132,
+        "name": "blood axe",
+        "count": 8,
+        "rate": 6.7
+      },
+      {
+        "itemId": 213,
+        "name": "vis baritus scroll",
+        "count": 8,
+        "rate": 6.7
+      },
+      {
+        "itemId": 215,
+        "name": "arcflamma scroll",
+        "count": 8,
+        "rate": 6.7
+      },
+      {
+        "itemId": 406,
+        "name": "fire ow",
+        "count": 8,
+        "rate": 6.7
+      },
+      {
+        "itemId": 539,
+        "name": "apprentice energy hat",
+        "count": 8,
+        "rate": 6.7
+      },
+      {
+        "itemId": 673,
+        "name": "Ice Wand",
+        "count": 8,
+        "rate": 6.7
+      },
+      {
+        "itemId": 738,
+        "name": "energy helmet",
+        "count": 7,
+        "rate": 5.9
+      },
+      {
+        "itemId": 57,
+        "name": "scimitar",
+        "count": 6,
+        "rate": 5.0
+      },
+      {
+        "itemId": 58,
+        "name": "life hammer",
+        "count": 6,
+        "rate": 5.0
+      },
+      {
+        "itemId": 61,
+        "name": "lightning staff",
+        "count": 6,
+        "rate": 5.0
+      },
+      {
+        "itemId": 146,
+        "name": "dragon sheld",
+        "count": 6,
+        "rate": 5.0
+      },
+      {
+        "itemId": 219,
+        "name": "magic arrows",
+        "count": 6,
+        "rate": 5.0
+      },
+      {
+        "itemId": 228,
+        "name": "salutaris ring",
+        "count": 6,
+        "rate": 5.0
+      },
+      {
+        "itemId": 452,
+        "name": "hit amulet",
+        "count": 6,
+        "rate": 5.0
+      },
+      {
+        "itemId": 68,
+        "name": "sanctus blade",
+        "count": 5,
+        "rate": 4.2
+      },
+      {
+        "itemId": 64,
+        "name": "lightning bow",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 65,
+        "name": "vorpal battle axe",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 152,
+        "name": "eleental chain",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 155,
+        "name": "xcelsus shield",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 160,
+        "name": "sanctus macc",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 266,
+        "name": "barbed oak arows",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 338,
+        "name": "runic staff",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 351,
+        "name": "fire helmet",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 150,
+        "name": "elemetal helmet",
+        "count": 3,
+        "rate": 2.5
+      },
+      {
+        "itemId": 730,
+        "name": "acid bow",
+        "count": 3,
+        "rate": 2.5
+      },
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 42,
+        "name": "acid hglberd",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 59,
+        "name": "acid staff",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 67,
+        "name": "bone mace",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 139,
+        "name": "reflective shiel",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 141,
+        "name": "reflective rob",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 158,
+        "name": "sanctus shielj",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 171,
+        "name": "un9c scimitar",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 230,
+        "name": "animus ring",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 264,
+        "name": "velocitas ring",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 268,
+        "name": "barbed magi arrows",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 295,
+        "name": "mage hat",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 317,
+        "name": "excelsus shield",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 618,
+        "name": "Boots of Fortitude",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 736,
+        "name": "apprentice energy hat",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 737,
+        "name": "frost helmet",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 63,
+        "name": "lightning sword",
+        "count": 1,
+        "rate": 0.8
+      }
+    ]
+  },
+  "60": {
+    "kills": 193,
+    "drops": [
+      {
+        "itemId": 33,
+        "name": "fire mace",
+        "count": 226,
+        "rate": 117.1
+      },
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 27,
+        "rate": 14.0
+      },
+      {
+        "itemId": 206,
+        "name": "hit amulet",
+        "count": 27,
+        "rate": 14.0
+      },
+      {
+        "itemId": 734,
+        "name": "strike helmet",
+        "count": 26,
+        "rate": 13.5
+      },
+      {
+        "itemId": 144,
+        "name": "specteral goves",
+        "count": 22,
+        "rate": 11.4
+      },
+      {
+        "itemId": 51,
+        "name": "earth hammer",
+        "count": 21,
+        "rate": 10.9
+      },
+      {
+        "itemId": 218,
+        "name": "salubris ring",
+        "count": 20,
+        "rate": 10.4
+      },
+      {
+        "itemId": 285,
+        "name": "acid staff",
+        "count": 20,
+        "rate": 10.4
+      },
+      {
+        "itemId": 214,
+        "name": "tueri ring",
+        "count": 18,
+        "rate": 9.3
+      },
+      {
+        "itemId": 503,
+        "name": "fighter gloves",
+        "count": 18,
+        "rate": 9.3
+      },
+      {
+        "itemId": 617,
+        "name": "Boots of Dodging",
+        "count": 17,
+        "rate": 8.8
+      },
+      {
+        "itemId": 735,
+        "name": "apprentice spirit hat",
+        "count": 15,
+        "rate": 7.8
+      },
+      {
+        "itemId": 45,
+        "name": "acij axe",
+        "count": 14,
+        "rate": 7.3
+      },
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 13,
+        "rate": 6.7
+      },
+      {
+        "itemId": 54,
+        "name": "blood rapier",
+        "count": 12,
+        "rate": 6.2
+      },
+      {
+        "itemId": 65,
+        "name": "vorpal battle axe",
+        "count": 12,
+        "rate": 6.2
+      },
+      {
+        "itemId": 48,
+        "name": "ispell axe",
+        "count": 11,
+        "rate": 5.7
+      },
+      {
+        "itemId": 119,
+        "name": "vorpal scimitar",
+        "count": 11,
+        "rate": 5.7
+      },
+      {
+        "itemId": 141,
+        "name": "reflective rob",
+        "count": 11,
+        "rate": 5.7
+      },
+      {
+        "itemId": 217,
+        "name": "key",
+        "count": 11,
+        "rate": 5.7
+      },
+      {
+        "itemId": 146,
+        "name": "dragon sheld",
+        "count": 10,
+        "rate": 5.2
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 10,
+        "rate": 5.2
+      },
+      {
+        "itemId": 731,
+        "name": "magic hat of spirit",
+        "count": 10,
+        "rate": 5.2
+      },
+      {
+        "itemId": 42,
+        "name": "acid hglberd",
+        "count": 9,
+        "rate": 4.7
+      },
+      {
+        "itemId": 540,
+        "name": "apprentice fire hat",
+        "count": 9,
+        "rate": 4.7
+      },
+      {
+        "itemId": 633,
+        "name": "Cape of Defense",
+        "count": 8,
+        "rate": 4.1
+      },
+      {
+        "itemId": 733,
+        "name": "rage helmet",
+        "count": 8,
+        "rate": 4.1
+      },
+      {
+        "itemId": 751,
+        "name": "tueri agility ring",
+        "count": 8,
+        "rate": 4.1
+      },
+      {
+        "itemId": 47,
+        "name": "dgspell mace",
+        "count": 7,
+        "rate": 3.6
+      },
+      {
+        "itemId": 142,
+        "name": "reflective chin",
+        "count": 7,
+        "rate": 3.6
+      },
+      {
+        "itemId": 266,
+        "name": "barbed oak arows",
+        "count": 7,
+        "rate": 3.6
+      },
+      {
+        "itemId": 304,
+        "name": "alubris ring",
+        "count": 7,
+        "rate": 3.6
+      },
+      {
+        "itemId": 283,
+        "name": "acid halberd",
+        "count": 6,
+        "rate": 3.1
+      },
+      {
+        "itemId": 43,
+        "name": "acid cace",
+        "count": 5,
+        "rate": 2.6
+      },
+      {
+        "itemId": 139,
+        "name": "reflective shiel",
+        "count": 5,
+        "rate": 2.6
+      },
+      {
+        "itemId": 539,
+        "name": "apprentice energy hat",
+        "count": 5,
+        "rate": 2.6
+      },
+      {
+        "itemId": 801,
+        "name": "dragon bow",
+        "count": 5,
+        "rate": 2.6
+      },
+      {
+        "itemId": 226,
+        "name": "white potion",
+        "count": 4,
+        "rate": 2.1
+      },
+      {
+        "itemId": 17,
+        "name": "battle@hammer",
+        "count": 3,
+        "rate": 1.6
+      },
+      {
+        "itemId": 53,
+        "name": "vlswo0d",
+        "count": 3,
+        "rate": 1.6
+      },
+      {
+        "itemId": 215,
+        "name": "arcflamma scroll",
+        "count": 3,
+        "rate": 1.6
+      },
+      {
+        "itemId": 406,
+        "name": "fire ow",
+        "count": 3,
+        "rate": 1.6
+      },
+      {
+        "itemId": 632,
+        "name": "Cloak of Accuracy",
+        "count": 3,
+        "rate": 1.6
+      },
+      {
+        "itemId": 132,
+        "name": "blood axe",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 143,
+        "name": "reflective plate",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 145,
+        "name": "dragon helmet",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 147,
+        "name": "gloves o strength",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 212,
+        "name": "fulgur wand",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 213,
+        "name": "vis baritus scroll",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 330,
+        "name": "gloves of strength",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 339,
+        "name": "tueri ring",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 557,
+        "name": "maggc spiked plate",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 618,
+        "name": "Boots of Fortitude",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 638,
+        "name": "item#638",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 753,
+        "name": "tueri wisdom ring",
+        "count": 2,
+        "rate": 1.0
+      },
+      {
+        "itemId": 41,
+        "name": "acid dager",
+        "count": 1,
+        "rate": 0.5
+      },
+      {
+        "itemId": 59,
+        "name": "acid staff",
+        "count": 1,
+        "rate": 0.5
+      },
+      {
+        "itemId": 210,
+        "name": "emerald",
+        "count": 1,
+        "rate": 0.5
+      },
+      {
+        "itemId": 211,
+        "name": "red opal",
+        "count": 1,
+        "rate": 0.5
+      },
+      {
+        "itemId": 284,
+        "name": "acid mace",
+        "count": 1,
+        "rate": 0.5
+      },
+      {
+        "itemId": 343,
+        "name": "minor spirit ring",
+        "count": 1,
+        "rate": 0.5
+      },
+      {
+        "itemId": 732,
+        "name": "magic hat of shadow",
+        "count": 1,
+        "rate": 0.5
+      }
+    ]
+  },
+  "63": {
+    "kills": 131,
+    "drops": [
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 39,
+        "rate": 29.8
+      },
+      {
+        "itemId": 738,
+        "name": "energy helmet",
+        "count": 34,
+        "rate": 26.0
+      },
+      {
+        "itemId": 452,
+        "name": "hit amulet",
+        "count": 26,
+        "rate": 19.8
+      },
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 23,
+        "rate": 17.6
+      },
+      {
+        "itemId": 55,
+        "name": "ice blade",
+        "count": 18,
+        "rate": 13.7
+      },
+      {
+        "itemId": 63,
+        "name": "lightning sword",
+        "count": 18,
+        "rate": 13.7
+      },
+      {
+        "itemId": 351,
+        "name": "fire helmet",
+        "count": 18,
+        "rate": 13.7
+      },
+      {
+        "itemId": 53,
+        "name": "vlswo0d",
+        "count": 15,
+        "rate": 11.5
+      },
+      {
+        "itemId": 155,
+        "name": "xcelsus shield",
+        "count": 13,
+        "rate": 9.9
+      },
+      {
+        "itemId": 60,
+        "name": "lightning dagger",
+        "count": 12,
+        "rate": 9.2
+      },
+      {
+        "itemId": 151,
+        "name": "elemental leather",
+        "count": 10,
+        "rate": 7.6
+      },
+      {
+        "itemId": 226,
+        "name": "white potion",
+        "count": 10,
+        "rate": 7.6
+      },
+      {
+        "itemId": 737,
+        "name": "frost helmet",
+        "count": 9,
+        "rate": 6.9
+      },
+      {
+        "itemId": 149,
+        "name": "elemenal shield",
+        "count": 8,
+        "rate": 6.1
+      },
+      {
+        "itemId": 632,
+        "name": "Cloak of Accuracy",
+        "count": 8,
+        "rate": 6.1
+      },
+      {
+        "itemId": 801,
+        "name": "dragon bow",
+        "count": 8,
+        "rate": 6.1
+      },
+      {
+        "itemId": 64,
+        "name": "lightning bow",
+        "count": 7,
+        "rate": 5.3
+      },
+      {
+        "itemId": 62,
+        "name": "lightning mace",
+        "count": 6,
+        "rate": 4.6
+      },
+      {
+        "itemId": 119,
+        "name": "vorpal scimitar",
+        "count": 6,
+        "rate": 4.6
+      },
+      {
+        "itemId": 156,
+        "name": "mage hat",
+        "count": 6,
+        "rate": 4.6
+      },
+      {
+        "itemId": 305,
+        "name": "salutaris ring",
+        "count": 6,
+        "rate": 4.6
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 6,
+        "rate": 4.6
+      },
+      {
+        "itemId": 736,
+        "name": "apprentice energy hat",
+        "count": 6,
+        "rate": 4.6
+      },
+      {
+        "itemId": 58,
+        "name": "life hammer",
+        "count": 5,
+        "rate": 3.8
+      },
+      {
+        "itemId": 228,
+        "name": "salutaris ring",
+        "count": 5,
+        "rate": 3.8
+      },
+      {
+        "itemId": 633,
+        "name": "Cape of Defense",
+        "count": 5,
+        "rate": 3.8
+      },
+      {
+        "itemId": 138,
+        "name": "ice hammer",
+        "count": 4,
+        "rate": 3.1
+      },
+      {
+        "itemId": 219,
+        "name": "magic arrows",
+        "count": 4,
+        "rate": 3.1
+      },
+      {
+        "itemId": 56,
+        "name": "ice mace",
+        "count": 3,
+        "rate": 2.3
+      },
+      {
+        "itemId": 150,
+        "name": "elemetal helmet",
+        "count": 3,
+        "rate": 2.3
+      },
+      {
+        "itemId": 223,
+        "name": "scroll creare porta",
+        "count": 3,
+        "rate": 2.3
+      },
+      {
+        "itemId": 54,
+        "name": "blood rapier",
+        "count": 2,
+        "rate": 1.5
+      },
+      {
+        "itemId": 65,
+        "name": "vorpal battle axe",
+        "count": 2,
+        "rate": 1.5
+      },
+      {
+        "itemId": 125,
+        "name": "blood mace",
+        "count": 2,
+        "rate": 1.5
+      },
+      {
+        "itemId": 132,
+        "name": "blood axe",
+        "count": 2,
+        "rate": 1.5
+      },
+      {
+        "itemId": 334,
+        "name": "ne sLaf",
+        "count": 2,
+        "rate": 1.5
+      },
+      {
+        "itemId": 557,
+        "name": "maggc spiked plate",
+        "count": 1,
+        "rate": 0.8
+      },
+      {
+        "itemId": 673,
+        "name": "Ice Wand",
+        "count": 1,
+        "rate": 0.8
+      }
+    ]
+  },
+  "65": {
+    "kills": 4,
+    "drops": [
+      {
+        "itemId": 33,
+        "name": "fire mace",
+        "count": 4,
+        "rate": 100.0
+      },
+      {
+        "itemId": 734,
+        "name": "strike helmet",
+        "count": 2,
+        "rate": 50.0
+      }
+    ]
+  },
+  "70": {
+    "kills": 45,
+    "drops": [
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 18,
+        "rate": 40.0
+      },
+      {
+        "itemId": 33,
+        "name": "fire mace",
+        "count": 16,
+        "rate": 35.6
+      },
+      {
+        "itemId": 51,
+        "name": "earth hammer",
+        "count": 9,
+        "rate": 20.0
+      },
+      {
+        "itemId": 212,
+        "name": "fulgur wand",
+        "count": 8,
+        "rate": 17.8
+      },
+      {
+        "itemId": 632,
+        "name": "Cloak of Accuracy",
+        "count": 7,
+        "rate": 15.6
+      },
+      {
+        "itemId": 65,
+        "name": "vorpal battle axe",
+        "count": 6,
+        "rate": 13.3
+      },
+      {
+        "itemId": 406,
+        "name": "fire ow",
+        "count": 5,
+        "rate": 11.1
+      },
+      {
+        "itemId": 218,
+        "name": "salubris ring",
+        "count": 4,
+        "rate": 8.9
+      },
+      {
+        "itemId": 285,
+        "name": "acid staff",
+        "count": 4,
+        "rate": 8.9
+      },
+      {
+        "itemId": 633,
+        "name": "Cape of Defense",
+        "count": 4,
+        "rate": 8.9
+      },
+      {
+        "itemId": 47,
+        "name": "dgspell mace",
+        "count": 3,
+        "rate": 6.7
+      },
+      {
+        "itemId": 734,
+        "name": "strike helmet",
+        "count": 3,
+        "rate": 6.7
+      },
+      {
+        "itemId": 735,
+        "name": "apprentice spirit hat",
+        "count": 3,
+        "rate": 6.7
+      },
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 52,
+        "name": "staff of omnis",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 54,
+        "name": "blood rapier",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 59,
+        "name": "acid staff",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 139,
+        "name": "reflective shiel",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 141,
+        "name": "reflective rob",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 206,
+        "name": "hit amulet",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 217,
+        "name": "key",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 733,
+        "name": "rage helmet",
+        "count": 2,
+        "rate": 4.4
+      },
+      {
+        "itemId": 43,
+        "name": "acid cace",
+        "count": 1,
+        "rate": 2.2
+      },
+      {
+        "itemId": 48,
+        "name": "ispell axe",
+        "count": 1,
+        "rate": 2.2
+      },
+      {
+        "itemId": 142,
+        "name": "reflective chin",
+        "count": 1,
+        "rate": 2.2
+      },
+      {
+        "itemId": 147,
+        "name": "gloves o strength",
+        "count": 1,
+        "rate": 2.2
+      },
+      {
+        "itemId": 254,
+        "name": "glowing potion",
+        "count": 1,
+        "rate": 2.2
+      }
+    ]
+  },
+  "71": {
+    "kills": 2,
+    "drops": []
+  },
+  "72": {
+    "kills": 2,
+    "drops": []
+  },
+  "74": {
+    "kills": 215,
+    "drops": [
+      {
+        "itemId": 61,
+        "name": "lightning staff",
+        "count": 236,
+        "rate": 109.8
+      },
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 138,
+        "rate": 64.2
+      },
+      {
+        "itemId": 34,
+        "name": "fire sword",
+        "count": 119,
+        "rate": 55.3
+      },
+      {
+        "itemId": 233,
+        "name": "nex arrows",
+        "count": 2,
+        "rate": 0.9
+      },
+      {
+        "itemId": 208,
+        "name": "wand of mederi",
+        "count": 1,
+        "rate": 0.5
+      }
+    ]
+  },
+  "317": {
+    "kills": 345,
+    "drops": [
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 410,
+        "rate": 118.8
+      },
+      {
+        "itemId": 61,
+        "name": "lightning staff",
+        "count": 153,
+        "rate": 44.3
+      },
+      {
+        "itemId": 34,
+        "name": "fire sword",
+        "count": 97,
+        "rate": 28.1
+      },
+      {
+        "itemId": 226,
+        "name": "white potion",
+        "count": 19,
+        "rate": 5.5
+      },
+      {
+        "itemId": 207,
+        "name": "wand of transport",
+        "count": 2,
+        "rate": 0.6
+      },
+      {
+        "itemId": 208,
+        "name": "wand of mederi",
+        "count": 1,
+        "rate": 0.3
+      }
+    ]
+  },
+  "335": {
+    "kills": 299,
+    "drops": [
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 237,
+        "rate": 79.3
+      },
+      {
+        "itemId": 34,
+        "name": "fire sword",
+        "count": 225,
+        "rate": 75.3
+      },
+      {
+        "itemId": 61,
+        "name": "lightning staff",
+        "count": 155,
+        "rate": 51.8
+      },
+      {
+        "itemId": 226,
+        "name": "white potion",
+        "count": 4,
+        "rate": 1.3
+      },
+      {
+        "itemId": 233,
+        "name": "nex arrows",
+        "count": 3,
+        "rate": 1.0
+      }
+    ]
+  },
+  "375": {
+    "kills": 285,
+    "drops": [
+      {
+        "itemId": 481,
+        "name": "giant sword",
+        "count": 583,
+        "rate": 204.6
+      },
+      {
+        "itemId": 69,
+        "name": "lucrum animus staff",
+        "count": 123,
+        "rate": 43.2
+      },
+      {
+        "itemId": 233,
+        "name": "nex arrows",
+        "count": 25,
+        "rate": 8.8
+      },
+      {
+        "itemId": 801,
+        "name": "dragon bow",
+        "count": 4,
+        "rate": 1.4
+      },
+      {
+        "itemId": 208,
+        "name": "wand of mederi",
+        "count": 1,
+        "rate": 0.4
+      },
+      {
+        "itemId": 226,
+        "name": "white potion",
+        "count": 1,
+        "rate": 0.4
+      }
+    ]
+  },
+  "383": {
+    "kills": 3,
+    "drops": [
+      {
+        "itemId": 33,
+        "name": "fire mace",
+        "count": 3,
+        "rate": 100.0
+      },
+      {
+        "itemId": 141,
+        "name": "reflective rob",
+        "count": 2,
+        "rate": 66.7
+      }
+    ]
+  },
+  "384": {
+    "kills": 117,
+    "drops": [
+      {
+        "itemId": 366,
+        "name": "Hell Sword",
+        "count": 46,
+        "rate": 39.3
+      },
+      {
+        "itemId": 59,
+        "name": "acid staff",
+        "count": 33,
+        "rate": 28.2
+      },
+      {
+        "itemId": 56,
+        "name": "ice mace",
+        "count": 14,
+        "rate": 12.0
+      },
+      {
+        "itemId": 60,
+        "name": "lightning dagger",
+        "count": 10,
+        "rate": 8.5
+      },
+      {
+        "itemId": 119,
+        "name": "vorpal scimitar",
+        "count": 8,
+        "rate": 6.8
+      },
+      {
+        "itemId": 219,
+        "name": "magic arrows",
+        "count": 8,
+        "rate": 6.8
+      },
+      {
+        "itemId": 801,
+        "name": "dragon bow",
+        "count": 8,
+        "rate": 6.8
+      },
+      {
+        "itemId": 55,
+        "name": "ice blade",
+        "count": 7,
+        "rate": 6.0
+      },
+      {
+        "itemId": 540,
+        "name": "apprentice fire hat",
+        "count": 7,
+        "rate": 6.0
+      },
+      {
+        "itemId": 51,
+        "name": "earth hammer",
+        "count": 6,
+        "rate": 5.1
+      },
+      {
+        "itemId": 144,
+        "name": "specteral goves",
+        "count": 6,
+        "rate": 5.1
+      },
+      {
+        "itemId": 149,
+        "name": "elemenal shield",
+        "count": 6,
+        "rate": 5.1
+      },
+      {
+        "itemId": 218,
+        "name": "salubris ring",
+        "count": 6,
+        "rate": 5.1
+      },
+      {
+        "itemId": 54,
+        "name": "blood rapier",
+        "count": 5,
+        "rate": 4.3
+      },
+      {
+        "itemId": 132,
+        "name": "blood axe",
+        "count": 5,
+        "rate": 4.3
+      },
+      {
+        "itemId": 147,
+        "name": "gloves o strength",
+        "count": 5,
+        "rate": 4.3
+      },
+      {
+        "itemId": 150,
+        "name": "elemetal helmet",
+        "count": 5,
+        "rate": 4.3
+      },
+      {
+        "itemId": 632,
+        "name": "Cloak of Accuracy",
+        "count": 5,
+        "rate": 4.3
+      },
+      {
+        "itemId": 738,
+        "name": "energy helmet",
+        "count": 5,
+        "rate": 4.3
+      },
+      {
+        "itemId": 33,
+        "name": "fire mace",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 61,
+        "name": "lightning staff",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 65,
+        "name": "vorpal battle axe",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 162,
+        "name": "mystic hejmeD",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 223,
+        "name": "scroll creare porta",
+        "count": 4,
+        "rate": 3.4
+      },
+      {
+        "itemId": 48,
+        "name": "ispell axe",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 145,
+        "name": "dragon helmet",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 333,
+        "name": "lightning staff",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 557,
+        "name": "maggc spiked plate",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 735,
+        "name": "apprentice spirit hat",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 736,
+        "name": "apprentice energy hat",
+        "count": 3,
+        "rate": 2.6
+      },
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 53,
+        "name": "vlswo0d",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 58,
+        "name": "life hammer",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 66,
+        "name": "giant sword",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 138,
+        "name": "ice hammer",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 254,
+        "name": "glowing potion",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 339,
+        "name": "tueri ring",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 2,
+        "rate": 1.7
+      },
+      {
+        "itemId": 67,
+        "name": "bone mace",
+        "count": 1,
+        "rate": 0.9
+      },
+      {
+        "itemId": 71,
+        "name": "mystic short sword",
+        "count": 1,
+        "rate": 0.9
+      },
+      {
+        "itemId": 146,
+        "name": "dragon sheld",
+        "count": 1,
+        "rate": 0.9
+      },
+      {
+        "itemId": 338,
+        "name": "runic staff",
+        "count": 1,
+        "rate": 0.9
+      }
+    ]
+  },
+  "385": {
+    "kills": 5,
+    "drops": [
+      {
+        "itemId": 42,
+        "name": "acid hglberd",
+        "count": 8,
+        "rate": 160.0
+      },
+      {
+        "itemId": 226,
+        "name": "white potion",
+        "count": 8,
+        "rate": 160.0
+      },
+      {
+        "itemId": 33,
+        "name": "fire mace",
+        "count": 4,
+        "rate": 80.0
+      },
+      {
+        "itemId": 431,
+        "name": "power potion",
+        "count": 4,
+        "rate": 80.0
+      },
+      {
+        "itemId": 633,
+        "name": "Cape of Defense",
+        "count": 3,
+        "rate": 60.0
+      }
+    ]
+  },
+  "388": {
+    "kills": 78,
+    "drops": [
+      {
+        "itemId": 69,
+        "name": "lucrum animus staff",
+        "count": 101,
+        "rate": 129.5
+      },
+      {
+        "itemId": 481,
+        "name": "giant sword",
+        "count": 52,
+        "rate": 66.7
+      },
+      {
+        "itemId": 208,
+        "name": "wand of mederi",
+        "count": 4,
+        "rate": 5.1
+      },
+      {
+        "itemId": 226,
+        "name": "white potion",
+        "count": 3,
+        "rate": 3.8
+      },
+      {
+        "itemId": 233,
+        "name": "nex arrows",
+        "count": 2,
+        "rate": 2.6
+      }
+    ]
+  },
+  "389": {
+    "kills": 10,
+    "drops": [
+      {
+        "itemId": 452,
+        "name": "hit amulet",
+        "count": 8,
+        "rate": 80.0
+      },
+      {
+        "itemId": 63,
+        "name": "lightning sword",
+        "count": 5,
+        "rate": 50.0
+      },
+      {
+        "itemId": 62,
+        "name": "lightning mace",
+        "count": 4,
+        "rate": 40.0
+      },
+      {
+        "itemId": 173,
+        "name": "rEnic staff",
+        "count": 4,
+        "rate": 40.0
+      },
+      {
+        "itemId": 268,
+        "name": "barbed magi arrows",
+        "count": 4,
+        "rate": 40.0
+      },
+      {
+        "itemId": 333,
+        "name": "lightning staff",
+        "count": 4,
+        "rate": 40.0
+      },
+      {
+        "itemId": 60,
+        "name": "lightning dagger",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 64,
+        "name": "lightning bow",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 73,
+        "name": "mystic staff",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 159,
+        "name": "bone staff",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 163,
+        "name": "mystic l_at8er",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 165,
+        "name": "mysticpl1te",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 172,
+        "name": "ruic mace",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 231,
+        "name": "lucranimus ring",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 737,
+        "name": "frost helmet",
+        "count": 2,
+        "rate": 20.0
+      },
+      {
+        "itemId": 69,
+        "name": "lucrum animus staff",
+        "count": 1,
+        "rate": 10.0
+      },
+      {
+        "itemId": 208,
+        "name": "wand of mederi",
+        "count": 1,
+        "rate": 10.0
+      },
+      {
+        "itemId": 366,
+        "name": "Hell Sword",
+        "count": 1,
+        "rate": 10.0
+      }
+    ]
+  },
+  "403": {
+    "kills": 2,
+    "drops": [
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 2,
+        "rate": 100.0
+      },
+      {
+        "itemId": 143,
+        "name": "reflective plate",
+        "count": 2,
+        "rate": 100.0
+      }
+    ]
+  },
+  "457": {
+    "kills": 139,
+    "drops": [
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 146,
+        "rate": 105.0
+      },
+      {
+        "itemId": 146,
+        "name": "dragon sheld",
+        "count": 21,
+        "rate": 15.1
+      },
+      {
+        "itemId": 51,
+        "name": "earth hammer",
+        "count": 19,
+        "rate": 13.7
+      },
+      {
+        "itemId": 57,
+        "name": "scimitar",
+        "count": 19,
+        "rate": 13.7
+      },
+      {
+        "itemId": 56,
+        "name": "ice mace",
+        "count": 17,
+        "rate": 12.2
+      },
+      {
+        "itemId": 218,
+        "name": "salubris ring",
+        "count": 17,
+        "rate": 12.2
+      },
+      {
+        "itemId": 53,
+        "name": "vlswo0d",
+        "count": 16,
+        "rate": 11.5
+      },
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 14,
+        "rate": 10.1
+      },
+      {
+        "itemId": 223,
+        "name": "scroll creare porta",
+        "count": 14,
+        "rate": 10.1
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 13,
+        "rate": 9.4
+      },
+      {
+        "itemId": 557,
+        "name": "maggc spiked plate",
+        "count": 13,
+        "rate": 9.4
+      },
+      {
+        "itemId": 801,
+        "name": "dragon bow",
+        "count": 12,
+        "rate": 8.6
+      },
+      {
+        "itemId": 735,
+        "name": "apprentice spirit hat",
+        "count": 11,
+        "rate": 7.9
+      },
+      {
+        "itemId": 138,
+        "name": "ice hammer",
+        "count": 10,
+        "rate": 7.2
+      },
+      {
+        "itemId": 633,
+        "name": "Cape of Defense",
+        "count": 10,
+        "rate": 7.2
+      },
+      {
+        "itemId": 144,
+        "name": "specteral goves",
+        "count": 9,
+        "rate": 6.5
+      },
+      {
+        "itemId": 60,
+        "name": "lightning dagger",
+        "count": 8,
+        "rate": 5.8
+      },
+      {
+        "itemId": 540,
+        "name": "apprentice fire hat",
+        "count": 8,
+        "rate": 5.8
+      },
+      {
+        "itemId": 48,
+        "name": "ispell axe",
+        "count": 6,
+        "rate": 4.3
+      },
+      {
+        "itemId": 55,
+        "name": "ice blade",
+        "count": 6,
+        "rate": 4.3
+      },
+      {
+        "itemId": 58,
+        "name": "life hammer",
+        "count": 6,
+        "rate": 4.3
+      },
+      {
+        "itemId": 147,
+        "name": "gloves o strength",
+        "count": 6,
+        "rate": 4.3
+      },
+      {
+        "itemId": 149,
+        "name": "elemenal shield",
+        "count": 6,
+        "rate": 4.3
+      },
+      {
+        "itemId": 285,
+        "name": "acid staff",
+        "count": 6,
+        "rate": 4.3
+      },
+      {
+        "itemId": 54,
+        "name": "blood rapier",
+        "count": 5,
+        "rate": 3.6
+      },
+      {
+        "itemId": 220,
+        "name": "magic bag",
+        "count": 5,
+        "rate": 3.6
+      },
+      {
+        "itemId": 49,
+        "name": "specteral dagger",
+        "count": 4,
+        "rate": 2.9
+      },
+      {
+        "itemId": 132,
+        "name": "blood axe",
+        "count": 4,
+        "rate": 2.9
+      },
+      {
+        "itemId": 219,
+        "name": "magic arrows",
+        "count": 4,
+        "rate": 2.9
+      },
+      {
+        "itemId": 632,
+        "name": "Cloak of Accuracy",
+        "count": 4,
+        "rate": 2.9
+      },
+      {
+        "itemId": 217,
+        "name": "key",
+        "count": 3,
+        "rate": 2.2
+      },
+      {
+        "itemId": 304,
+        "name": "alubris ring",
+        "count": 3,
+        "rate": 2.2
+      },
+      {
+        "itemId": 330,
+        "name": "gloves of strength",
+        "count": 3,
+        "rate": 2.2
+      },
+      {
+        "itemId": 50,
+        "name": "specteral mace",
+        "count": 2,
+        "rate": 1.4
+      },
+      {
+        "itemId": 119,
+        "name": "vorpal scimitar",
+        "count": 2,
+        "rate": 1.4
+      },
+      {
+        "itemId": 366,
+        "name": "Hell Sword",
+        "count": 2,
+        "rate": 1.4
+      },
+      {
+        "itemId": 47,
+        "name": "dgspell mace",
+        "count": 1,
+        "rate": 0.7
+      },
+      {
+        "itemId": 150,
+        "name": "elemetal helmet",
+        "count": 1,
+        "rate": 0.7
+      },
+      {
+        "itemId": 333,
+        "name": "lightning staff",
+        "count": 1,
+        "rate": 0.7
+      },
+      {
+        "itemId": 736,
+        "name": "apprentice energy hat",
+        "count": 1,
+        "rate": 0.7
+      }
+    ]
+  },
+  "465": {
+    "kills": 69,
+    "drops": [
+      {
+        "itemId": 32,
+        "name": "fire staff",
+        "count": 41,
+        "rate": 59.4
+      },
+      {
+        "itemId": 44,
+        "name": "acid&sword",
+        "count": 15,
+        "rate": 21.7
+      },
+      {
+        "itemId": 58,
+        "name": "life hammer",
+        "count": 13,
+        "rate": 18.8
+      },
+      {
+        "itemId": 557,
+        "name": "maggc spiked plate",
+        "count": 13,
+        "rate": 18.8
+      },
+      {
+        "itemId": 56,
+        "name": "ice mace",
+        "count": 11,
+        "rate": 15.9
+      },
+      {
+        "itemId": 132,
+        "name": "blood axe",
+        "count": 11,
+        "rate": 15.9
+      },
+      {
+        "itemId": 54,
+        "name": "blood rapier",
+        "count": 9,
+        "rate": 13.0
+      },
+      {
+        "itemId": 59,
+        "name": "acid staff",
+        "count": 9,
+        "rate": 13.0
+      },
+      {
+        "itemId": 147,
+        "name": "gloves o strength",
+        "count": 9,
+        "rate": 13.0
+      },
+      {
+        "itemId": 150,
+        "name": "elemetal helmet",
+        "count": 9,
+        "rate": 13.0
+      },
+      {
+        "itemId": 219,
+        "name": "magic arrows",
+        "count": 9,
+        "rate": 13.0
+      },
+      {
+        "itemId": 801,
+        "name": "dragon bow",
+        "count": 9,
+        "rate": 13.0
+      },
+      {
+        "itemId": 218,
+        "name": "salubris ring",
+        "count": 8,
+        "rate": 11.6
+      },
+      {
+        "itemId": 633,
+        "name": "Cape of Defense",
+        "count": 7,
+        "rate": 10.1
+      },
+      {
+        "itemId": 540,
+        "name": "apprentice fire hat",
+        "count": 6,
+        "rate": 8.7
+      },
+      {
+        "itemId": 632,
+        "name": "Cloak of Accuracy",
+        "count": 6,
+        "rate": 8.7
+      },
+      {
+        "itemId": 47,
+        "name": "dgspell mace",
+        "count": 5,
+        "rate": 7.2
+      },
+      {
+        "itemId": 51,
+        "name": "earth hammer",
+        "count": 4,
+        "rate": 5.8
+      },
+      {
+        "itemId": 57,
+        "name": "scimitar",
+        "count": 4,
+        "rate": 5.8
+      },
+      {
+        "itemId": 60,
+        "name": "lightning dagger",
+        "count": 4,
+        "rate": 5.8
+      },
+      {
+        "itemId": 119,
+        "name": "vorpal scimitar",
+        "count": 3,
+        "rate": 4.3
+      },
+      {
+        "itemId": 223,
+        "name": "scroll creare porta",
+        "count": 3,
+        "rate": 4.3
+      },
+      {
+        "itemId": 48,
+        "name": "ispell axe",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 65,
+        "name": "vorpal battle axe",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 138,
+        "name": "ice hammer",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 145,
+        "name": "dragon helmet",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 146,
+        "name": "dragon sheld",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 149,
+        "name": "elemenal shield",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 304,
+        "name": "alubris ring",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 366,
+        "name": "Hell Sword",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 735,
+        "name": "apprentice spirit hat",
+        "count": 2,
+        "rate": 2.9
+      },
+      {
+        "itemId": 53,
+        "name": "vlswo0d",
+        "count": 1,
+        "rate": 1.4
+      },
+      {
+        "itemId": 206,
+        "name": "hit amulet",
+        "count": 1,
+        "rate": 1.4
+      },
+      {
+        "itemId": 217,
+        "name": "key",
+        "count": 1,
+        "rate": 1.4
+      },
+      {
+        "itemId": 330,
+        "name": "gloves of strength",
+        "count": 1,
+        "rate": 1.4
+      }
+    ]
+  },
+  "466": {
+    "kills": 77,
+    "drops": [
+      {
+        "itemId": 59,
+        "name": "acid staff",
+        "count": 46,
+        "rate": 59.7
+      },
+      {
+        "itemId": 366,
+        "name": "Hell Sword",
+        "count": 26,
+        "rate": 33.8
+      },
+      {
+        "itemId": 540,
+        "name": "apprentice fire hat",
+        "count": 14,
+        "rate": 18.2
+      },
+      {
+        "itemId": 541,
+        "name": "apprentice shadow hot",
+        "count": 12,
+        "rate": 15.6
+      },
+      {
+        "itemId": 65,
+        "name": "vorpal battle axe",
+        "count": 9,
+        "rate": 11.7
+      },
+      {
+        "itemId": 54,
+        "name": "blood rapier",
+        "count": 8,
+        "rate": 10.4
+      },
+      {
+        "itemId": 144,
+        "name": "specteral goves",
+        "count": 6,
+        "rate": 7.8
+      },
+      {
+        "itemId": 147,
+        "name": "gloves o strength",
+        "count": 6,
+        "rate": 7.8
+      },
+      {
+        "itemId": 150,
+        "name": "elemetal helmet",
+        "count": 6,
+        "rate": 7.8
+      },
+      {
+        "itemId": 223,
+        "name": "scroll creare porta",
+        "count": 6,
+        "rate": 7.8
+      },
+      {
+        "itemId": 557,
+        "name": "maggc spiked plate",
+        "count": 6,
+        "rate": 7.8
+      },
+      {
+        "itemId": 735,
+        "name": "apprentice spirit hat",
+        "count": 6,
+        "rate": 7.8
+      },
+      {
+        "itemId": 736,
+        "name": "apprentice energy hat",
+        "count": 6,
+        "rate": 7.8
+      },
+      {
+        "itemId": 149,
+        "name": "elemenal shield",
+        "count": 5,
+        "rate": 6.5
+      },
+      {
+        "itemId": 633,
+        "name": "Cape of Defense",
+        "count": 5,
+        "rate": 6.5
+      },
+      {
+        "itemId": 51,
+        "name": "earth hammer",
+        "count": 4,
+        "rate": 5.2
+      },
+      {
+        "itemId": 56,
+        "name": "ice mace",
+        "count": 4,
+        "rate": 5.2
+      },
+      {
+        "itemId": 138,
+        "name": "ice hammer",
+        "count": 4,
+        "rate": 5.2
+      },
+      {
+        "itemId": 219,
+        "name": "magic arrows",
+        "count": 4,
+        "rate": 5.2
+      },
+      {
+        "itemId": 333,
+        "name": "lightning staff",
+        "count": 4,
+        "rate": 5.2
+      },
+      {
+        "itemId": 57,
+        "name": "scimitar",
+        "count": 3,
+        "rate": 3.9
+      },
+      {
+        "itemId": 132,
+        "name": "blood axe",
+        "count": 3,
+        "rate": 3.9
+      },
+      {
+        "itemId": 801,
+        "name": "dragon bow",
+        "count": 3,
+        "rate": 3.9
+      },
+      {
+        "itemId": 58,
+        "name": "life hammer",
+        "count": 2,
+        "rate": 2.6
+      },
+      {
+        "itemId": 60,
+        "name": "lightning dagger",
+        "count": 2,
+        "rate": 2.6
+      },
+      {
+        "itemId": 145,
+        "name": "dragon helmet",
+        "count": 2,
+        "rate": 2.6
+      },
+      {
+        "itemId": 146,
+        "name": "dragon sheld",
+        "count": 2,
+        "rate": 2.6
+      },
+      {
+        "itemId": 632,
+        "name": "Cloak of Accuracy",
+        "count": 2,
+        "rate": 2.6
+      },
+      {
+        "itemId": 220,
+        "name": "magic bag",
+        "count": 1,
+        "rate": 1.3
+      },
+      {
+        "itemId": 304,
+        "name": "alubris ring",
+        "count": 1,
+        "rate": 1.3
+      }
+    ]
+  }
+}

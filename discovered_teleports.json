@@ -1,0 +1,41 @@
+{
+  "teleports": [
+    {
+      "srcX": 857,
+      "srcY": 933,
+      "dstX": 861,
+      "dstY": 941,
+      "srcHeight": 17,
+      "dstHeight": 17,
+      "srcTileType": 46,
+      "dstTileType": 3,
+      "count": 1,
+      "layer": 0
+    },
+    {
+      "srcX": 875,
+      "srcY": 933,
+      "dstX": 895,
+      "dstY": 932,
+      "srcHeight": 17,
+      "dstHeight": 7,
+      "srcTileType": 14,
+      "dstTileType": 14,
+      "count": 1,
+      "layer": 0
+    },
+    {
+      "srcX": 890,
+      "srcY": 958,
+      "dstX": 893,
+      "dstY": 953,
+      "srcHeight": 17,
+      "dstHeight": 80,
+      "srcTileType": 14,
+      "dstTileType": 14,
+      "count": 1,
+      "layer": 0
+    }
+  ],
+  "count": 3
+}

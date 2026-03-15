@@ -1,0 +1,67 @@
+-- Zone discovery data (auto-generated)
+-- Last synced: Thu Mar 12 16:38:40 2026
+return {
+  byGeometry = {
+    [-1] = {
+      flags = {},
+      name = "",
+      visits = 5,
+      zoneIDs = {
+        1,
+        2,
+        3,
+        4,
+        5,
+      },
+    },
+    [0] = {
+      flags = {
+        noMarks = true,
+      },
+      name = "",
+      visits = 33,
+      zoneIDs = {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        43,
+      },
+    },
+  },
+  byName = {},
+  diskMaps = {
+    [0] = {
+      path = ".\\main.map",
+      size = 4779584,
+    },
+  },
+}

@@ -19,6 +19,8 @@ Then open http://localhost:8000 in your browser.
 Leaflet-based tiled map with full pan/zoom support. Features include:
 
 - Overlay layers for teleports, hazards, monster spawn zones, and special tiles
+- Live discovery data integration — hazards and teleports discovered in-game by [XenTools](https://github.com/nwl9009/XenTools) are displayed with false positive filtering to suppress unreliable entries
+- Go-to-coords navigation — jump directly to specific world coordinates in the viewer
 - Clickable markers with detailed info popups
 - Room overlays showing dungeon boundaries and breakouts
 - Layer toggle controls to show/hide individual overlay categories
@@ -41,12 +43,19 @@ All map data is generated upstream and copied into this repository for static se
 - **`rooms/`** — Dungeon room boundary definitions
 - **`tiles/`** — Pre-rendered tile images used by the satellite viewer
 
-This data is produced by [XenMap](https://github.com/nwl9009/XenMap) using tile data captured by [XenTools](https://github.com/nwl9009/XenTools). See those repositories for the generation pipeline.
+### Data Pipeline
+
+The full pipeline from discovery to viewer:
+
+1. **[XenTools](https://github.com/nwl9009/XenTools)** discovers in-game data (hazards, teleports, tile types) through live gameplay
+2. XenTools syncs discovery data to GitHub
+3. **[XenMap](https://github.com/nwl9009/XenMap)** consumes the tile data and generates map tiles, overlay JSON files, and room definitions
+4. **Gamemap2431** serves the viewer and data as a static site via GitHub Pages
 
 ## Deployment
 
 This site is served via GitHub Pages from the `nwl9009/Gamemap2431` repository. To update the map:
 
-1. Regenerate data files using XenMap tools (see XenMap README for details)
+1. Regenerate data files using [XenMap](https://github.com/nwl9009/XenMap) tools (see XenMap README for details)
 2. Copy the updated JSON files, room definitions, and tile images into this repo
 3. Commit and push — GitHub Pages will serve the changes automatically
